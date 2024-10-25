@@ -1,0 +1,358 @@
+{
+  "address": "0x93db64f9d41313DbC7aF7A401d94968A58126463",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "singleton",
+          "type": "address"
+        }
+      ],
+      "name": "ChangedMasterCopy",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        },
+        {
+          "indexed": false,
+          "internalType": "enum Enum.Operation",
+          "name": "operation",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "safeTxGas",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "baseGas",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "gasPrice",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "gasToken",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address payable",
+          "name": "refundReceiver",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "signatures",
+          "type": "bytes"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "additionalInfo",
+          "type": "bytes"
+        }
+      ],
+      "name": "SafeMultiSigTransaction",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "initiator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address[]",
+          "name": "owners",
+          "type": "address[]"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "threshold",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "initializer",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "fallbackHandler",
+          "type": "address"
+        }
+      ],
+      "name": "SafeSetup",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "MIGRATION_SINGLETON",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "l2Singleton",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "fallbackHandler",
+          "type": "address"
+        }
+      ],
+      "name": "migrateFromV111",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "l2Singleton",
+          "type": "address"
+        }
+      ],
+      "name": "migrateToL2",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xe83a6a733ca22bca651ad6d9ef9ce91f90111225c2b034ae5b3e470b144e5685",
+  "receipt": {
+    "to": "0x97A23639dbce0507Ee466741AAb1A6BD4EB7a38c",
+    "from": "0x98e2ee7DcBDEBFE5E3D51f9136f938c88A7D63F3",
+    "contractAddress": null,
+    "transactionIndex": 0,
+    "gasUsed": "917662",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x912c3b9990334cdf848b6d88c2ed6974c213feb5dfbcbadb94329ae9ebe3dfa7",
+    "transactionHash": "0xe83a6a733ca22bca651ad6d9ef9ce91f90111225c2b034ae5b3e470b144e5685",
+    "logs": [],
+    "blockNumber": 15800,
+    "cumulativeGasUsed": "917662",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "d6372cac540e87137b93d1ade6e31ca3",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.27+commit.40a35a09\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"singleton\",\"type\":\"address\"}],\"name\":\"ChangedMasterCopy\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"},{\"indexed\":false,\"internalType\":\"enum Enum.Operation\",\"name\":\"operation\",\"type\":\"uint8\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"safeTxGas\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"baseGas\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"gasPrice\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"gasToken\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"refundReceiver\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"signatures\",\"type\":\"bytes\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"additionalInfo\",\"type\":\"bytes\"}],\"name\":\"SafeMultiSigTransaction\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"initiator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address[]\",\"name\":\"owners\",\"type\":\"address[]\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"threshold\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"initializer\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"fallbackHandler\",\"type\":\"address\"}],\"name\":\"SafeSetup\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"MIGRATION_SINGLETON\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"l2Singleton\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"fallbackHandler\",\"type\":\"address\"}],\"name\":\"migrateFromV111\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"l2Singleton\",\"type\":\"address\"}],\"name\":\"migrateToL2\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"IMPORTANT: The migration will only work with proxies that store the implementation address in the storage slot 0.\",\"events\":{\"ChangedMasterCopy(address)\":{\"params\":{\"singleton\":\"New master copy address\"}}},\"kind\":\"dev\",\"methods\":{\"constructor\":{\"details\":\"Initializes the migrationSingleton with the contract's own address.\"},\"migrateFromV111(address,address)\":{\"details\":\"This function should only be called via a delegatecall to perform the upgrade. Singletons version will be checked, so it implies that contracts exist. A valid and compatible fallbackHandler needs to be provided, only existence will be checked.\"},\"migrateToL2(address)\":{\"details\":\"This function should only be called via a delegatecall to perform the upgrade. Singletons versions will be compared, so it implies that contracts exist\"}},\"title\":\"Migration Contract for updating a Safe from 1.1.1/1.3.0/1.4.1 versions to a L2 version. Useful when replaying a Safe from a non L2 network in a L2 network.\",\"version\":1},\"userdoc\":{\"events\":{\"ChangedMasterCopy(address)\":{\"notice\":\"Event indicating a change of master copy address.\"}},\"kind\":\"user\",\"methods\":{\"constructor\":{\"notice\":\"Constructor\"},\"migrateFromV111(address,address)\":{\"notice\":\"Migrate from Safe 1.1.1 Singleton to 1.3.0 or 1.4.1 L2 Safe is required to have nonce 0 so backend can support it after the migration\"},\"migrateToL2(address)\":{\"notice\":\"Migrate from Safe 1.3.0/1.4.1 Singleton (L1) to the same version provided L2 singleton Safe is required to have nonce 0 so backend can support it after the migration\"}},\"notice\":\"This contract facilitates the migration of a Safe contract from version 1.1.1 to 1.3.0/1.4.1 L2, 1.3.0 to 1.3.0L2 or from 1.4.1 to 1.4.1L2         Other versions are not supported\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/libraries/SafeToL2Migration.sol\":\"SafeToL2Migration\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"details\":{\"constantOptimizer\":true,\"cse\":true,\"deduplicate\":true,\"inliner\":true,\"jumpdestRemover\":true,\"orderLiterals\":true,\"peephole\":true,\"simpleCounterForLoopUncheckedIncrement\":true,\"yul\":true,\"yulDetails\":{\"optimizerSteps\":\":fDnTOcmuO\",\"stackAllocation\":true}},\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"contracts/interfaces/IFallbackManager.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title IFallbackManager - A contract interface managing fallback calls made to this contract.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface IFallbackManager {\\r\\n    event ChangedFallbackHandler(address indexed handler);\\r\\n\\r\\n    /**\\r\\n     * @notice Set Fallback Handler to `handler` for the Safe.\\r\\n     * @dev Only fallback calls without value and with data will be forwarded.\\r\\n     *      This can only be done via a Safe transaction.\\r\\n     *      Cannot be set to the Safe itself.\\r\\n     * @param handler contract to handle fallback calls.\\r\\n     */\\r\\n    function setFallbackHandler(address handler) external;\\r\\n}\\r\\n\",\"keccak256\":\"0xac140e71f4d9518982b27ccd9370d3d41c767f21bcef45a6bdd69785612d0e9b\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/IGuardManager.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\n/* solhint-disable one-contract-per-file */\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title IGuardManager - A contract interface managing transaction guards which perform pre and post-checks on Safe transactions.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface IGuardManager {\\r\\n    event ChangedGuard(address indexed guard);\\r\\n\\r\\n    /**\\r\\n     * @dev Set a guard that checks transactions before execution\\r\\n     *      This can only be done via a Safe transaction.\\r\\n     *      \\u26a0\\ufe0f IMPORTANT: Since a guard has full power to block Safe transaction execution,\\r\\n     *        a broken guard can cause a denial of service for the Safe. Make sure to carefully\\r\\n     *        audit the guard code and design recovery mechanisms.\\r\\n     * @notice Set Transaction Guard `guard` for the Safe. Make sure you trust the guard.\\r\\n     * @param guard The address of the guard to be used or the 0 address to disable the guard\\r\\n     */\\r\\n    function setGuard(address guard) external;\\r\\n}\\r\\n\",\"keccak256\":\"0x01f0c2ce0a38046de929195363684c15bcd579159e8c2fc3123b6710d5f0fe27\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/IModuleManager.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\nimport {Enum} from \\\"../libraries/Enum.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title IModuleManager - An interface of contract managing Safe modules\\r\\n * @notice Modules are extensions with unlimited access to a Safe that can be added to a Safe by its owners.\\r\\n           \\u26a0\\ufe0f WARNING: Modules are a security risk since they can execute arbitrary transactions, \\r\\n           so only trusted and audited modules should be added to a Safe. A malicious module can\\r\\n           completely takeover a Safe.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface IModuleManager {\\r\\n    event EnabledModule(address indexed module);\\r\\n    event DisabledModule(address indexed module);\\r\\n    event ExecutionFromModuleSuccess(address indexed module);\\r\\n    event ExecutionFromModuleFailure(address indexed module);\\r\\n    event ChangedModuleGuard(address indexed moduleGuard);\\r\\n\\r\\n    /**\\r\\n     * @notice Enables the module `module` for the Safe.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param module Module to be whitelisted.\\r\\n     */\\r\\n    function enableModule(address module) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Disables the module `module` for the Safe.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param prevModule Previous module in the modules linked list.\\r\\n     * @param module Module to be removed.\\r\\n     */\\r\\n    function disableModule(address prevModule, address module) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Execute `operation` (0: Call, 1: DelegateCall) to `to` with `value` (Native Token)\\r\\n     * @param to Destination address of module transaction.\\r\\n     * @param value Ether value of module transaction.\\r\\n     * @param data Data payload of module transaction.\\r\\n     * @param operation Operation type of module transaction.\\r\\n     * @return success Boolean flag indicating if the call succeeded.\\r\\n     */\\r\\n    function execTransactionFromModule(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes memory data,\\r\\n        Enum.Operation operation\\r\\n    ) external returns (bool success);\\r\\n\\r\\n    /**\\r\\n     * @notice Execute `operation` (0: Call, 1: DelegateCall) to `to` with `value` (Native Token) and return data\\r\\n     * @param to Destination address of module transaction.\\r\\n     * @param value Ether value of module transaction.\\r\\n     * @param data Data payload of module transaction.\\r\\n     * @param operation Operation type of module transaction.\\r\\n     * @return success Boolean flag indicating if the call succeeded.\\r\\n     * @return returnData Data returned by the call.\\r\\n     */\\r\\n    function execTransactionFromModuleReturnData(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes memory data,\\r\\n        Enum.Operation operation\\r\\n    ) external returns (bool success, bytes memory returnData);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns if an module is enabled\\r\\n     * @return True if the module is enabled\\r\\n     */\\r\\n    function isModuleEnabled(address module) external view returns (bool);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns an array of modules.\\r\\n     *         If all entries fit into a single page, the next pointer will be 0x1.\\r\\n     *         If another page is present, next will be the last element of the returned array.\\r\\n     * @param start Start of the page. Has to be a module or start pointer (0x1 address)\\r\\n     * @param pageSize Maximum number of modules that should be returned. Has to be > 0\\r\\n     * @return array Array of modules.\\r\\n     * @return next Start of the next page.\\r\\n     */\\r\\n    function getModulesPaginated(address start, uint256 pageSize) external view returns (address[] memory array, address next);\\r\\n\\r\\n    /**\\r\\n     * @dev Set a module guard that checks transactions initiated by the module before execution\\r\\n     *      This can only be done via a Safe transaction.\\r\\n     *      \\u26a0\\ufe0f IMPORTANT: Since a module guard has full power to block Safe transaction execution initiatied via a module,\\r\\n     *        a broken module guard can cause a denial of service for the Safe modules. Make sure to carefully\\r\\n     *        audit the module guard code and design recovery mechanisms.\\r\\n     * @notice Set Module Guard `moduleGuard` for the Safe. Make sure you trust the module guard.\\r\\n     * @param moduleGuard The address of the module guard to be used or the zero address to disable the module guard.\\r\\n     */\\r\\n    function setModuleGuard(address moduleGuard) external;\\r\\n}\\r\\n\",\"keccak256\":\"0xb4dc05e8a965d5109212a0971c0666d749d11c5ca7420b79f9f93bc55194d141\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/IOwnerManager.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title IOwnerManager - Interface for contract which manages Safe owners and a threshold to authorize transactions.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface IOwnerManager {\\r\\n    event AddedOwner(address indexed owner);\\r\\n    event RemovedOwner(address indexed owner);\\r\\n    event ChangedThreshold(uint256 threshold);\\r\\n\\r\\n    /**\\r\\n     * @notice Adds the owner `owner` to the Safe and updates the threshold to `_threshold`.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param owner New owner address.\\r\\n     * @param _threshold New threshold.\\r\\n     */\\r\\n    function addOwnerWithThreshold(address owner, uint256 _threshold) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Removes the owner `owner` from the Safe and updates the threshold to `_threshold`.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param prevOwner Owner that pointed to the owner to be removed in the linked list\\r\\n     * @param owner Owner address to be removed.\\r\\n     * @param _threshold New threshold.\\r\\n     */\\r\\n    function removeOwner(address prevOwner, address owner, uint256 _threshold) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Replaces the owner `oldOwner` in the Safe with `newOwner`.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param prevOwner Owner that pointed to the owner to be replaced in the linked list\\r\\n     * @param oldOwner Owner address to be replaced.\\r\\n     * @param newOwner New owner address.\\r\\n     */\\r\\n    function swapOwner(address prevOwner, address oldOwner, address newOwner) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Changes the threshold of the Safe to `_threshold`.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param _threshold New threshold.\\r\\n     */\\r\\n    function changeThreshold(uint256 _threshold) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Returns the number of required confirmations for a Safe transaction aka the threshold.\\r\\n     * @return Threshold number.\\r\\n     */\\r\\n    function getThreshold() external view returns (uint256);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns if `owner` is an owner of the Safe.\\r\\n     * @return Boolean if owner is an owner of the Safe.\\r\\n     */\\r\\n    function isOwner(address owner) external view returns (bool);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns a list of Safe owners.\\r\\n     * @return Array of Safe owners.\\r\\n     */\\r\\n    function getOwners() external view returns (address[] memory);\\r\\n}\\r\\n\",\"keccak256\":\"0x80bd294df67adb27ed505dd3b17ef2252514acf738d52593fbd682c3493c9de0\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/ISafe.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\nimport {Enum} from \\\"./../libraries/Enum.sol\\\";\\r\\nimport {IFallbackManager} from \\\"./IFallbackManager.sol\\\";\\r\\nimport {IGuardManager} from \\\"./IGuardManager.sol\\\";\\r\\nimport {IModuleManager} from \\\"./IModuleManager.sol\\\";\\r\\nimport {IOwnerManager} from \\\"./IOwnerManager.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title ISafe - A multisignature wallet interface with support for confirmations using signed messages based on EIP-712.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface ISafe is IModuleManager, IGuardManager, IOwnerManager, IFallbackManager {\\r\\n    event SafeSetup(address indexed initiator, address[] owners, uint256 threshold, address initializer, address fallbackHandler);\\r\\n    event ApproveHash(bytes32 indexed approvedHash, address indexed owner);\\r\\n    event SignMsg(bytes32 indexed msgHash);\\r\\n    event ExecutionFailure(bytes32 indexed txHash, uint256 payment);\\r\\n    event ExecutionSuccess(bytes32 indexed txHash, uint256 payment);\\r\\n\\r\\n    /**\\r\\n     * @notice Sets an initial storage of the Safe contract.\\r\\n     * @dev This method can only be called once.\\r\\n     *      If a proxy was created without setting up, anyone can call setup and claim the proxy.\\r\\n     * @param _owners List of Safe owners.\\r\\n     * @param _threshold Number of required confirmations for a Safe transaction.\\r\\n     * @param to Contract address for optional delegate call.\\r\\n     * @param data Data payload for optional delegate call.\\r\\n     * @param fallbackHandler Handler for fallback calls to this contract\\r\\n     * @param paymentToken Token that should be used for the payment (0 is ETH)\\r\\n     * @param payment Value that should be paid\\r\\n     * @param paymentReceiver Address that should receive the payment (or 0 if tx.origin)\\r\\n     */\\r\\n    function setup(\\r\\n        address[] calldata _owners,\\r\\n        uint256 _threshold,\\r\\n        address to,\\r\\n        bytes calldata data,\\r\\n        address fallbackHandler,\\r\\n        address paymentToken,\\r\\n        uint256 payment,\\r\\n        address payable paymentReceiver\\r\\n    ) external;\\r\\n\\r\\n    /** @notice Executes a `operation` {0: Call, 1: DelegateCall}} transaction to `to` with `value` (Native Currency)\\r\\n     *          and pays `gasPrice` * `gasLimit` in `gasToken` token to `refundReceiver`.\\r\\n     * @dev The fees are always transferred, even if the user transaction fails.\\r\\n     *      This method doesn't perform any sanity check of the transaction, such as:\\r\\n     *      - if the contract at `to` address has code or not\\r\\n     *      - if the `gasToken` is a contract or not\\r\\n     *      It is the responsibility of the caller to perform such checks.\\r\\n     * @param to Destination address of Safe transaction.\\r\\n     * @param value Ether value of Safe transaction.\\r\\n     * @param data Data payload of Safe transaction.\\r\\n     * @param operation Operation type of Safe transaction.\\r\\n     * @param safeTxGas Gas that should be used for the Safe transaction.\\r\\n     * @param baseGas Gas costs that are independent of the transaction execution(e.g. base transaction fee, signature check, payment of the refund)\\r\\n     * @param gasPrice Gas price that should be used for the payment calculation.\\r\\n     * @param gasToken Token address (or 0 if ETH) that is used for the payment.\\r\\n     * @param refundReceiver Address of receiver of gas payment (or 0 if tx.origin).\\r\\n     * @param signatures Signature data that should be verified.\\r\\n     *                   Can be packed ECDSA signature ({bytes32 r}{bytes32 s}{uint8 v}), contract signature (EIP-1271) or approved hash.\\r\\n     * @return success Boolean indicating transaction's success.\\r\\n     */\\r\\n    function execTransaction(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes calldata data,\\r\\n        Enum.Operation operation,\\r\\n        uint256 safeTxGas,\\r\\n        uint256 baseGas,\\r\\n        uint256 gasPrice,\\r\\n        address gasToken,\\r\\n        address payable refundReceiver,\\r\\n        bytes memory signatures\\r\\n    ) external payable returns (bool success);\\r\\n\\r\\n    /**\\r\\n     * @notice Checks whether the signature provided is valid for the provided data and hash. Reverts otherwise.\\r\\n     * @param dataHash Hash of the data (could be either a message hash or transaction hash)\\r\\n     * @param signatures Signature data that should be verified.\\r\\n     *                   Can be packed ECDSA signature ({bytes32 r}{bytes32 s}{uint8 v}), contract signature (EIP-1271) or approved hash.\\r\\n     */\\r\\n    function checkSignatures(bytes32 dataHash, bytes memory signatures) external view;\\r\\n\\r\\n    /**\\r\\n     * @notice Checks whether the signature provided is valid for the provided data and hash. Reverts otherwise.\\r\\n     * @dev Since the EIP-1271 does an external call, be mindful of reentrancy attacks.\\r\\n     * @param executor Address that executing the transaction.\\r\\n     *        \\u26a0\\ufe0f\\u26a0\\ufe0f\\u26a0\\ufe0f Make sure that the executor address is a legitmate executor.\\r\\n     *        Incorrectly passed the executor might reduce the threshold by 1 signature. \\u26a0\\ufe0f\\u26a0\\ufe0f\\u26a0\\ufe0f\\r\\n     * @param dataHash Hash of the data (could be either a message hash or transaction hash)\\r\\n     * @param signatures Signature data that should be verified.\\r\\n     *                   Can be packed ECDSA signature ({bytes32 r}{bytes32 s}{uint8 v}), contract signature (EIP-1271) or approved hash.\\r\\n     * @param requiredSignatures Amount of required valid signatures.\\r\\n     */\\r\\n    function checkNSignatures(address executor, bytes32 dataHash, bytes memory signatures, uint256 requiredSignatures) external view;\\r\\n\\r\\n    /**\\r\\n     * @notice Marks hash `hashToApprove` as approved.\\r\\n     * @dev This can be used with a pre-approved hash transaction signature.\\r\\n     *      IMPORTANT: The approved hash stays approved forever. There's no revocation mechanism, so it behaves similarly to ECDSA signatures\\r\\n     * @param hashToApprove The hash to mark as approved for signatures that are verified by this contract.\\r\\n     */\\r\\n    function approveHash(bytes32 hashToApprove) external;\\r\\n\\r\\n    /**\\r\\n     * @dev Returns the domain separator for this contract, as defined in the EIP-712 standard.\\r\\n     * @return bytes32 The domain separator hash.\\r\\n     */\\r\\n    function domainSeparator() external view returns (bytes32);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns transaction hash to be signed by owners.\\r\\n     * @param to Destination address.\\r\\n     * @param value Ether value.\\r\\n     * @param data Data payload.\\r\\n     * @param operation Operation type.\\r\\n     * @param safeTxGas Gas that should be used for the safe transaction.\\r\\n     * @param baseGas Gas costs for data used to trigger the safe transaction.\\r\\n     * @param gasPrice Maximum gas price that should be used for this transaction.\\r\\n     * @param gasToken Token address (or 0 if ETH) that is used for the payment.\\r\\n     * @param refundReceiver Address of receiver of gas payment (or 0 if tx.origin).\\r\\n     * @param _nonce Transaction nonce.\\r\\n     * @return Transaction hash.\\r\\n     */\\r\\n    function getTransactionHash(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes calldata data,\\r\\n        Enum.Operation operation,\\r\\n        uint256 safeTxGas,\\r\\n        uint256 baseGas,\\r\\n        uint256 gasPrice,\\r\\n        address gasToken,\\r\\n        address refundReceiver,\\r\\n        uint256 _nonce\\r\\n    ) external view returns (bytes32);\\r\\n\\r\\n    /**\\r\\n     * External getter function for state variables.\\r\\n     */\\r\\n\\r\\n    /**\\r\\n     * @notice Returns the version of the Safe contract.\\r\\n     * @return Version string.\\r\\n     */\\r\\n    // solhint-disable-next-line\\r\\n    function VERSION() external view returns (string memory);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns the nonce of the Safe contract.\\r\\n     * @return Nonce.\\r\\n     */\\r\\n    function nonce() external view returns (uint256);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns a uint if the messageHash is signed by the owner.\\r\\n     * @param messageHash Hash of message that should be checked.\\r\\n     * @return Number denoting if an owner signed the hash.\\r\\n     */\\r\\n    function signedMessages(bytes32 messageHash) external view returns (uint256);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns a uint if the messageHash is approved by the owner.\\r\\n     * @param owner Owner address that should be checked.\\r\\n     * @param messageHash Hash of message that should be checked.\\r\\n     * @return Number denoting if an owner approved the hash.\\r\\n     */\\r\\n    function approvedHashes(address owner, bytes32 messageHash) external view returns (uint256);\\r\\n}\\r\\n\",\"keccak256\":\"0x7b68615030245afc1acba44d5bd450caecfd23d3fadc7bbc577c36d7dbdd9b09\",\"license\":\"LGPL-3.0-only\"},\"contracts/libraries/Enum.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title Enum - Collection of enums used in Safe Smart Account contracts.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\nlibrary Enum {\\r\\n    enum Operation {\\r\\n        Call,\\r\\n        DelegateCall\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x5eed8ff46d1411dd7f9485efeb69fdfca53ba516e8c5b67a71e7bea59904f920\",\"license\":\"LGPL-3.0-only\"},\"contracts/libraries/SafeStorage.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title SafeStorage - Storage layout of the Safe Smart Account contracts to be used in libraries.\\r\\n * @dev Should be always the first base contract of a library that is used with a Safe.\\r\\n * @author Richard Meissner - @rmeissner\\r\\n */\\r\\ncontract SafeStorage {\\r\\n    // From /common/Singleton.sol\\r\\n    address internal singleton;\\r\\n    // From /common/ModuleManager.sol\\r\\n    mapping(address => address) internal modules;\\r\\n    // From /common/OwnerManager.sol\\r\\n    mapping(address => address) internal owners;\\r\\n    uint256 internal ownerCount;\\r\\n    uint256 internal threshold;\\r\\n\\r\\n    // From /Safe.sol\\r\\n    uint256 internal nonce;\\r\\n    bytes32 internal _deprecatedDomainSeparator;\\r\\n    mapping(bytes32 => uint256) internal signedMessages;\\r\\n    mapping(address => mapping(bytes32 => uint256)) internal approvedHashes;\\r\\n}\\r\\n\",\"keccak256\":\"0xa5c6f39d070cc6ee83e45ad2789d55e69005c21ceb21ae87b743a44eeb8641c4\",\"license\":\"LGPL-3.0-only\"},\"contracts/libraries/SafeToL2Migration.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\n/* solhint-disable one-contract-per-file */\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\nimport {ISafe} from \\\"./../interfaces/ISafe.sol\\\";\\r\\nimport {Enum} from \\\"./../libraries/Enum.sol\\\";\\r\\nimport {SafeStorage} from \\\"./../libraries/SafeStorage.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title Migration Contract for updating a Safe from 1.1.1/1.3.0/1.4.1 versions to a L2 version. Useful when replaying a Safe from a non L2 network in a L2 network.\\r\\n * @notice This contract facilitates the migration of a Safe contract from version 1.1.1 to 1.3.0/1.4.1 L2, 1.3.0 to 1.3.0L2 or from 1.4.1 to 1.4.1L2\\r\\n *         Other versions are not supported\\r\\n * @dev IMPORTANT: The migration will only work with proxies that store the implementation address in the storage slot 0.\\r\\n */\\r\\ncontract SafeToL2Migration is SafeStorage {\\r\\n    // Address of this contract\\r\\n    address public immutable MIGRATION_SINGLETON;\\r\\n\\r\\n    /**\\r\\n     * @notice Constructor\\r\\n     * @dev Initializes the migrationSingleton with the contract's own address.\\r\\n     */\\r\\n    constructor() {\\r\\n        MIGRATION_SINGLETON = address(this);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Event indicating a change of master copy address.\\r\\n     * @param singleton New master copy address\\r\\n     */\\r\\n    event ChangedMasterCopy(address singleton);\\r\\n\\r\\n    event SafeSetup(address indexed initiator, address[] owners, uint256 threshold, address initializer, address fallbackHandler);\\r\\n\\r\\n    event SafeMultiSigTransaction(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes data,\\r\\n        Enum.Operation operation,\\r\\n        uint256 safeTxGas,\\r\\n        uint256 baseGas,\\r\\n        uint256 gasPrice,\\r\\n        address gasToken,\\r\\n        address payable refundReceiver,\\r\\n        bytes signatures,\\r\\n        // We combine nonce, sender and threshold into one to avoid stack too deep\\r\\n        // Dev note: additionalInfo should not contain `bytes`, as this complicates decoding\\r\\n        bytes additionalInfo\\r\\n    );\\r\\n\\r\\n    /**\\r\\n     * @notice Modifier to make a function callable via delegatecall only.\\r\\n     * If the function is called via a regular call, it will revert.\\r\\n     */\\r\\n    modifier onlyDelegateCall() {\\r\\n        require(address(this) != MIGRATION_SINGLETON, \\\"Migration should only be called via delegatecall\\\");\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Modifier to prevent using initialized Safes.\\r\\n     * If Safe has a nonce higher than 0, it will revert\\r\\n     */\\r\\n    modifier onlyNonceZero() {\\r\\n        // Nonce is increased before executing a tx, so first executed tx will have nonce=1\\r\\n        require(nonce == 1, \\\"Safe must have not executed any tx\\\");\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @dev Internal function with common migration steps, changes the singleton and emits SafeMultiSigTransaction event\\r\\n     */\\r\\n    function migrate(address l2Singleton, bytes memory functionData) private {\\r\\n        singleton = l2Singleton;\\r\\n\\r\\n        // Encode nonce, sender, threshold\\r\\n        bytes memory additionalInfo = abi.encode(0, msg.sender, threshold);\\r\\n\\r\\n        // Simulate a L2 transaction so Safe Tx Service indexer picks up the Safe\\r\\n        emit SafeMultiSigTransaction(\\r\\n            MIGRATION_SINGLETON,\\r\\n            0,\\r\\n            functionData,\\r\\n            Enum.Operation.DelegateCall,\\r\\n            0,\\r\\n            0,\\r\\n            0,\\r\\n            address(0),\\r\\n            payable(address(0)),\\r\\n            \\\"\\\", // We cannot detect signatures\\r\\n            additionalInfo\\r\\n        );\\r\\n        emit ChangedMasterCopy(l2Singleton);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Migrate from Safe 1.3.0/1.4.1 Singleton (L1) to the same version provided L2 singleton\\r\\n     * Safe is required to have nonce 0 so backend can support it after the migration\\r\\n     * @dev This function should only be called via a delegatecall to perform the upgrade.\\r\\n     * Singletons versions will be compared, so it implies that contracts exist\\r\\n     */\\r\\n    function migrateToL2(address l2Singleton) external onlyDelegateCall onlyNonceZero {\\r\\n        address _singleton = singleton;\\r\\n        require(_singleton != l2Singleton, \\\"Safe is already using the singleton\\\");\\r\\n        bytes32 oldSingletonVersion = keccak256(abi.encodePacked(ISafe(_singleton).VERSION()));\\r\\n        bytes32 newSingletonVersion = keccak256(abi.encodePacked(ISafe(l2Singleton).VERSION()));\\r\\n\\r\\n        require(oldSingletonVersion == newSingletonVersion, \\\"L2 singleton must match current version singleton\\\");\\r\\n        // There's no way to make sure if address is a valid singleton, unless we configure the contract for every chain\\r\\n        require(\\r\\n            newSingletonVersion == keccak256(abi.encodePacked(\\\"1.3.0\\\")) || newSingletonVersion == keccak256(abi.encodePacked(\\\"1.4.1\\\")),\\r\\n            \\\"Provided singleton version is not supported\\\"\\r\\n        );\\r\\n\\r\\n        // 0xef2624ae - bytes4(keccak256(\\\"migrateToL2(address)\\\"))\\r\\n        bytes memory functionData = abi.encodeWithSelector(0xef2624ae, l2Singleton);\\r\\n        migrate(l2Singleton, functionData);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Migrate from Safe 1.1.1 Singleton to 1.3.0 or 1.4.1 L2\\r\\n     * Safe is required to have nonce 0 so backend can support it after the migration\\r\\n     * @dev This function should only be called via a delegatecall to perform the upgrade.\\r\\n     * Singletons version will be checked, so it implies that contracts exist.\\r\\n     * A valid and compatible fallbackHandler needs to be provided, only existence will be checked.\\r\\n     */\\r\\n    function migrateFromV111(address l2Singleton, address fallbackHandler) external onlyDelegateCall onlyNonceZero {\\r\\n        require(isContract(fallbackHandler), \\\"fallbackHandler is not a contract\\\");\\r\\n\\r\\n        bytes32 oldSingletonVersion = keccak256(abi.encodePacked(ISafe(singleton).VERSION()));\\r\\n        require(oldSingletonVersion == keccak256(abi.encodePacked(\\\"1.1.1\\\")), \\\"Provided singleton version is not supported\\\");\\r\\n\\r\\n        bytes32 newSingletonVersion = keccak256(abi.encodePacked(ISafe(l2Singleton).VERSION()));\\r\\n        require(\\r\\n            newSingletonVersion == keccak256(abi.encodePacked(\\\"1.3.0\\\")) || newSingletonVersion == keccak256(abi.encodePacked(\\\"1.4.1\\\")),\\r\\n            \\\"Provided singleton version is not supported\\\"\\r\\n        );\\r\\n\\r\\n        ISafe safe = ISafe(address(this));\\r\\n        safe.setFallbackHandler(fallbackHandler);\\r\\n\\r\\n        // Safes < 1.3.0 did not emit SafeSetup, so Safe Tx Service backend needs the event to index the Safe\\r\\n        emit SafeSetup(MIGRATION_SINGLETON, getOwners(), threshold, address(0), fallbackHandler);\\r\\n\\r\\n        // 0xd9a20812 - bytes4(keccak256(\\\"migrateFromV111(address,address)\\\"))\\r\\n        bytes memory functionData = abi.encodeWithSelector(0xd9a20812, l2Singleton, fallbackHandler);\\r\\n        migrate(l2Singleton, functionData);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Checks whether an Ethereum address corresponds to a contract or an externally owned account (EOA).\\r\\n     * @param account The Ethereum address to be checked.\\r\\n     * @return A boolean value indicating whether the address is associated with a contract (true) or an EOA (false).\\r\\n     * @dev This function relies on the `extcodesize` assembly opcode to determine whether an address is a contract.\\r\\n     * It may return incorrect results in some edge cases (see documentation for details).\\r\\n     * Developers should use caution when relying on the results of this function for critical decision-making.\\r\\n     */\\r\\n    function isContract(address account) internal view returns (bool) {\\r\\n        uint256 size;\\r\\n        /* solhint-disable no-inline-assembly */\\r\\n        /// @solidity memory-safe-assembly\\r\\n        assembly {\\r\\n            size := extcodesize(account)\\r\\n        }\\r\\n        /* solhint-enable no-inline-assembly */\\r\\n\\r\\n        // If the code size is greater than 0, it is a contract; otherwise, it is an EOA.\\r\\n        return size > 0;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Returns a list of Safe owners.\\r\\n     * @dev This function is copied from `OwnerManager.sol` and takes advantage of the fact that\\r\\n     * migration happens with a `DELEGATECALL` in the context of the migrating account, which allows\\r\\n     * us to read the owners directly from storage and avoid the additional overhead of a `CALL`\\r\\n     * into the account implementation. Note that we can rely on the memory layout of the {owners}\\r\\n     * @return Array of Safe owners.\\r\\n     */\\r\\n    function getOwners() internal view returns (address[] memory) {\\r\\n        address[] memory array = new address[](ownerCount);\\r\\n        address sentinelOwners = address(0x1);\\r\\n        // populate return array\\r\\n        uint256 index = 0;\\r\\n        address currentOwner = owners[sentinelOwners];\\r\\n        while (currentOwner != sentinelOwners) {\\r\\n            array[index] = currentOwner;\\r\\n            currentOwner = owners[currentOwner];\\r\\n            index++;\\r\\n        }\\r\\n        return array;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x1613283e373c80d6bb06dc62a852565e762c5aeabf17f1b98567008f3220d1a6\",\"license\":\"LGPL-3.0-only\"}},\"version\":1}",
+  "bytecode": "0x60a06040523461003f57610011610079565b604051610f9a61008882396080518181816081015281816101f7015281816107980152610f0a0152610f9a90f35b600080fd5b6100589061005b906001600160a01b031682565b90565b6001600160a01b031690565b61005890610044565b61005890610067565b61008230610070565b60805256fe6080604052600436101561001257600080fd5b60003560e01c806372f7a95614610042578063d9a208121461003d5763ef2624ae0361005257610132565b610100565b61006c565b600091031261005257565b600080fd5b6001600160a01b031690565b90565b9052565b565b346100525761007c366004610047565b6100bb7f00000000000000000000000000000000000000000000000000000000000000006040515b918291826001600160a01b03909116815260200190565b0390f35b6001600160a01b0381160361005257565b9050359061006a826100bf565b9190604083820312610052576100639060206100f982866100d0565b94016100d0565b34610052576101196101133660046100dd565b906108eb565b604051005b9060208282031261005257610063916100d0565b346100525761011961014536600461011e565b610b36565b61006390610057906001600160a01b031682565b6100639061014a565b6100639061015e565b0190565b1561017b57565b60405162461bcd60e51b815260206004820152603060248201527f4d6967726174696f6e2073686f756c64206f6e6c792062652063616c6c65642060448201526f1d9a584819195b1959d85d1958d85b1b60821b6064820152608490fd5b9061006a9161022b6101ea30610167565b6102246001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016916001600160a01b031690565b1415610174565b6102a5565b6100639081565b6100639054610230565b6100636100636100639290565b1561025557565b60405162461bcd60e51b815260206004820152602260248201527f53616665206d7573742068617665206e6f7420657865637574656420616e79206044820152610e8f60f31b6064820152608490fd5b9061006a916102ce6102b76005610237565b6102c86102c46001610241565b9190565b1461024e565b6105d3565b156102da57565b60405162461bcd60e51b815260206004820152602160248201527f66616c6c6261636b48616e646c6572206973206e6f74206120636f6e747261636044820152601d60fa1b6064820152608490fd5b61006390610057565b6100639054610329565b634e487b7160e01b600052604160045260246000fd5b90601f01601f1916810190811067ffffffffffffffff82111761037457604052565b61033c565b9061006a61038660405190565b9283610352565b67ffffffffffffffff811161037457602090601f01601f19160190565b60005b8381106103bd5750506000910152565b81810151838201526020016103ad565b909291926103e26103dd8261038d565b610379565b93818552818301116100525761006a9160208501906103aa565b9080601f83011215610052578151610063926020016103cd565b9060208282031261005257815167ffffffffffffffff81116100525761006392016103fc565b6040513d6000823e3d90fd5b6101706104609260209261045a815190565b94859290565b938491016103aa565b61006391610448565b1561047957565b60405162461bcd60e51b815260206004820152602b60248201527f50726f76696465642073696e676c65746f6e2076657273696f6e206973206e6f60448201526a1d081cdd5c1c1bdc9d195960aa1b6064820152608490fd5b6100576100636100639290565b610063906104d2565b906105086105016104f7845190565b8084529260200190565b9260200190565b9060005b8181106105195750505090565b90919261053f61053860019286516001600160a01b0316815260200190565b9460200190565b92910161050c565b61058561006a9461057561056d60609599989699608086019086820360008801526104e8565b986020850152565b6001600160a01b03166040830152565b01906001600160a01b03169052565b6105a76105a16100639290565b60e01b90565b6001600160e01b03191690565b6001600160a01b03909116815260408101929161006a91602090610585565b6105e46105df83610b3f565b6102d3565b6105f96105f46105f46000610332565b610167565b63ffa1ad74600061060960405190565b80936106158460e01b90565b825260049082905afa908115610874576106b36000926106cb9484916108d1575b5061065f61064360405190565b8092610653602083019182610469565b90810382520382610352565b61067161066a825190565b9160200190565b206106ad6102c461068160405190565b61069e81602081016106538164312e312e3160d81b815260050190565b6106a961066a825190565b2090565b14610472565b6106bf6105f485610167565b60405193849260e01b90565b825260049082905afa801561087457610738916000916108ae575b506106f361064360405190565b6106fe61066a825190565b2061072861070b60405190565b61069e816020810161065381640312e332e360dc1b815260050190565b8114908115610879575b50610472565b6107476105f46105f430610167565b90813b1561005257600061075a60405190565b63f08a032360e01b81526001600160a01b0385166004820152928390602490829084905af180156108745761006a9360049361085192610856575b507f00000000000000000000000000000000000000000000000000000000000000007f141df868a6331af528e38c83b7aa03edc19be66e37ae67f9285bf4f8e3c6a1a86107e0610c1a565b6107e987610237565b90610814856108016107fb60006104df565b96610167565b9561080b60405190565b94859485610547565b0390a261084261082763d9a20812610594565b918461083260405190565b96879460208601908152016105b4565b60208201810382520383610352565b610e88565b61086e9060006108668183610352565b810190610047565b38610795565b61043c565b90506108a76102c461088a60405190565b61069e81602081016106538164312e342e3160d81b815260050190565b1438610732565b6108cb91503d806000833e6108c38183610352565b810190610416565b386106e6565b6108e591503d8086833e6108c38183610352565b38610636565b9061006a916101d9565b61006a906109056101ea30610167565b61006a906109166102b76005610237565b6109d9565b1561092257565b60405162461bcd60e51b815260206004820152602360248201527f5361666520697320616c7265616479207573696e67207468652073696e676c656044820152623a37b760e91b6064820152608490fd5b1561097a57565b60405162461bcd60e51b815260206004820152603160248201527f4c322073696e676c65746f6e206d757374206d617463682063757272656e74206044820152703b32b939b4b7b71039b4b733b632ba37b760791b6064820152608490fd5b610a076105f46109e96000610332565b6105f46001600160a01b0385166001600160a01b038316141561091b565b63ffa1ad74916000610a1860405190565b8093610a248660e01b90565b825260049082905afa91821561087457610a74926000918291610b1c575b50610a4f61064360405190565b610a5a61066a825190565b2093610a686105f484610167565b60405194859260e01b90565b825260049082905afa80156108745761006a93610aba610ac692600495600091610b01575b50610aa661064360405190565b610ab161066a825190565b20918214610973565b61072861070b60405190565b610851610ad663ef2624ae610594565b61084283610ae360405190565b95869360208501908152016001600160a01b03909116815260200190565b610b1691503d806000833e6108c38183610352565b38610a99565b610b3091503d8084833e6108c38183610352565b38610a42565b61006a906108f5565b3b610b4d6102c46000610241565b1190565b67ffffffffffffffff81116103745760208091020190565b90610b766103dd83610b51565b918252565b369037565b9061006a610b96610b9084610b69565b93610b51565b601f190160208401610b7b565b90610bad90610167565b600052602052604060002090565b634e487b7160e01b600052603260045260246000fd5b90610bda825190565b811015610beb576020809102010190565b610bbb565b634e487b7160e01b600052601160045260246000fd5b6000198114610c155760010190565b610bf0565b610c2c610c276003610237565b610b80565b6001610c3860016104df565b90610c436000610241565b9160029082610c5b610c56836002610ba3565b610332565b905b610c6a575b505050505090565b6001600160a01b0382166001600160a01b03821614610cbc57610caf610c5682610ca9610cb594610c9b8a8c610bd1565b906001600160a01b03169052565b85610ba3565b94610c06565b9383610c5d565b610c62565b90610cd1610063610ced92610167565b82546001600160a01b0319166001600160a01b03919091161790565b9055565b610cfe6100636100639290565b60ff1690565b61006690610cf1565b604090610d3d61006a9496959396610d2d60608401986000850190610d04565b6001600160a01b03166020830152565b0152565b61006690610241565b610d6b610d7460209361017093610d5f815190565b80835293849260200190565b958691016103aa565b601f01601f191690565b634e487b7160e01b600052602160045260246000fd5b60021115610d9e57565b610d7e565b9061006a82610d94565b61006390610da3565b61006690610dad565b98939596610e3b610e7998610e31610e669860806100639f9d978f90610e1f610e4599610e559c610e12610e2a94610e0861016088019460008901906001600160a01b03169052565b6020870190610d41565b8482036040860152610d4a565b9d6060830190610db6565b0190610d41565b60a08c0190610d41565b60c08a0190610d41565b6001600160a01b031660e0880152565b6001600160a01b0316610100860152565b8381036101208501526000815260200190565b91610140818403910152610d4a565b610f5f907f66753cd2356569ee081232e3be8909b950e0a76c1f8460c3a5e3c2be32b11bed7f75e41bc35ff1bf14d81d1d2f649c0084a0f974f9289c803ec9898eeec4c8d0b893610eda836000610cc1565b600090610f54610eea6004610237565b610f08610ef660405190565b80926106536020830191338984610d0d565b7f000000000000000000000000000000000000000000000000000000000000000092610f33856104df565b8580806001610f4185610167565b95610f4b60405190565b9a8b9a8b610dbf565b0390a16040516100a4565b0390a156fea2646970667358221220cffb90a2370891d3d7934646de0ca2338fe68a1e77857d37916c14b3d1a4e53064736f6c634300081b0033",
+  "deployedBytecode": "0x6080604052600436101561001257600080fd5b60003560e01c806372f7a95614610042578063d9a208121461003d5763ef2624ae0361005257610132565b610100565b61006c565b600091031261005257565b600080fd5b6001600160a01b031690565b90565b9052565b565b346100525761007c366004610047565b6100bb7f00000000000000000000000000000000000000000000000000000000000000006040515b918291826001600160a01b03909116815260200190565b0390f35b6001600160a01b0381160361005257565b9050359061006a826100bf565b9190604083820312610052576100639060206100f982866100d0565b94016100d0565b34610052576101196101133660046100dd565b906108eb565b604051005b9060208282031261005257610063916100d0565b346100525761011961014536600461011e565b610b36565b61006390610057906001600160a01b031682565b6100639061014a565b6100639061015e565b0190565b1561017b57565b60405162461bcd60e51b815260206004820152603060248201527f4d6967726174696f6e2073686f756c64206f6e6c792062652063616c6c65642060448201526f1d9a584819195b1959d85d1958d85b1b60821b6064820152608490fd5b9061006a9161022b6101ea30610167565b6102246001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016916001600160a01b031690565b1415610174565b6102a5565b6100639081565b6100639054610230565b6100636100636100639290565b1561025557565b60405162461bcd60e51b815260206004820152602260248201527f53616665206d7573742068617665206e6f7420657865637574656420616e79206044820152610e8f60f31b6064820152608490fd5b9061006a916102ce6102b76005610237565b6102c86102c46001610241565b9190565b1461024e565b6105d3565b156102da57565b60405162461bcd60e51b815260206004820152602160248201527f66616c6c6261636b48616e646c6572206973206e6f74206120636f6e747261636044820152601d60fa1b6064820152608490fd5b61006390610057565b6100639054610329565b634e487b7160e01b600052604160045260246000fd5b90601f01601f1916810190811067ffffffffffffffff82111761037457604052565b61033c565b9061006a61038660405190565b9283610352565b67ffffffffffffffff811161037457602090601f01601f19160190565b60005b8381106103bd5750506000910152565b81810151838201526020016103ad565b909291926103e26103dd8261038d565b610379565b93818552818301116100525761006a9160208501906103aa565b9080601f83011215610052578151610063926020016103cd565b9060208282031261005257815167ffffffffffffffff81116100525761006392016103fc565b6040513d6000823e3d90fd5b6101706104609260209261045a815190565b94859290565b938491016103aa565b61006391610448565b1561047957565b60405162461bcd60e51b815260206004820152602b60248201527f50726f76696465642073696e676c65746f6e2076657273696f6e206973206e6f60448201526a1d081cdd5c1c1bdc9d195960aa1b6064820152608490fd5b6100576100636100639290565b610063906104d2565b906105086105016104f7845190565b8084529260200190565b9260200190565b9060005b8181106105195750505090565b90919261053f61053860019286516001600160a01b0316815260200190565b9460200190565b92910161050c565b61058561006a9461057561056d60609599989699608086019086820360008801526104e8565b986020850152565b6001600160a01b03166040830152565b01906001600160a01b03169052565b6105a76105a16100639290565b60e01b90565b6001600160e01b03191690565b6001600160a01b03909116815260408101929161006a91602090610585565b6105e46105df83610b3f565b6102d3565b6105f96105f46105f46000610332565b610167565b63ffa1ad74600061060960405190565b80936106158460e01b90565b825260049082905afa908115610874576106b36000926106cb9484916108d1575b5061065f61064360405190565b8092610653602083019182610469565b90810382520382610352565b61067161066a825190565b9160200190565b206106ad6102c461068160405190565b61069e81602081016106538164312e312e3160d81b815260050190565b6106a961066a825190565b2090565b14610472565b6106bf6105f485610167565b60405193849260e01b90565b825260049082905afa801561087457610738916000916108ae575b506106f361064360405190565b6106fe61066a825190565b2061072861070b60405190565b61069e816020810161065381640312e332e360dc1b815260050190565b8114908115610879575b50610472565b6107476105f46105f430610167565b90813b1561005257600061075a60405190565b63f08a032360e01b81526001600160a01b0385166004820152928390602490829084905af180156108745761006a9360049361085192610856575b507f00000000000000000000000000000000000000000000000000000000000000007f141df868a6331af528e38c83b7aa03edc19be66e37ae67f9285bf4f8e3c6a1a86107e0610c1a565b6107e987610237565b90610814856108016107fb60006104df565b96610167565b9561080b60405190565b94859485610547565b0390a261084261082763d9a20812610594565b918461083260405190565b96879460208601908152016105b4565b60208201810382520383610352565b610e88565b61086e9060006108668183610352565b810190610047565b38610795565b61043c565b90506108a76102c461088a60405190565b61069e81602081016106538164312e342e3160d81b815260050190565b1438610732565b6108cb91503d806000833e6108c38183610352565b810190610416565b386106e6565b6108e591503d8086833e6108c38183610352565b38610636565b9061006a916101d9565b61006a906109056101ea30610167565b61006a906109166102b76005610237565b6109d9565b1561092257565b60405162461bcd60e51b815260206004820152602360248201527f5361666520697320616c7265616479207573696e67207468652073696e676c656044820152623a37b760e91b6064820152608490fd5b1561097a57565b60405162461bcd60e51b815260206004820152603160248201527f4c322073696e676c65746f6e206d757374206d617463682063757272656e74206044820152703b32b939b4b7b71039b4b733b632ba37b760791b6064820152608490fd5b610a076105f46109e96000610332565b6105f46001600160a01b0385166001600160a01b038316141561091b565b63ffa1ad74916000610a1860405190565b8093610a248660e01b90565b825260049082905afa91821561087457610a74926000918291610b1c575b50610a4f61064360405190565b610a5a61066a825190565b2093610a686105f484610167565b60405194859260e01b90565b825260049082905afa80156108745761006a93610aba610ac692600495600091610b01575b50610aa661064360405190565b610ab161066a825190565b20918214610973565b61072861070b60405190565b610851610ad663ef2624ae610594565b61084283610ae360405190565b95869360208501908152016001600160a01b03909116815260200190565b610b1691503d806000833e6108c38183610352565b38610a99565b610b3091503d8084833e6108c38183610352565b38610a42565b61006a906108f5565b3b610b4d6102c46000610241565b1190565b67ffffffffffffffff81116103745760208091020190565b90610b766103dd83610b51565b918252565b369037565b9061006a610b96610b9084610b69565b93610b51565b601f190160208401610b7b565b90610bad90610167565b600052602052604060002090565b634e487b7160e01b600052603260045260246000fd5b90610bda825190565b811015610beb576020809102010190565b610bbb565b634e487b7160e01b600052601160045260246000fd5b6000198114610c155760010190565b610bf0565b610c2c610c276003610237565b610b80565b6001610c3860016104df565b90610c436000610241565b9160029082610c5b610c56836002610ba3565b610332565b905b610c6a575b505050505090565b6001600160a01b0382166001600160a01b03821614610cbc57610caf610c5682610ca9610cb594610c9b8a8c610bd1565b906001600160a01b03169052565b85610ba3565b94610c06565b9383610c5d565b610c62565b90610cd1610063610ced92610167565b82546001600160a01b0319166001600160a01b03919091161790565b9055565b610cfe6100636100639290565b60ff1690565b61006690610cf1565b604090610d3d61006a9496959396610d2d60608401986000850190610d04565b6001600160a01b03166020830152565b0152565b61006690610241565b610d6b610d7460209361017093610d5f815190565b80835293849260200190565b958691016103aa565b601f01601f191690565b634e487b7160e01b600052602160045260246000fd5b60021115610d9e57565b610d7e565b9061006a82610d94565b61006390610da3565b61006690610dad565b98939596610e3b610e7998610e31610e669860806100639f9d978f90610e1f610e4599610e559c610e12610e2a94610e0861016088019460008901906001600160a01b03169052565b6020870190610d41565b8482036040860152610d4a565b9d6060830190610db6565b0190610d41565b60a08c0190610d41565b60c08a0190610d41565b6001600160a01b031660e0880152565b6001600160a01b0316610100860152565b8381036101208501526000815260200190565b91610140818403910152610d4a565b610f5f907f66753cd2356569ee081232e3be8909b950e0a76c1f8460c3a5e3c2be32b11bed7f75e41bc35ff1bf14d81d1d2f649c0084a0f974f9289c803ec9898eeec4c8d0b893610eda836000610cc1565b600090610f54610eea6004610237565b610f08610ef660405190565b80926106536020830191338984610d0d565b7f000000000000000000000000000000000000000000000000000000000000000092610f33856104df565b8580806001610f4185610167565b95610f4b60405190565b9a8b9a8b610dbf565b0390a16040516100a4565b0390a156fea2646970667358221220cffb90a2370891d3d7934646de0ca2338fe68a1e77857d37916c14b3d1a4e53064736f6c634300081b0033",
+  "devdoc": {
+    "details": "IMPORTANT: The migration will only work with proxies that store the implementation address in the storage slot 0.",
+    "events": {
+      "ChangedMasterCopy(address)": {
+        "params": {
+          "singleton": "New master copy address"
+        }
+      }
+    },
+    "kind": "dev",
+    "methods": {
+      "constructor": {
+        "details": "Initializes the migrationSingleton with the contract's own address."
+      },
+      "migrateFromV111(address,address)": {
+        "details": "This function should only be called via a delegatecall to perform the upgrade. Singletons version will be checked, so it implies that contracts exist. A valid and compatible fallbackHandler needs to be provided, only existence will be checked."
+      },
+      "migrateToL2(address)": {
+        "details": "This function should only be called via a delegatecall to perform the upgrade. Singletons versions will be compared, so it implies that contracts exist"
+      }
+    },
+    "title": "Migration Contract for updating a Safe from 1.1.1/1.3.0/1.4.1 versions to a L2 version. Useful when replaying a Safe from a non L2 network in a L2 network.",
+    "version": 1
+  },
+  "userdoc": {
+    "events": {
+      "ChangedMasterCopy(address)": {
+        "notice": "Event indicating a change of master copy address."
+      }
+    },
+    "kind": "user",
+    "methods": {
+      "constructor": {
+        "notice": "Constructor"
+      },
+      "migrateFromV111(address,address)": {
+        "notice": "Migrate from Safe 1.1.1 Singleton to 1.3.0 or 1.4.1 L2 Safe is required to have nonce 0 so backend can support it after the migration"
+      },
+      "migrateToL2(address)": {
+        "notice": "Migrate from Safe 1.3.0/1.4.1 Singleton (L1) to the same version provided L2 singleton Safe is required to have nonce 0 so backend can support it after the migration"
+      }
+    },
+    "notice": "This contract facilitates the migration of a Safe contract from version 1.1.1 to 1.3.0/1.4.1 L2, 1.3.0 to 1.3.0L2 or from 1.4.1 to 1.4.1L2         Other versions are not supported",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 6142,
+        "contract": "contracts/libraries/SafeToL2Migration.sol:SafeToL2Migration",
+        "label": "singleton",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 6146,
+        "contract": "contracts/libraries/SafeToL2Migration.sol:SafeToL2Migration",
+        "label": "modules",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_address)"
+      },
+      {
+        "astId": 6150,
+        "contract": "contracts/libraries/SafeToL2Migration.sol:SafeToL2Migration",
+        "label": "owners",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_address,t_address)"
+      },
+      {
+        "astId": 6152,
+        "contract": "contracts/libraries/SafeToL2Migration.sol:SafeToL2Migration",
+        "label": "ownerCount",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 6154,
+        "contract": "contracts/libraries/SafeToL2Migration.sol:SafeToL2Migration",
+        "label": "threshold",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 6156,
+        "contract": "contracts/libraries/SafeToL2Migration.sol:SafeToL2Migration",
+        "label": "nonce",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 6158,
+        "contract": "contracts/libraries/SafeToL2Migration.sol:SafeToL2Migration",
+        "label": "_deprecatedDomainSeparator",
+        "offset": 0,
+        "slot": "6",
+        "type": "t_bytes32"
+      },
+      {
+        "astId": 6162,
+        "contract": "contracts/libraries/SafeToL2Migration.sol:SafeToL2Migration",
+        "label": "signedMessages",
+        "offset": 0,
+        "slot": "7",
+        "type": "t_mapping(t_bytes32,t_uint256)"
+      },
+      {
+        "astId": 6168,
+        "contract": "contracts/libraries/SafeToL2Migration.sol:SafeToL2Migration",
+        "label": "approvedHashes",
+        "offset": 0,
+        "slot": "8",
+        "type": "t_mapping(t_address,t_mapping(t_bytes32,t_uint256))"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_address,t_address)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => address)",
+        "numberOfBytes": "32",
+        "value": "t_address"
+      },
+      "t_mapping(t_address,t_mapping(t_bytes32,t_uint256))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(bytes32 => uint256))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_bytes32,t_uint256)"
+      },
+      "t_mapping(t_bytes32,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

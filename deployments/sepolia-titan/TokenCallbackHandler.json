@@ -1,0 +1,237 @@
+{
+  "address": "0x75449E32614D8e77B0f922F4E0A8732524B4d2d1",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC1155BatchReceived",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC1155Received",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC721Received",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "interfaceId",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "tokensReceived",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x6114596114ed2e2eace67b2637da290abc3b9228f021277e7e83a8eea1988b3c",
+  "receipt": {
+    "to": "0x97A23639dbce0507Ee466741AAb1A6BD4EB7a38c",
+    "from": "0x98e2ee7DcBDEBFE5E3D51f9136f938c88A7D63F3",
+    "contractAddress": null,
+    "transactionIndex": 0,
+    "gasUsed": "318209",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x6852c691f4be105c0384681e649f157fef83cb04ee50c9c0832b84d1cda12a26",
+    "transactionHash": "0x6114596114ed2e2eace67b2637da290abc3b9228f021277e7e83a8eea1988b3c",
+    "logs": [],
+    "blockNumber": 15791,
+    "cumulativeGasUsed": "318209",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "d6372cac540e87137b93d1ade6e31ca3",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.27+commit.40a35a09\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"onERC1155BatchReceived\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"onERC1155Received\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"onERC721Received\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"tokensReceived\",\"outputs\":[],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Richard Meissner - @rmeissner\",\"kind\":\"dev\",\"methods\":{\"supportsInterface(bytes4)\":{\"params\":{\"interfaceId\":\"Id of the interface.\"},\"returns\":{\"_0\":\"if the interface is supported.\"}}},\"title\":\"Default Callback Handler - Handles supported tokens' callbacks, allowing Safes receiving these tokens.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)\":{\"notice\":\"Handles ERC1155 Token batch callback. return Standardized onERC1155BatchReceived return value.\"},\"onERC1155Received(address,address,uint256,uint256,bytes)\":{\"notice\":\"Handles ERC1155 Token callback. return Standardized onERC1155Received return value.\"},\"onERC721Received(address,address,uint256,bytes)\":{\"notice\":\"Handles ERC721 Token callback.  return Standardized onERC721Received return value.\"},\"supportsInterface(bytes4)\":{\"notice\":\"Implements ERC165 interface support for ERC1155TokenReceiver, ERC721TokenReceiver and IERC165.\"},\"tokensReceived(address,address,address,uint256,bytes,bytes)\":{\"notice\":\"Handles ERC777 Token callback. return nothing (not standardized)\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/handler/TokenCallbackHandler.sol\":\"TokenCallbackHandler\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"details\":{\"constantOptimizer\":true,\"cse\":true,\"deduplicate\":true,\"inliner\":true,\"jumpdestRemover\":true,\"orderLiterals\":true,\"peephole\":true,\"simpleCounterForLoopUncheckedIncrement\":true,\"yul\":true,\"yulDetails\":{\"optimizerSteps\":\":fDnTOcmuO\",\"stackAllocation\":true}},\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"contracts/handler/TokenCallbackHandler.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\nimport {ERC1155TokenReceiver} from \\\"../interfaces/ERC1155TokenReceiver.sol\\\";\\r\\nimport {ERC721TokenReceiver} from \\\"../interfaces/ERC721TokenReceiver.sol\\\";\\r\\nimport {ERC777TokensRecipient} from \\\"../interfaces/ERC777TokensRecipient.sol\\\";\\r\\nimport {IERC165} from \\\"../interfaces/IERC165.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title Default Callback Handler - Handles supported tokens' callbacks, allowing Safes receiving these tokens.\\r\\n * @author Richard Meissner - @rmeissner\\r\\n */\\r\\ncontract TokenCallbackHandler is ERC1155TokenReceiver, ERC777TokensRecipient, ERC721TokenReceiver, IERC165 {\\r\\n    /**\\r\\n     * @notice Handles ERC1155 Token callback.\\r\\n     * return Standardized onERC1155Received return value.\\r\\n     */\\r\\n    function onERC1155Received(address, address, uint256, uint256, bytes calldata) external pure override returns (bytes4) {\\r\\n        return 0xf23a6e61;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Handles ERC1155 Token batch callback.\\r\\n     * return Standardized onERC1155BatchReceived return value.\\r\\n     */\\r\\n    function onERC1155BatchReceived(\\r\\n        address,\\r\\n        address,\\r\\n        uint256[] calldata,\\r\\n        uint256[] calldata,\\r\\n        bytes calldata\\r\\n    ) external pure override returns (bytes4) {\\r\\n        return 0xbc197c81;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Handles ERC721 Token callback.\\r\\n     *  return Standardized onERC721Received return value.\\r\\n     */\\r\\n    function onERC721Received(address, address, uint256, bytes calldata) external pure override returns (bytes4) {\\r\\n        return 0x150b7a02;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Handles ERC777 Token callback.\\r\\n     * return nothing (not standardized)\\r\\n     */\\r\\n    function tokensReceived(address, address, address, uint256, bytes calldata, bytes calldata) external pure override {\\r\\n        // We implement this for completeness, doesn't really have any value\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Implements ERC165 interface support for ERC1155TokenReceiver, ERC721TokenReceiver and IERC165.\\r\\n     * @param interfaceId Id of the interface.\\r\\n     * @return if the interface is supported.\\r\\n     */\\r\\n    function supportsInterface(bytes4 interfaceId) external view virtual override returns (bool) {\\r\\n        return\\r\\n            interfaceId == type(ERC1155TokenReceiver).interfaceId ||\\r\\n            interfaceId == type(ERC721TokenReceiver).interfaceId ||\\r\\n            interfaceId == type(IERC165).interfaceId;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x9f26a735dfff0faa2724793882eb03dde11775a789cfba78ae8bf028094e732a\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/ERC1155TokenReceiver.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n// Note: The ERC-165 identifier for this interface is 0x4e2312e0.\\r\\ninterface ERC1155TokenReceiver {\\r\\n    /**\\r\\n     * @notice Handle the receipt of a single ERC1155 token type.\\r\\n     * @dev An ERC1155-compliant smart contract MUST call this function on the token recipient contract, at the end of a `safeTransferFrom` after the balance has been updated.\\r\\n     *      This function MUST return `bytes4(keccak256(\\\"onERC1155Received(address,address,uint256,uint256,bytes)\\\"))` (i.e. 0xf23a6e61) if it accepts the transfer.\\r\\n     *      This function MUST revert if it rejects the transfer.\\r\\n     *      Return of any other value than the prescribed keccak256 generated value MUST result in the transaction being reverted by the caller.\\r\\n     * @param _operator  The address which initiated the transfer (i.e. msg.sender).\\r\\n     * @param _from      The address which previously owned the token.\\r\\n     * @param _id        The ID of the token being transferred.\\r\\n     * @param _value     The amount of tokens being transferred.\\r\\n     * @param _data      Additional data with no specified format.\\r\\n     * @return           `bytes4(keccak256(\\\"onERC1155Received(address,address,uint256,uint256,bytes)\\\"))`.\\r\\n     */\\r\\n    function onERC1155Received(\\r\\n        address _operator,\\r\\n        address _from,\\r\\n        uint256 _id,\\r\\n        uint256 _value,\\r\\n        bytes calldata _data\\r\\n    ) external returns (bytes4);\\r\\n\\r\\n    /**\\r\\n     * @notice Handle the receipt of multiple ERC1155 token types.\\r\\n     * @dev An ERC1155-compliant smart contract MUST call this function on the token recipient contract, at the end of a `safeBatchTransferFrom` after the balances have been updated.\\r\\n     *      This function MUST return `bytes4(keccak256(\\\"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)\\\"))` (i.e. 0xbc197c81) if it accepts the transfer(s).\\r\\n     *      This function MUST revert if it rejects the transfer(s).\\r\\n     *      Return of any other value than the prescribed keccak256 generated value MUST result in the transaction being reverted by the caller.\\r\\n     * @param _operator  The address which initiated the batch transfer (i.e. msg.sender).\\r\\n     * @param _from      The address which previously owned the token.\\r\\n     * @param _ids       An array containing ids of each token being transferred (order and length must match _values array).\\r\\n     * @param _values    An array containing amounts of each token being transferred (order and length must match _ids array).\\r\\n     * @param _data      Additional data with no specified format.\\r\\n     * @return           `bytes4(keccak256(\\\"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)\\\"))`.\\r\\n     */\\r\\n    function onERC1155BatchReceived(\\r\\n        address _operator,\\r\\n        address _from,\\r\\n        uint256[] calldata _ids,\\r\\n        uint256[] calldata _values,\\r\\n        bytes calldata _data\\r\\n    ) external returns (bytes4);\\r\\n}\\r\\n\",\"keccak256\":\"0xc71c97bf3d521189ac646958e38ebd1cdfc08f493637fd3992c8e47ce333579d\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/ERC721TokenReceiver.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/// @dev Note: the ERC-165 identifier for this interface is 0x150b7a02.\\r\\ninterface ERC721TokenReceiver {\\r\\n    /**\\r\\n     * @notice Handle the receipt of an NFT\\r\\n     * @dev The ERC721 smart contract calls this function on the recipient\\r\\n     *  after a `transfer`. This function MAY throw to revert and reject the\\r\\n     *  transfer. Return of other than the magic value MUST result in the\\r\\n     *  transaction being reverted.\\r\\n     *  Note: the contract address is always the message sender.\\r\\n     * @param _operator The address which called `safeTransferFrom` function.\\r\\n     * @param _from The address which previously owned the token.\\r\\n     * @param _tokenId The NFT identifier which is being transferred.\\r\\n     * @param _data Additional data with no specified format.\\r\\n     * @return `bytes4(keccak256(\\\"onERC721Received(address,address,uint256,bytes)\\\"))`.\\r\\n     *  unless throwing\\r\\n     */\\r\\n    function onERC721Received(address _operator, address _from, uint256 _tokenId, bytes calldata _data) external returns (bytes4);\\r\\n}\\r\\n\",\"keccak256\":\"0xadd81d3b6c54eca306429918b5e9f12413378d74c56527350c1cc500117208f6\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/ERC777TokensRecipient.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title ERC777TokensRecipient\\r\\n * @dev Interface for contracts that will be called with the ERC777 token's `tokensReceived` method.\\r\\n * The contract receiving the tokens must implement this interface in order to receive the tokens.\\r\\n */\\r\\ninterface ERC777TokensRecipient {\\r\\n    /**\\r\\n     * @dev Called by the ERC777 token contract after a successful transfer or a minting operation.\\r\\n     * @param operator The address of the operator performing the transfer or minting operation.\\r\\n     * @param from The address of the sender.\\r\\n     * @param to The address of the recipient.\\r\\n     * @param amount The amount of tokens that were transferred or minted.\\r\\n     * @param data Additional data that was passed during the transfer or minting operation.\\r\\n     * @param operatorData Additional data that was passed by the operator during the transfer or minting operation.\\r\\n     */\\r\\n    function tokensReceived(\\r\\n        address operator,\\r\\n        address from,\\r\\n        address to,\\r\\n        uint256 amount,\\r\\n        bytes calldata data,\\r\\n        bytes calldata operatorData\\r\\n    ) external;\\r\\n}\\r\\n\",\"keccak256\":\"0xa072f947dcb9ce7e2b4b49d4a9114d512ca6b8085f9c786c38645de9f9f7c6e6\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/IERC165.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/// @notice More details at https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol\\r\\ninterface IERC165 {\\r\\n    /**\\r\\n     * @dev Returns true if this contract implements the interface defined by `interfaceId`.\\r\\n     * See the corresponding EIP section\\r\\n     * https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified\\r\\n     * to learn more about how these ids are created.\\r\\n     *\\r\\n     * This function call must use less than 30 000 gas.\\r\\n     */\\r\\n    function supportsInterface(bytes4 interfaceId) external view returns (bool);\\r\\n}\\r\\n\",\"keccak256\":\"0x9606d417e73b051594c5270abb703dd4d164b3da737aafd2b8d0c2407c19b093\",\"license\":\"LGPL-3.0-only\"}},\"version\":1}",
+  "bytecode": "0x6080604052346019576040516104c961001f82396104c990f35b600080fdfe6080604052600436101561001257600080fd5b60003560e01c806223de291461006157806301ffc9a71461005c578063150b7a0214610057578063bc197c81146100525763f23a6e610361007b576103a3565b61031e565b61022c565b6101af565b610156565b90565b6001600160a01b0381165b0361007b57565b600080fd5b9050359061008d82610069565b565b80610074565b9050359061008d8261008f565b909182601f8301121561007b5781359167ffffffffffffffff831161007b57602001926001830284011161007b57565b60c08183031261007b576100e68282610080565b926100f48360208401610080565b926101028160408501610080565b926101108260608301610095565b92608082013567ffffffffffffffff811161007b57836101319184016100a2565b92909360a082013567ffffffffffffffff811161007b5761015292016100a2565b9091565b3461007b576101663660046100d2565b505050505050505061017760405190565b80805b0390f35b6001600160e01b03198116610074565b9050359061008d8261017e565b9060208282031261007b576100669161018e565b3461007b5761017a6101ca6101c536600461019b565b6103c5565b60405191829182901515815260200190565b9060808282031261007b576101f18183610080565b926101ff8260208501610080565b9261020d8360408301610095565b92606082013567ffffffffffffffff811161007b5761015292016100a2565b3461007b5761017a61024b6102423660046101dc565b9392909261043e565b604051918291826001600160e01b0319909116815260200190565b909182601f8301121561007b5781359167ffffffffffffffff831161007b57602001926020830284011161007b57565b9160a08383031261007b576102ab8284610080565b926102b98360208301610080565b92604082013567ffffffffffffffff811161007b57816102da918401610266565b929093606082013567ffffffffffffffff811161007b57836102fd918401610266565b929093608082013567ffffffffffffffff811161007b5761015292016100a2565b3461007b5761017a61024b610334366004610296565b96959095949194939293610459565b91909160a08184031261007b5761035a8382610080565b926103688160208401610080565b926103768260408501610095565b926103848360608301610095565b92608082013567ffffffffffffffff811161007b5761015292016100a2565b3461007b5761017a61024b6103b9366004610343565b94939093929192610477565b630271189760e51b6001600160e01b0319821614908115610403575b81156103eb575090565b6301ffc9a760e01b91506001600160e01b0319161490565b6001600160e01b03198116630a85bd0160e11b1491506103e1565b61043161042b6100669290565b60e01b90565b6001600160e01b03191690565b505050505061044b600090565b5061006663150b7a0261041e565b5050505050505050610469600090565b5061006663bc197c8161041e565b505050505050610485600090565b5061006663f23a6e6161041e56fea26469706673582212204d0939c3a1269828757fd053a70df78d201532d667f1ed3490f9159935316b0964736f6c634300081b0033",
+  "deployedBytecode": "0x6080604052600436101561001257600080fd5b60003560e01c806223de291461006157806301ffc9a71461005c578063150b7a0214610057578063bc197c81146100525763f23a6e610361007b576103a3565b61031e565b61022c565b6101af565b610156565b90565b6001600160a01b0381165b0361007b57565b600080fd5b9050359061008d82610069565b565b80610074565b9050359061008d8261008f565b909182601f8301121561007b5781359167ffffffffffffffff831161007b57602001926001830284011161007b57565b60c08183031261007b576100e68282610080565b926100f48360208401610080565b926101028160408501610080565b926101108260608301610095565b92608082013567ffffffffffffffff811161007b57836101319184016100a2565b92909360a082013567ffffffffffffffff811161007b5761015292016100a2565b9091565b3461007b576101663660046100d2565b505050505050505061017760405190565b80805b0390f35b6001600160e01b03198116610074565b9050359061008d8261017e565b9060208282031261007b576100669161018e565b3461007b5761017a6101ca6101c536600461019b565b6103c5565b60405191829182901515815260200190565b9060808282031261007b576101f18183610080565b926101ff8260208501610080565b9261020d8360408301610095565b92606082013567ffffffffffffffff811161007b5761015292016100a2565b3461007b5761017a61024b6102423660046101dc565b9392909261043e565b604051918291826001600160e01b0319909116815260200190565b909182601f8301121561007b5781359167ffffffffffffffff831161007b57602001926020830284011161007b57565b9160a08383031261007b576102ab8284610080565b926102b98360208301610080565b92604082013567ffffffffffffffff811161007b57816102da918401610266565b929093606082013567ffffffffffffffff811161007b57836102fd918401610266565b929093608082013567ffffffffffffffff811161007b5761015292016100a2565b3461007b5761017a61024b610334366004610296565b96959095949194939293610459565b91909160a08184031261007b5761035a8382610080565b926103688160208401610080565b926103768260408501610095565b926103848360608301610095565b92608082013567ffffffffffffffff811161007b5761015292016100a2565b3461007b5761017a61024b6103b9366004610343565b94939093929192610477565b630271189760e51b6001600160e01b0319821614908115610403575b81156103eb575090565b6301ffc9a760e01b91506001600160e01b0319161490565b6001600160e01b03198116630a85bd0160e11b1491506103e1565b61043161042b6100669290565b60e01b90565b6001600160e01b03191690565b505050505061044b600090565b5061006663150b7a0261041e565b5050505050505050610469600090565b5061006663bc197c8161041e565b505050505050610485600090565b5061006663f23a6e6161041e56fea26469706673582212204d0939c3a1269828757fd053a70df78d201532d667f1ed3490f9159935316b0964736f6c634300081b0033",
+  "devdoc": {
+    "author": "Richard Meissner - @rmeissner",
+    "kind": "dev",
+    "methods": {
+      "supportsInterface(bytes4)": {
+        "params": {
+          "interfaceId": "Id of the interface."
+        },
+        "returns": {
+          "_0": "if the interface is supported."
+        }
+      }
+    },
+    "title": "Default Callback Handler - Handles supported tokens' callbacks, allowing Safes receiving these tokens.",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)": {
+        "notice": "Handles ERC1155 Token batch callback. return Standardized onERC1155BatchReceived return value."
+      },
+      "onERC1155Received(address,address,uint256,uint256,bytes)": {
+        "notice": "Handles ERC1155 Token callback. return Standardized onERC1155Received return value."
+      },
+      "onERC721Received(address,address,uint256,bytes)": {
+        "notice": "Handles ERC721 Token callback.  return Standardized onERC721Received return value."
+      },
+      "supportsInterface(bytes4)": {
+        "notice": "Implements ERC165 interface support for ERC1155TokenReceiver, ERC721TokenReceiver and IERC165."
+      },
+      "tokensReceived(address,address,address,uint256,bytes,bytes)": {
+        "notice": "Handles ERC777 Token callback. return nothing (not standardized)"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "address": "0x73EeCC34911C97500793b7105157d7FCDF204fF6",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "singleton",
+          "type": "address"
+        }
+      ],
+      "name": "ChangedMasterCopy",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "l2Singleton",
+          "type": "address"
+        }
+      ],
+      "name": "setupToL2",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x2b2cbdcbef24f77cfb6e19215ddbdc2b5f120ce915fbf6f66b9d0c30ff0d3bbf",
+  "receipt": {
+    "to": "0x97A23639dbce0507Ee466741AAb1A6BD4EB7a38c",
+    "from": "0x98e2ee7DcBDEBFE5E3D51f9136f938c88A7D63F3",
+    "contractAddress": null,
+    "transactionIndex": 0,
+    "gasUsed": "238974",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xbf38e70d4e47c1d1a9afc0b556efb5407572da0aeb96169ab23c1751d2b9b3d7",
+    "transactionHash": "0x2b2cbdcbef24f77cfb6e19215ddbdc2b5f120ce915fbf6f66b9d0c30ff0d3bbf",
+    "logs": [],
+    "blockNumber": 15797,
+    "cumulativeGasUsed": "238974",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "d6372cac540e87137b93d1ade6e31ca3",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.27+commit.40a35a09\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"singleton\",\"type\":\"address\"}],\"name\":\"ChangedMasterCopy\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"l2Singleton\",\"type\":\"address\"}],\"name\":\"setupToL2\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This contract expects the singleton to be the {Safe} by default. Even if there are more {SafeL2} proxies deployed, the average gas cost on L2s is significantly lower, making the current design more economically efficient overall.\",\"events\":{\"ChangedMasterCopy(address)\":{\"params\":{\"singleton\":\"New master copy address\"}}},\"kind\":\"dev\",\"methods\":{\"setupToL2(address)\":{\"details\":\"This function checks that the chain ID is not 1, and if it isn't updates the singleton      to the provided L2 singleton.\"}},\"stateVariables\":{\"SELF\":{\"details\":\"Address of the contract.      This is used to ensure that the contract is only ever `DELEGATECALL`-ed.\"}},\"title\":\"Safe to L2 Setup Contract\",\"version\":1},\"userdoc\":{\"events\":{\"ChangedMasterCopy(address)\":{\"notice\":\"Event indicating a change of master copy address.\"}},\"kind\":\"user\",\"methods\":{\"constructor\":{\"notice\":\"Initializes a new {SafeToL2Setup} instance.\"},\"setupToL2(address)\":{\"notice\":\"Setup the Safe with the provided L2 singleton if needed.\"}},\"notice\":\"This contract facilitates the deployment of a Safe to the same address on all networks by         automatically changing the singleton to the L2 version when not on chain ID 1.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/libraries/SafeToL2Setup.sol\":\"SafeToL2Setup\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"details\":{\"constantOptimizer\":true,\"cse\":true,\"deduplicate\":true,\"inliner\":true,\"jumpdestRemover\":true,\"orderLiterals\":true,\"peephole\":true,\"simpleCounterForLoopUncheckedIncrement\":true,\"yul\":true,\"yulDetails\":{\"optimizerSteps\":\":fDnTOcmuO\",\"stackAllocation\":true}},\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"contracts/libraries/SafeStorage.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title SafeStorage - Storage layout of the Safe Smart Account contracts to be used in libraries.\\r\\n * @dev Should be always the first base contract of a library that is used with a Safe.\\r\\n * @author Richard Meissner - @rmeissner\\r\\n */\\r\\ncontract SafeStorage {\\r\\n    // From /common/Singleton.sol\\r\\n    address internal singleton;\\r\\n    // From /common/ModuleManager.sol\\r\\n    mapping(address => address) internal modules;\\r\\n    // From /common/OwnerManager.sol\\r\\n    mapping(address => address) internal owners;\\r\\n    uint256 internal ownerCount;\\r\\n    uint256 internal threshold;\\r\\n\\r\\n    // From /Safe.sol\\r\\n    uint256 internal nonce;\\r\\n    bytes32 internal _deprecatedDomainSeparator;\\r\\n    mapping(bytes32 => uint256) internal signedMessages;\\r\\n    mapping(address => mapping(bytes32 => uint256)) internal approvedHashes;\\r\\n}\\r\\n\",\"keccak256\":\"0xa5c6f39d070cc6ee83e45ad2789d55e69005c21ceb21ae87b743a44eeb8641c4\",\"license\":\"LGPL-3.0-only\"},\"contracts/libraries/SafeToL2Setup.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\nimport {SafeStorage} from \\\"../libraries/SafeStorage.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title Safe to L2 Setup Contract\\r\\n * @dev This contract expects the singleton to be the {Safe} by default. Even if there are more\\r\\n * {SafeL2} proxies deployed, the average gas cost on L2s is significantly lower, making the\\r\\n * current design more economically efficient overall.\\r\\n * @notice This contract facilitates the deployment of a Safe to the same address on all networks by\\r\\n *         automatically changing the singleton to the L2 version when not on chain ID 1.\\r\\n */\\r\\ncontract SafeToL2Setup is SafeStorage {\\r\\n    /**\\r\\n     * @dev Address of the contract.\\r\\n     *      This is used to ensure that the contract is only ever `DELEGATECALL`-ed.\\r\\n     */\\r\\n    address private immutable SELF;\\r\\n\\r\\n    /**\\r\\n     * @notice Event indicating a change of master copy address.\\r\\n     * @param singleton New master copy address\\r\\n     */\\r\\n    event ChangedMasterCopy(address singleton);\\r\\n\\r\\n    /**\\r\\n     * @notice Initializes a new {SafeToL2Setup} instance.\\r\\n     */\\r\\n    constructor() {\\r\\n        SELF = address(this);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Modifier ensure a function is only called via `DELEGATECALL`. Will revert otherwise.\\r\\n     */\\r\\n    modifier onlyDelegateCall() {\\r\\n        require(address(this) != SELF, \\\"SafeToL2Setup should only be called via delegatecall\\\");\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Modifier to prevent using initialized Safes.\\r\\n     */\\r\\n    modifier onlyNonceZero() {\\r\\n        require(nonce == 0, \\\"Safe must have not executed any tx\\\");\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Modifier to ensure that the specified account is a contract.\\r\\n     *\\r\\n     */\\r\\n    modifier onlyContract(address account) {\\r\\n        require(codeSize(account) != 0, \\\"Account doesn't contain code\\\");\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Setup the Safe with the provided L2 singleton if needed.\\r\\n     * @dev This function checks that the chain ID is not 1, and if it isn't updates the singleton\\r\\n     *      to the provided L2 singleton.\\r\\n     */\\r\\n    function setupToL2(address l2Singleton) external onlyDelegateCall onlyNonceZero onlyContract(l2Singleton) {\\r\\n        if (chainId() != 1) {\\r\\n            singleton = l2Singleton;\\r\\n            emit ChangedMasterCopy(l2Singleton);\\r\\n        }\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Returns the current chain ID.\\r\\n     */\\r\\n    function chainId() private view returns (uint256 result) {\\r\\n        /* solhint-disable no-inline-assembly */\\r\\n        /// @solidity memory-safe-assembly\\r\\n        assembly {\\r\\n            result := chainid()\\r\\n        }\\r\\n        /* solhint-enable no-inline-assembly */\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Returns the code size of the specified account.\\r\\n     */\\r\\n    function codeSize(address account) internal view returns (uint256 result) {\\r\\n        /* solhint-disable no-inline-assembly */\\r\\n        /// @solidity memory-safe-assembly\\r\\n        assembly {\\r\\n            result := extcodesize(account)\\r\\n        }\\r\\n        /* solhint-enable no-inline-assembly */\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x8383cd7a0be9398ffea97e417657255cf1ee0d750e638601741148066f1d6d20\",\"license\":\"LGPL-3.0-only\"}},\"version\":1}",
+  "bytecode": "0x60a060405234602857600e605c565b604051610355610069823960805181610138015261035590f35b600080fd5b603f906042906001600160a01b031682565b90565b6001600160a01b031690565b603f90602d565b603f90604e565b6063306055565b60805256fe6080604052600436101561001257600080fd5b60003560e01c63fe51f643036100475761006f565b6001600160a01b031690565b90565b6001600160a01b0381160361004757565b600080fd5b9050359061005982610036565b565b90602082820312610047576100339161004c565b346100475761008761008236600461005b565b610316565b604051005b61003390610027906001600160a01b031682565b6100339061008c565b610033906100a0565b156100b957565b60405162461bcd60e51b815260206004820152603460248201527f53616665546f4c3253657475702073686f756c64206f6e6c792062652063616c6044820152731b1959081d9a584819195b1959d85d1958d85b1b60621b6064820152608490fd5b6100599061016c61012b306100a9565b6101656001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016916001600160a01b031690565b14156100b2565b6101e6565b6100339081565b6100339054610171565b6100336100336100339290565b1561019657565b60405162461bcd60e51b815260206004820152602260248201527f53616665206d7573742068617665206e6f7420657865637574656420616e79206044820152610e8f60f31b6064820152608490fd5b6100599061020e6101f76005610178565b6102086102046000610182565b9190565b1461018f565b61025f565b1561021a57565b60405162461bcd60e51b815260206004820152601c60248201527f4163636f756e7420646f65736e277420636f6e7461696e20636f6465000000006044820152606490fd5b6100599061027c813b6102756102046000610182565b1415610213565b6102b1565b906102916100336102ad926100a9565b82546001600160a01b0319166001600160a01b03919091161790565b9055565b466102bf6102046001610182565b036102c75750565b610311816102f77f75e41bc35ff1bf14d81d1d2f649c0084a0f974f9289c803ec9898eeec4c8d0b8936000610281565b604051918291826001600160a01b03909116815260200190565b0390a1565b6100599061011b56fea2646970667358221220807c79bd5c8c5b150c65243f84bec89b037346f3bcda11aaafffec5146bd761064736f6c634300081b0033",
+  "deployedBytecode": "0x6080604052600436101561001257600080fd5b60003560e01c63fe51f643036100475761006f565b6001600160a01b031690565b90565b6001600160a01b0381160361004757565b600080fd5b9050359061005982610036565b565b90602082820312610047576100339161004c565b346100475761008761008236600461005b565b610316565b604051005b61003390610027906001600160a01b031682565b6100339061008c565b610033906100a0565b156100b957565b60405162461bcd60e51b815260206004820152603460248201527f53616665546f4c3253657475702073686f756c64206f6e6c792062652063616c6044820152731b1959081d9a584819195b1959d85d1958d85b1b60621b6064820152608490fd5b6100599061016c61012b306100a9565b6101656001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016916001600160a01b031690565b14156100b2565b6101e6565b6100339081565b6100339054610171565b6100336100336100339290565b1561019657565b60405162461bcd60e51b815260206004820152602260248201527f53616665206d7573742068617665206e6f7420657865637574656420616e79206044820152610e8f60f31b6064820152608490fd5b6100599061020e6101f76005610178565b6102086102046000610182565b9190565b1461018f565b61025f565b1561021a57565b60405162461bcd60e51b815260206004820152601c60248201527f4163636f756e7420646f65736e277420636f6e7461696e20636f6465000000006044820152606490fd5b6100599061027c813b6102756102046000610182565b1415610213565b6102b1565b906102916100336102ad926100a9565b82546001600160a01b0319166001600160a01b03919091161790565b9055565b466102bf6102046001610182565b036102c75750565b610311816102f77f75e41bc35ff1bf14d81d1d2f649c0084a0f974f9289c803ec9898eeec4c8d0b8936000610281565b604051918291826001600160a01b03909116815260200190565b0390a1565b6100599061011b56fea2646970667358221220807c79bd5c8c5b150c65243f84bec89b037346f3bcda11aaafffec5146bd761064736f6c634300081b0033",
+  "devdoc": {
+    "details": "This contract expects the singleton to be the {Safe} by default. Even if there are more {SafeL2} proxies deployed, the average gas cost on L2s is significantly lower, making the current design more economically efficient overall.",
+    "events": {
+      "ChangedMasterCopy(address)": {
+        "params": {
+          "singleton": "New master copy address"
+        }
+      }
+    },
+    "kind": "dev",
+    "methods": {
+      "setupToL2(address)": {
+        "details": "This function checks that the chain ID is not 1, and if it isn't updates the singleton      to the provided L2 singleton."
+      }
+    },
+    "stateVariables": {
+      "SELF": {
+        "details": "Address of the contract.      This is used to ensure that the contract is only ever `DELEGATECALL`-ed."
+      }
+    },
+    "title": "Safe to L2 Setup Contract",
+    "version": 1
+  },
+  "userdoc": {
+    "events": {
+      "ChangedMasterCopy(address)": {
+        "notice": "Event indicating a change of master copy address."
+      }
+    },
+    "kind": "user",
+    "methods": {
+      "constructor": {
+        "notice": "Initializes a new {SafeToL2Setup} instance."
+      },
+      "setupToL2(address)": {
+        "notice": "Setup the Safe with the provided L2 singleton if needed."
+      }
+    },
+    "notice": "This contract facilitates the deployment of a Safe to the same address on all networks by         automatically changing the singleton to the L2 version when not on chain ID 1.",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 6142,
+        "contract": "contracts/libraries/SafeToL2Setup.sol:SafeToL2Setup",
+        "label": "singleton",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 6146,
+        "contract": "contracts/libraries/SafeToL2Setup.sol:SafeToL2Setup",
+        "label": "modules",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_address)"
+      },
+      {
+        "astId": 6150,
+        "contract": "contracts/libraries/SafeToL2Setup.sol:SafeToL2Setup",
+        "label": "owners",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_address,t_address)"
+      },
+      {
+        "astId": 6152,
+        "contract": "contracts/libraries/SafeToL2Setup.sol:SafeToL2Setup",
+        "label": "ownerCount",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 6154,
+        "contract": "contracts/libraries/SafeToL2Setup.sol:SafeToL2Setup",
+        "label": "threshold",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 6156,
+        "contract": "contracts/libraries/SafeToL2Setup.sol:SafeToL2Setup",
+        "label": "nonce",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 6158,
+        "contract": "contracts/libraries/SafeToL2Setup.sol:SafeToL2Setup",
+        "label": "_deprecatedDomainSeparator",
+        "offset": 0,
+        "slot": "6",
+        "type": "t_bytes32"
+      },
+      {
+        "astId": 6162,
+        "contract": "contracts/libraries/SafeToL2Setup.sol:SafeToL2Setup",
+        "label": "signedMessages",
+        "offset": 0,
+        "slot": "7",
+        "type": "t_mapping(t_bytes32,t_uint256)"
+      },
+      {
+        "astId": 6168,
+        "contract": "contracts/libraries/SafeToL2Setup.sol:SafeToL2Setup",
+        "label": "approvedHashes",
+        "offset": 0,
+        "slot": "8",
+        "type": "t_mapping(t_address,t_mapping(t_bytes32,t_uint256))"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_address,t_address)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => address)",
+        "numberOfBytes": "32",
+        "value": "t_address"
+      },
+      "t_mapping(t_address,t_mapping(t_bytes32,t_uint256))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(bytes32 => uint256))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_bytes32,t_uint256)"
+      },
+      "t_mapping(t_bytes32,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

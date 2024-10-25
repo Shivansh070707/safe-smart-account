@@ -1,0 +1,321 @@
+{
+  "address": "0x466D3706dE61B09c91182a789e71d63E3bd19231",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "safeSingleton",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "safeL2Singleton",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "fallbackHandler",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "singleton",
+          "type": "address"
+        }
+      ],
+      "name": "ChangedMasterCopy",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "MIGRATION_SINGLETON",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SAFE_FALLBACK_HANDLER",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SAFE_L2_SINGLETON",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SAFE_SINGLETON",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "migrateL2Singleton",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "migrateL2WithFallbackHandler",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "migrateSingleton",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "migrateWithFallbackHandler",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x30acd67f3de3388e20e57735363369034c49b3a21a5acda38e13ecefc462f83d",
+  "receipt": {
+    "to": "0x97A23639dbce0507Ee466741AAb1A6BD4EB7a38c",
+    "from": "0x98e2ee7DcBDEBFE5E3D51f9136f938c88A7D63F3",
+    "contractAddress": null,
+    "transactionIndex": 0,
+    "gasUsed": "367472",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xc1d990fee3f011038963a241bfa6be452d0c357f7886097444efbcc59426cba8",
+    "transactionHash": "0x30acd67f3de3388e20e57735363369034c49b3a21a5acda38e13ecefc462f83d",
+    "logs": [],
+    "blockNumber": 15801,
+    "cumulativeGasUsed": "367472",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x3913aC926c0E3BADA76FA976663d25238836954c",
+    "0x7d72f5419e67b91183609e23A496E883a63D080E",
+    "0xb7875Cde5e1e63c299689fB491116a6a03fA62cB"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "d6372cac540e87137b93d1ade6e31ca3",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.27+commit.40a35a09\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"safeSingleton\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"safeL2Singleton\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"fallbackHandler\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"singleton\",\"type\":\"address\"}],\"name\":\"ChangedMasterCopy\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"MIGRATION_SINGLETON\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"SAFE_FALLBACK_HANDLER\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"SAFE_L2_SINGLETON\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"SAFE_SINGLETON\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"migrateL2Singleton\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"migrateL2WithFallbackHandler\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"migrateSingleton\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"migrateWithFallbackHandler\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"@safe-global/safe-protocol\",\"details\":\"IMPORTANT: The library is intended to be used with the Safe standard proxy that stores the singleton address      at the storage slot 0. Use at your own risk with custom proxy implementations. The contract will allow invocations      to the migration functions only via delegatecall.\",\"events\":{\"ChangedMasterCopy(address)\":{\"params\":{\"singleton\":\"New master copy address\"}}},\"kind\":\"dev\",\"methods\":{\"constructor\":{\"params\":{\"fallbackHandler\":\"Address of the fallback handler implementation\",\"safeL2Singleton\":\"Address of the SafeL2 Singleton implementation\",\"safeSingleton\":\"Address of the Safe Singleton implementation\"}}},\"title\":\"Migration Contract for Safe Upgrade\",\"version\":1},\"userdoc\":{\"events\":{\"ChangedMasterCopy(address)\":{\"notice\":\"Event indicating a change of a singleton address. Named master copy here for legacy reasons.\"}},\"kind\":\"user\",\"methods\":{\"MIGRATION_SINGLETON()\":{\"notice\":\"Address of this contract\"},\"SAFE_FALLBACK_HANDLER()\":{\"notice\":\"Address of the Fallback Handler\"},\"SAFE_L2_SINGLETON()\":{\"notice\":\"Address of the Safe Singleton (L2) implementation\"},\"SAFE_SINGLETON()\":{\"notice\":\"Address of the Safe Singleton implementation\"},\"constructor\":{\"notice\":\"Constructor\"},\"migrateL2Singleton()\":{\"notice\":\"Migrate the Safe contract to a new Safe Singleton (L2) implementation.\"},\"migrateL2WithFallbackHandler()\":{\"notice\":\"Migrate to Safe Singleton (L2) and set the fallback handler. This function is intended to be used when migrating         a Safe to a version which also requires updating fallback handler.\"},\"migrateSingleton()\":{\"notice\":\"Migrate the Safe contract to a new Safe Singleton implementation.\"},\"migrateWithFallbackHandler()\":{\"notice\":\"Migrate to Safe Singleton and set the fallback handler. This function is intended to be used when migrating         a Safe to a version which also requires updating fallback handler.\"}},\"notice\":\"This is a generic contract that facilitates Safe and SafeL2 proxy contracts to migrate their singleton address.         The supported target Safe version is immutable and set in the constructor during the deployment of the contract.         This contract also supports migration with fallback handler update.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/libraries/SafeMigration.sol\":\"SafeMigration\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"details\":{\"constantOptimizer\":true,\"cse\":true,\"deduplicate\":true,\"inliner\":true,\"jumpdestRemover\":true,\"orderLiterals\":true,\"peephole\":true,\"simpleCounterForLoopUncheckedIncrement\":true,\"yul\":true,\"yulDetails\":{\"optimizerSteps\":\":fDnTOcmuO\",\"stackAllocation\":true}},\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"contracts/interfaces/IFallbackManager.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title IFallbackManager - A contract interface managing fallback calls made to this contract.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface IFallbackManager {\\r\\n    event ChangedFallbackHandler(address indexed handler);\\r\\n\\r\\n    /**\\r\\n     * @notice Set Fallback Handler to `handler` for the Safe.\\r\\n     * @dev Only fallback calls without value and with data will be forwarded.\\r\\n     *      This can only be done via a Safe transaction.\\r\\n     *      Cannot be set to the Safe itself.\\r\\n     * @param handler contract to handle fallback calls.\\r\\n     */\\r\\n    function setFallbackHandler(address handler) external;\\r\\n}\\r\\n\",\"keccak256\":\"0xac140e71f4d9518982b27ccd9370d3d41c767f21bcef45a6bdd69785612d0e9b\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/IGuardManager.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\n/* solhint-disable one-contract-per-file */\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title IGuardManager - A contract interface managing transaction guards which perform pre and post-checks on Safe transactions.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface IGuardManager {\\r\\n    event ChangedGuard(address indexed guard);\\r\\n\\r\\n    /**\\r\\n     * @dev Set a guard that checks transactions before execution\\r\\n     *      This can only be done via a Safe transaction.\\r\\n     *      \\u26a0\\ufe0f IMPORTANT: Since a guard has full power to block Safe transaction execution,\\r\\n     *        a broken guard can cause a denial of service for the Safe. Make sure to carefully\\r\\n     *        audit the guard code and design recovery mechanisms.\\r\\n     * @notice Set Transaction Guard `guard` for the Safe. Make sure you trust the guard.\\r\\n     * @param guard The address of the guard to be used or the 0 address to disable the guard\\r\\n     */\\r\\n    function setGuard(address guard) external;\\r\\n}\\r\\n\",\"keccak256\":\"0x01f0c2ce0a38046de929195363684c15bcd579159e8c2fc3123b6710d5f0fe27\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/IModuleManager.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\nimport {Enum} from \\\"../libraries/Enum.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title IModuleManager - An interface of contract managing Safe modules\\r\\n * @notice Modules are extensions with unlimited access to a Safe that can be added to a Safe by its owners.\\r\\n           \\u26a0\\ufe0f WARNING: Modules are a security risk since they can execute arbitrary transactions, \\r\\n           so only trusted and audited modules should be added to a Safe. A malicious module can\\r\\n           completely takeover a Safe.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface IModuleManager {\\r\\n    event EnabledModule(address indexed module);\\r\\n    event DisabledModule(address indexed module);\\r\\n    event ExecutionFromModuleSuccess(address indexed module);\\r\\n    event ExecutionFromModuleFailure(address indexed module);\\r\\n    event ChangedModuleGuard(address indexed moduleGuard);\\r\\n\\r\\n    /**\\r\\n     * @notice Enables the module `module` for the Safe.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param module Module to be whitelisted.\\r\\n     */\\r\\n    function enableModule(address module) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Disables the module `module` for the Safe.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param prevModule Previous module in the modules linked list.\\r\\n     * @param module Module to be removed.\\r\\n     */\\r\\n    function disableModule(address prevModule, address module) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Execute `operation` (0: Call, 1: DelegateCall) to `to` with `value` (Native Token)\\r\\n     * @param to Destination address of module transaction.\\r\\n     * @param value Ether value of module transaction.\\r\\n     * @param data Data payload of module transaction.\\r\\n     * @param operation Operation type of module transaction.\\r\\n     * @return success Boolean flag indicating if the call succeeded.\\r\\n     */\\r\\n    function execTransactionFromModule(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes memory data,\\r\\n        Enum.Operation operation\\r\\n    ) external returns (bool success);\\r\\n\\r\\n    /**\\r\\n     * @notice Execute `operation` (0: Call, 1: DelegateCall) to `to` with `value` (Native Token) and return data\\r\\n     * @param to Destination address of module transaction.\\r\\n     * @param value Ether value of module transaction.\\r\\n     * @param data Data payload of module transaction.\\r\\n     * @param operation Operation type of module transaction.\\r\\n     * @return success Boolean flag indicating if the call succeeded.\\r\\n     * @return returnData Data returned by the call.\\r\\n     */\\r\\n    function execTransactionFromModuleReturnData(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes memory data,\\r\\n        Enum.Operation operation\\r\\n    ) external returns (bool success, bytes memory returnData);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns if an module is enabled\\r\\n     * @return True if the module is enabled\\r\\n     */\\r\\n    function isModuleEnabled(address module) external view returns (bool);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns an array of modules.\\r\\n     *         If all entries fit into a single page, the next pointer will be 0x1.\\r\\n     *         If another page is present, next will be the last element of the returned array.\\r\\n     * @param start Start of the page. Has to be a module or start pointer (0x1 address)\\r\\n     * @param pageSize Maximum number of modules that should be returned. Has to be > 0\\r\\n     * @return array Array of modules.\\r\\n     * @return next Start of the next page.\\r\\n     */\\r\\n    function getModulesPaginated(address start, uint256 pageSize) external view returns (address[] memory array, address next);\\r\\n\\r\\n    /**\\r\\n     * @dev Set a module guard that checks transactions initiated by the module before execution\\r\\n     *      This can only be done via a Safe transaction.\\r\\n     *      \\u26a0\\ufe0f IMPORTANT: Since a module guard has full power to block Safe transaction execution initiatied via a module,\\r\\n     *        a broken module guard can cause a denial of service for the Safe modules. Make sure to carefully\\r\\n     *        audit the module guard code and design recovery mechanisms.\\r\\n     * @notice Set Module Guard `moduleGuard` for the Safe. Make sure you trust the module guard.\\r\\n     * @param moduleGuard The address of the module guard to be used or the zero address to disable the module guard.\\r\\n     */\\r\\n    function setModuleGuard(address moduleGuard) external;\\r\\n}\\r\\n\",\"keccak256\":\"0xb4dc05e8a965d5109212a0971c0666d749d11c5ca7420b79f9f93bc55194d141\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/IOwnerManager.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title IOwnerManager - Interface for contract which manages Safe owners and a threshold to authorize transactions.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface IOwnerManager {\\r\\n    event AddedOwner(address indexed owner);\\r\\n    event RemovedOwner(address indexed owner);\\r\\n    event ChangedThreshold(uint256 threshold);\\r\\n\\r\\n    /**\\r\\n     * @notice Adds the owner `owner` to the Safe and updates the threshold to `_threshold`.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param owner New owner address.\\r\\n     * @param _threshold New threshold.\\r\\n     */\\r\\n    function addOwnerWithThreshold(address owner, uint256 _threshold) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Removes the owner `owner` from the Safe and updates the threshold to `_threshold`.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param prevOwner Owner that pointed to the owner to be removed in the linked list\\r\\n     * @param owner Owner address to be removed.\\r\\n     * @param _threshold New threshold.\\r\\n     */\\r\\n    function removeOwner(address prevOwner, address owner, uint256 _threshold) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Replaces the owner `oldOwner` in the Safe with `newOwner`.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param prevOwner Owner that pointed to the owner to be replaced in the linked list\\r\\n     * @param oldOwner Owner address to be replaced.\\r\\n     * @param newOwner New owner address.\\r\\n     */\\r\\n    function swapOwner(address prevOwner, address oldOwner, address newOwner) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Changes the threshold of the Safe to `_threshold`.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param _threshold New threshold.\\r\\n     */\\r\\n    function changeThreshold(uint256 _threshold) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Returns the number of required confirmations for a Safe transaction aka the threshold.\\r\\n     * @return Threshold number.\\r\\n     */\\r\\n    function getThreshold() external view returns (uint256);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns if `owner` is an owner of the Safe.\\r\\n     * @return Boolean if owner is an owner of the Safe.\\r\\n     */\\r\\n    function isOwner(address owner) external view returns (bool);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns a list of Safe owners.\\r\\n     * @return Array of Safe owners.\\r\\n     */\\r\\n    function getOwners() external view returns (address[] memory);\\r\\n}\\r\\n\",\"keccak256\":\"0x80bd294df67adb27ed505dd3b17ef2252514acf738d52593fbd682c3493c9de0\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/ISafe.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\nimport {Enum} from \\\"./../libraries/Enum.sol\\\";\\r\\nimport {IFallbackManager} from \\\"./IFallbackManager.sol\\\";\\r\\nimport {IGuardManager} from \\\"./IGuardManager.sol\\\";\\r\\nimport {IModuleManager} from \\\"./IModuleManager.sol\\\";\\r\\nimport {IOwnerManager} from \\\"./IOwnerManager.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title ISafe - A multisignature wallet interface with support for confirmations using signed messages based on EIP-712.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface ISafe is IModuleManager, IGuardManager, IOwnerManager, IFallbackManager {\\r\\n    event SafeSetup(address indexed initiator, address[] owners, uint256 threshold, address initializer, address fallbackHandler);\\r\\n    event ApproveHash(bytes32 indexed approvedHash, address indexed owner);\\r\\n    event SignMsg(bytes32 indexed msgHash);\\r\\n    event ExecutionFailure(bytes32 indexed txHash, uint256 payment);\\r\\n    event ExecutionSuccess(bytes32 indexed txHash, uint256 payment);\\r\\n\\r\\n    /**\\r\\n     * @notice Sets an initial storage of the Safe contract.\\r\\n     * @dev This method can only be called once.\\r\\n     *      If a proxy was created without setting up, anyone can call setup and claim the proxy.\\r\\n     * @param _owners List of Safe owners.\\r\\n     * @param _threshold Number of required confirmations for a Safe transaction.\\r\\n     * @param to Contract address for optional delegate call.\\r\\n     * @param data Data payload for optional delegate call.\\r\\n     * @param fallbackHandler Handler for fallback calls to this contract\\r\\n     * @param paymentToken Token that should be used for the payment (0 is ETH)\\r\\n     * @param payment Value that should be paid\\r\\n     * @param paymentReceiver Address that should receive the payment (or 0 if tx.origin)\\r\\n     */\\r\\n    function setup(\\r\\n        address[] calldata _owners,\\r\\n        uint256 _threshold,\\r\\n        address to,\\r\\n        bytes calldata data,\\r\\n        address fallbackHandler,\\r\\n        address paymentToken,\\r\\n        uint256 payment,\\r\\n        address payable paymentReceiver\\r\\n    ) external;\\r\\n\\r\\n    /** @notice Executes a `operation` {0: Call, 1: DelegateCall}} transaction to `to` with `value` (Native Currency)\\r\\n     *          and pays `gasPrice` * `gasLimit` in `gasToken` token to `refundReceiver`.\\r\\n     * @dev The fees are always transferred, even if the user transaction fails.\\r\\n     *      This method doesn't perform any sanity check of the transaction, such as:\\r\\n     *      - if the contract at `to` address has code or not\\r\\n     *      - if the `gasToken` is a contract or not\\r\\n     *      It is the responsibility of the caller to perform such checks.\\r\\n     * @param to Destination address of Safe transaction.\\r\\n     * @param value Ether value of Safe transaction.\\r\\n     * @param data Data payload of Safe transaction.\\r\\n     * @param operation Operation type of Safe transaction.\\r\\n     * @param safeTxGas Gas that should be used for the Safe transaction.\\r\\n     * @param baseGas Gas costs that are independent of the transaction execution(e.g. base transaction fee, signature check, payment of the refund)\\r\\n     * @param gasPrice Gas price that should be used for the payment calculation.\\r\\n     * @param gasToken Token address (or 0 if ETH) that is used for the payment.\\r\\n     * @param refundReceiver Address of receiver of gas payment (or 0 if tx.origin).\\r\\n     * @param signatures Signature data that should be verified.\\r\\n     *                   Can be packed ECDSA signature ({bytes32 r}{bytes32 s}{uint8 v}), contract signature (EIP-1271) or approved hash.\\r\\n     * @return success Boolean indicating transaction's success.\\r\\n     */\\r\\n    function execTransaction(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes calldata data,\\r\\n        Enum.Operation operation,\\r\\n        uint256 safeTxGas,\\r\\n        uint256 baseGas,\\r\\n        uint256 gasPrice,\\r\\n        address gasToken,\\r\\n        address payable refundReceiver,\\r\\n        bytes memory signatures\\r\\n    ) external payable returns (bool success);\\r\\n\\r\\n    /**\\r\\n     * @notice Checks whether the signature provided is valid for the provided data and hash. Reverts otherwise.\\r\\n     * @param dataHash Hash of the data (could be either a message hash or transaction hash)\\r\\n     * @param signatures Signature data that should be verified.\\r\\n     *                   Can be packed ECDSA signature ({bytes32 r}{bytes32 s}{uint8 v}), contract signature (EIP-1271) or approved hash.\\r\\n     */\\r\\n    function checkSignatures(bytes32 dataHash, bytes memory signatures) external view;\\r\\n\\r\\n    /**\\r\\n     * @notice Checks whether the signature provided is valid for the provided data and hash. Reverts otherwise.\\r\\n     * @dev Since the EIP-1271 does an external call, be mindful of reentrancy attacks.\\r\\n     * @param executor Address that executing the transaction.\\r\\n     *        \\u26a0\\ufe0f\\u26a0\\ufe0f\\u26a0\\ufe0f Make sure that the executor address is a legitmate executor.\\r\\n     *        Incorrectly passed the executor might reduce the threshold by 1 signature. \\u26a0\\ufe0f\\u26a0\\ufe0f\\u26a0\\ufe0f\\r\\n     * @param dataHash Hash of the data (could be either a message hash or transaction hash)\\r\\n     * @param signatures Signature data that should be verified.\\r\\n     *                   Can be packed ECDSA signature ({bytes32 r}{bytes32 s}{uint8 v}), contract signature (EIP-1271) or approved hash.\\r\\n     * @param requiredSignatures Amount of required valid signatures.\\r\\n     */\\r\\n    function checkNSignatures(address executor, bytes32 dataHash, bytes memory signatures, uint256 requiredSignatures) external view;\\r\\n\\r\\n    /**\\r\\n     * @notice Marks hash `hashToApprove` as approved.\\r\\n     * @dev This can be used with a pre-approved hash transaction signature.\\r\\n     *      IMPORTANT: The approved hash stays approved forever. There's no revocation mechanism, so it behaves similarly to ECDSA signatures\\r\\n     * @param hashToApprove The hash to mark as approved for signatures that are verified by this contract.\\r\\n     */\\r\\n    function approveHash(bytes32 hashToApprove) external;\\r\\n\\r\\n    /**\\r\\n     * @dev Returns the domain separator for this contract, as defined in the EIP-712 standard.\\r\\n     * @return bytes32 The domain separator hash.\\r\\n     */\\r\\n    function domainSeparator() external view returns (bytes32);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns transaction hash to be signed by owners.\\r\\n     * @param to Destination address.\\r\\n     * @param value Ether value.\\r\\n     * @param data Data payload.\\r\\n     * @param operation Operation type.\\r\\n     * @param safeTxGas Gas that should be used for the safe transaction.\\r\\n     * @param baseGas Gas costs for data used to trigger the safe transaction.\\r\\n     * @param gasPrice Maximum gas price that should be used for this transaction.\\r\\n     * @param gasToken Token address (or 0 if ETH) that is used for the payment.\\r\\n     * @param refundReceiver Address of receiver of gas payment (or 0 if tx.origin).\\r\\n     * @param _nonce Transaction nonce.\\r\\n     * @return Transaction hash.\\r\\n     */\\r\\n    function getTransactionHash(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes calldata data,\\r\\n        Enum.Operation operation,\\r\\n        uint256 safeTxGas,\\r\\n        uint256 baseGas,\\r\\n        uint256 gasPrice,\\r\\n        address gasToken,\\r\\n        address refundReceiver,\\r\\n        uint256 _nonce\\r\\n    ) external view returns (bytes32);\\r\\n\\r\\n    /**\\r\\n     * External getter function for state variables.\\r\\n     */\\r\\n\\r\\n    /**\\r\\n     * @notice Returns the version of the Safe contract.\\r\\n     * @return Version string.\\r\\n     */\\r\\n    // solhint-disable-next-line\\r\\n    function VERSION() external view returns (string memory);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns the nonce of the Safe contract.\\r\\n     * @return Nonce.\\r\\n     */\\r\\n    function nonce() external view returns (uint256);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns a uint if the messageHash is signed by the owner.\\r\\n     * @param messageHash Hash of message that should be checked.\\r\\n     * @return Number denoting if an owner signed the hash.\\r\\n     */\\r\\n    function signedMessages(bytes32 messageHash) external view returns (uint256);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns a uint if the messageHash is approved by the owner.\\r\\n     * @param owner Owner address that should be checked.\\r\\n     * @param messageHash Hash of message that should be checked.\\r\\n     * @return Number denoting if an owner approved the hash.\\r\\n     */\\r\\n    function approvedHashes(address owner, bytes32 messageHash) external view returns (uint256);\\r\\n}\\r\\n\",\"keccak256\":\"0x7b68615030245afc1acba44d5bd450caecfd23d3fadc7bbc577c36d7dbdd9b09\",\"license\":\"LGPL-3.0-only\"},\"contracts/libraries/Enum.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title Enum - Collection of enums used in Safe Smart Account contracts.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\nlibrary Enum {\\r\\n    enum Operation {\\r\\n        Call,\\r\\n        DelegateCall\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x5eed8ff46d1411dd7f9485efeb69fdfca53ba516e8c5b67a71e7bea59904f920\",\"license\":\"LGPL-3.0-only\"},\"contracts/libraries/SafeMigration.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\nimport {ISafe} from \\\"./../interfaces/ISafe.sol\\\";\\r\\nimport {SafeStorage} from \\\"./../libraries/SafeStorage.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title Migration Contract for Safe Upgrade\\r\\n * @notice This is a generic contract that facilitates Safe and SafeL2 proxy contracts to migrate their singleton address.\\r\\n *         The supported target Safe version is immutable and set in the constructor during the deployment of the contract.\\r\\n *         This contract also supports migration with fallback handler update.\\r\\n * @author @safe-global/safe-protocol\\r\\n * @dev IMPORTANT: The library is intended to be used with the Safe standard proxy that stores the singleton address\\r\\n *      at the storage slot 0. Use at your own risk with custom proxy implementations. The contract will allow invocations\\r\\n *      to the migration functions only via delegatecall.\\r\\n */\\r\\ncontract SafeMigration is SafeStorage {\\r\\n    /**\\r\\n     * @notice Address of this contract\\r\\n     */\\r\\n    address public immutable MIGRATION_SINGLETON;\\r\\n    /**\\r\\n     * @notice Address of the Safe Singleton implementation\\r\\n     */\\r\\n    address public immutable SAFE_SINGLETON;\\r\\n    /**\\r\\n     * @notice Address of the Safe Singleton (L2) implementation\\r\\n     */\\r\\n    address public immutable SAFE_L2_SINGLETON;\\r\\n    /**\\r\\n     * @notice Address of the Fallback Handler\\r\\n     */\\r\\n    address public immutable SAFE_FALLBACK_HANDLER;\\r\\n\\r\\n    /**\\r\\n     * @notice Event indicating a change of a singleton address. Named master copy here for legacy reasons.\\r\\n     * @param singleton New master copy address\\r\\n     */\\r\\n    event ChangedMasterCopy(address singleton);\\r\\n\\r\\n    /**\\r\\n     * @notice Modifier to make a function callable via delegatecall only.\\r\\n     * If the function is called via a regular call, it will revert.\\r\\n     */\\r\\n    modifier onlyDelegateCall() {\\r\\n        require(address(this) != MIGRATION_SINGLETON, \\\"Migration should only be called via delegatecall\\\");\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Constructor\\r\\n     * @param safeSingleton Address of the Safe Singleton implementation\\r\\n     * @param safeL2Singleton Address of the SafeL2 Singleton implementation\\r\\n     * @param fallbackHandler Address of the fallback handler implementation\\r\\n     */\\r\\n    constructor(address safeSingleton, address safeL2Singleton, address fallbackHandler) {\\r\\n        MIGRATION_SINGLETON = address(this);\\r\\n\\r\\n        require(hasCode(safeSingleton), \\\"Safe Singleton is not deployed\\\");\\r\\n        require(hasCode(safeL2Singleton), \\\"Safe Singleton (L2) is not deployed\\\");\\r\\n        require(hasCode(fallbackHandler), \\\"fallback handler is not deployed\\\");\\r\\n\\r\\n        SAFE_SINGLETON = safeSingleton;\\r\\n        SAFE_L2_SINGLETON = safeL2Singleton;\\r\\n        SAFE_FALLBACK_HANDLER = fallbackHandler;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Migrate the Safe contract to a new Safe Singleton implementation.\\r\\n     */\\r\\n    function migrateSingleton() public onlyDelegateCall {\\r\\n        singleton = SAFE_SINGLETON;\\r\\n        emit ChangedMasterCopy(SAFE_SINGLETON);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Migrate to Safe Singleton and set the fallback handler. This function is intended to be used when migrating\\r\\n     *         a Safe to a version which also requires updating fallback handler.\\r\\n     */\\r\\n    function migrateWithFallbackHandler() external onlyDelegateCall {\\r\\n        migrateSingleton();\\r\\n        ISafe(address(this)).setFallbackHandler(SAFE_FALLBACK_HANDLER);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Migrate the Safe contract to a new Safe Singleton (L2) implementation.\\r\\n     */\\r\\n    function migrateL2Singleton() public onlyDelegateCall {\\r\\n        singleton = SAFE_L2_SINGLETON;\\r\\n        emit ChangedMasterCopy(SAFE_L2_SINGLETON);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Migrate to Safe Singleton (L2) and set the fallback handler. This function is intended to be used when migrating\\r\\n     *         a Safe to a version which also requires updating fallback handler.\\r\\n     */\\r\\n    function migrateL2WithFallbackHandler() external onlyDelegateCall {\\r\\n        migrateL2Singleton();\\r\\n        ISafe(address(this)).setFallbackHandler(SAFE_FALLBACK_HANDLER);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Checks whether an account has code.\\r\\n     * @param account The address of the account to be checked.\\r\\n     * @return A boolean value indicating whether the address has code (true) or not (false).\\r\\n     * @dev This function relies on the `extcodesize` assembly opcode to determine whether an address has code.\\r\\n     * It does not reliably determine whether or not an address is a smart contract or an EOA.\\r\\n     */\\r\\n    function hasCode(address account) internal view returns (bool) {\\r\\n        uint256 size;\\r\\n        /* solhint-disable no-inline-assembly */\\r\\n        /// @solidity memory-safe-assembly\\r\\n        assembly {\\r\\n            size := extcodesize(account)\\r\\n        }\\r\\n        /* solhint-enable no-inline-assembly */\\r\\n\\r\\n        return size > 0;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x2d25557dc9037e4a5cdc924b01516a737c9f16eccf0d9e591cfeb0a620e86a36\",\"license\":\"LGPL-3.0-only\"},\"contracts/libraries/SafeStorage.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title SafeStorage - Storage layout of the Safe Smart Account contracts to be used in libraries.\\r\\n * @dev Should be always the first base contract of a library that is used with a Safe.\\r\\n * @author Richard Meissner - @rmeissner\\r\\n */\\r\\ncontract SafeStorage {\\r\\n    // From /common/Singleton.sol\\r\\n    address internal singleton;\\r\\n    // From /common/ModuleManager.sol\\r\\n    mapping(address => address) internal modules;\\r\\n    // From /common/OwnerManager.sol\\r\\n    mapping(address => address) internal owners;\\r\\n    uint256 internal ownerCount;\\r\\n    uint256 internal threshold;\\r\\n\\r\\n    // From /Safe.sol\\r\\n    uint256 internal nonce;\\r\\n    bytes32 internal _deprecatedDomainSeparator;\\r\\n    mapping(bytes32 => uint256) internal signedMessages;\\r\\n    mapping(address => mapping(bytes32 => uint256)) internal approvedHashes;\\r\\n}\\r\\n\",\"keccak256\":\"0xa5c6f39d070cc6ee83e45ad2789d55e69005c21ceb21ae87b743a44eeb8641c4\",\"license\":\"LGPL-3.0-only\"}},\"version\":1}",
+  "bytecode": "0x6101006040523461006b5761001b61001561011f565b91610261565b6040516105586102cf823960805181818161015601526102c0015260a0518181816101c801526104f0015260c05181818161018f0152610352015260e05181818160ef0152610404015261055890f35b600080fd5b634e487b7160e01b600052604160045260246000fd5b90601f01601f191681019081106001600160401b038211176100a757604052565b610070565b906100c06100b960405190565b9283610086565b565b6001600160a01b031690565b90565b6001600160a01b0381160361006b57565b905051906100c0826100d1565b909160608284031261006b576100ce61010884846100e2565b93604061011882602087016100e2565b94016100e2565b61013d61082780380380610132816100ac565b9283398101906100ef565b909192565b6100ce906100c2906001600160a01b031682565b6100ce90610142565b6100ce90610156565b1561016f57565b60405162461bcd60e51b815260206004820152601e60248201527f536166652053696e676c65746f6e206973206e6f74206465706c6f7965640000604482015280606481015b0390fd5b156101c057565b60405162461bcd60e51b815260206004820152602360248201527f536166652053696e676c65746f6e20284c3229206973206e6f74206465706c6f6044820152621e595960ea1b6064820152608490fd5b1561021857565b60405162461bcd60e51b8152806101b5600482016020808252818101527f66616c6c6261636b2068616e646c6572206973206e6f74206465706c6f796564604082015260600190565b61026a3061015f565b60805261027e610279826102b8565b610168565b61028f61028a836102b8565b6101b9565b6102a061029b846102b8565b610211565b60a05260c05260e052565b6100ce6100ce6100ce9290565b3b6102ca6102c660006102ab565b9190565b119056fe6080604052600436101561001257600080fd5b60003560e01c806307f464a4146100925780630d7101f71461008d57806368cb3d941461008857806372f7a956146100835780639bf47d6e1461007e578063caa12add14610079578063ed007fc6146100745763f6682ab0036100a257610204565b6101ec565b6101b3565b61017a565b610141565b610129565b6100da565b6100a7565b60009103126100a257565b600080fd5b346100a2576100b7366004610097565b6100bf610381565b60405180805b0390f35b6001600160a01b031690565b90565b565b346100a2576100ea366004610097565b6100c57f00000000000000000000000000000000000000000000000000000000000000005b604051918291826001600160a01b03909116815260200190565b346100a257610139366004610097565b6100bf610494565b346100a257610151366004610097565b6100c57f000000000000000000000000000000000000000000000000000000000000000061010f565b346100a25761018a366004610097565b6100c57f000000000000000000000000000000000000000000000000000000000000000061010f565b346100a2576101c3366004610097565b6100c57f000000000000000000000000000000000000000000000000000000000000000061010f565b346100a2576101fc366004610097565b6100bf6104b3565b346100a257610214366004610097565b6100bf61051a565b6100d5906100c9906001600160a01b031682565b6100d59061021c565b6100d590610230565b1561024957565b60405162461bcd60e51b815260206004820152603060248201527f4d6967726174696f6e2073686f756c64206f6e6c792062652063616c6c65642060448201526f1d9a584819195b1959d85d1958d85b1b60821b6064820152608490fd5b6102f46102b330610239565b6102ed6001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016916001600160a01b031690565b1415610242565b6100d861032c565b9061030c6100d561032892610239565b82546001600160a01b0319166001600160a01b03919091161790565b9055565b7f75e41bc35ff1bf14d81d1d2f649c0084a0f974f9289c803ec9898eeec4c8d0b861037c7f000000000000000000000000000000000000000000000000000000000000000061010f8160006102fc565b0390a1565b6100d86102a7565b6103956102b330610239565b6100d86103e6565b634e487b7160e01b600052604160045260246000fd5b90601f01601f1916810190811067ffffffffffffffff8211176103d557604052565b61039d565b6040513d6000823e3d90fd5b6103ee610381565b6104026103fd6103fd30610239565b610239565b7f000000000000000000000000000000000000000000000000000000000000000090803b156100a25761046660009291839261043d60405190565b948593849283919063f08a032360e01b8352600483016001600160a01b03909116815260200190565b03925af1801561048f576104775750565b6100d890600061048781836103b3565b810190610097565b6103da565b6100d8610389565b6104a86102b330610239565b6100d86103ee61051a565b6100d861049c565b6104c76102b330610239565b6100d87f75e41bc35ff1bf14d81d1d2f649c0084a0f974f9289c803ec9898eeec4c8d0b861037c7f000000000000000000000000000000000000000000000000000000000000000061010f8160006102fc565b6100d86104bb56fea2646970667358221220ea39997ab0753eb19959a61a588852863745cdbb6832b7bae7d52626710c60ce64736f6c634300081b0033",
+  "deployedBytecode": "0x6080604052600436101561001257600080fd5b60003560e01c806307f464a4146100925780630d7101f71461008d57806368cb3d941461008857806372f7a956146100835780639bf47d6e1461007e578063caa12add14610079578063ed007fc6146100745763f6682ab0036100a257610204565b6101ec565b6101b3565b61017a565b610141565b610129565b6100da565b6100a7565b60009103126100a257565b600080fd5b346100a2576100b7366004610097565b6100bf610381565b60405180805b0390f35b6001600160a01b031690565b90565b565b346100a2576100ea366004610097565b6100c57f00000000000000000000000000000000000000000000000000000000000000005b604051918291826001600160a01b03909116815260200190565b346100a257610139366004610097565b6100bf610494565b346100a257610151366004610097565b6100c57f000000000000000000000000000000000000000000000000000000000000000061010f565b346100a25761018a366004610097565b6100c57f000000000000000000000000000000000000000000000000000000000000000061010f565b346100a2576101c3366004610097565b6100c57f000000000000000000000000000000000000000000000000000000000000000061010f565b346100a2576101fc366004610097565b6100bf6104b3565b346100a257610214366004610097565b6100bf61051a565b6100d5906100c9906001600160a01b031682565b6100d59061021c565b6100d590610230565b1561024957565b60405162461bcd60e51b815260206004820152603060248201527f4d6967726174696f6e2073686f756c64206f6e6c792062652063616c6c65642060448201526f1d9a584819195b1959d85d1958d85b1b60821b6064820152608490fd5b6102f46102b330610239565b6102ed6001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016916001600160a01b031690565b1415610242565b6100d861032c565b9061030c6100d561032892610239565b82546001600160a01b0319166001600160a01b03919091161790565b9055565b7f75e41bc35ff1bf14d81d1d2f649c0084a0f974f9289c803ec9898eeec4c8d0b861037c7f000000000000000000000000000000000000000000000000000000000000000061010f8160006102fc565b0390a1565b6100d86102a7565b6103956102b330610239565b6100d86103e6565b634e487b7160e01b600052604160045260246000fd5b90601f01601f1916810190811067ffffffffffffffff8211176103d557604052565b61039d565b6040513d6000823e3d90fd5b6103ee610381565b6104026103fd6103fd30610239565b610239565b7f000000000000000000000000000000000000000000000000000000000000000090803b156100a25761046660009291839261043d60405190565b948593849283919063f08a032360e01b8352600483016001600160a01b03909116815260200190565b03925af1801561048f576104775750565b6100d890600061048781836103b3565b810190610097565b6103da565b6100d8610389565b6104a86102b330610239565b6100d86103ee61051a565b6100d861049c565b6104c76102b330610239565b6100d87f75e41bc35ff1bf14d81d1d2f649c0084a0f974f9289c803ec9898eeec4c8d0b861037c7f000000000000000000000000000000000000000000000000000000000000000061010f8160006102fc565b6100d86104bb56fea2646970667358221220ea39997ab0753eb19959a61a588852863745cdbb6832b7bae7d52626710c60ce64736f6c634300081b0033",
+  "devdoc": {
+    "author": "@safe-global/safe-protocol",
+    "details": "IMPORTANT: The library is intended to be used with the Safe standard proxy that stores the singleton address      at the storage slot 0. Use at your own risk with custom proxy implementations. The contract will allow invocations      to the migration functions only via delegatecall.",
+    "events": {
+      "ChangedMasterCopy(address)": {
+        "params": {
+          "singleton": "New master copy address"
+        }
+      }
+    },
+    "kind": "dev",
+    "methods": {
+      "constructor": {
+        "params": {
+          "fallbackHandler": "Address of the fallback handler implementation",
+          "safeL2Singleton": "Address of the SafeL2 Singleton implementation",
+          "safeSingleton": "Address of the Safe Singleton implementation"
+        }
+      }
+    },
+    "title": "Migration Contract for Safe Upgrade",
+    "version": 1
+  },
+  "userdoc": {
+    "events": {
+      "ChangedMasterCopy(address)": {
+        "notice": "Event indicating a change of a singleton address. Named master copy here for legacy reasons."
+      }
+    },
+    "kind": "user",
+    "methods": {
+      "MIGRATION_SINGLETON()": {
+        "notice": "Address of this contract"
+      },
+      "SAFE_FALLBACK_HANDLER()": {
+        "notice": "Address of the Fallback Handler"
+      },
+      "SAFE_L2_SINGLETON()": {
+        "notice": "Address of the Safe Singleton (L2) implementation"
+      },
+      "SAFE_SINGLETON()": {
+        "notice": "Address of the Safe Singleton implementation"
+      },
+      "constructor": {
+        "notice": "Constructor"
+      },
+      "migrateL2Singleton()": {
+        "notice": "Migrate the Safe contract to a new Safe Singleton (L2) implementation."
+      },
+      "migrateL2WithFallbackHandler()": {
+        "notice": "Migrate to Safe Singleton (L2) and set the fallback handler. This function is intended to be used when migrating         a Safe to a version which also requires updating fallback handler."
+      },
+      "migrateSingleton()": {
+        "notice": "Migrate the Safe contract to a new Safe Singleton implementation."
+      },
+      "migrateWithFallbackHandler()": {
+        "notice": "Migrate to Safe Singleton and set the fallback handler. This function is intended to be used when migrating         a Safe to a version which also requires updating fallback handler."
+      }
+    },
+    "notice": "This is a generic contract that facilitates Safe and SafeL2 proxy contracts to migrate their singleton address.         The supported target Safe version is immutable and set in the constructor during the deployment of the contract.         This contract also supports migration with fallback handler update.",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 6142,
+        "contract": "contracts/libraries/SafeMigration.sol:SafeMigration",
+        "label": "singleton",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 6146,
+        "contract": "contracts/libraries/SafeMigration.sol:SafeMigration",
+        "label": "modules",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_address)"
+      },
+      {
+        "astId": 6150,
+        "contract": "contracts/libraries/SafeMigration.sol:SafeMigration",
+        "label": "owners",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_address,t_address)"
+      },
+      {
+        "astId": 6152,
+        "contract": "contracts/libraries/SafeMigration.sol:SafeMigration",
+        "label": "ownerCount",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 6154,
+        "contract": "contracts/libraries/SafeMigration.sol:SafeMigration",
+        "label": "threshold",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 6156,
+        "contract": "contracts/libraries/SafeMigration.sol:SafeMigration",
+        "label": "nonce",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 6158,
+        "contract": "contracts/libraries/SafeMigration.sol:SafeMigration",
+        "label": "_deprecatedDomainSeparator",
+        "offset": 0,
+        "slot": "6",
+        "type": "t_bytes32"
+      },
+      {
+        "astId": 6162,
+        "contract": "contracts/libraries/SafeMigration.sol:SafeMigration",
+        "label": "signedMessages",
+        "offset": 0,
+        "slot": "7",
+        "type": "t_mapping(t_bytes32,t_uint256)"
+      },
+      {
+        "astId": 6168,
+        "contract": "contracts/libraries/SafeMigration.sol:SafeMigration",
+        "label": "approvedHashes",
+        "offset": 0,
+        "slot": "8",
+        "type": "t_mapping(t_address,t_mapping(t_bytes32,t_uint256))"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_address,t_address)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => address)",
+        "numberOfBytes": "32",
+        "value": "t_address"
+      },
+      "t_mapping(t_address,t_mapping(t_bytes32,t_uint256))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(bytes32 => uint256))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_bytes32,t_uint256)"
+      },
+      "t_mapping(t_bytes32,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

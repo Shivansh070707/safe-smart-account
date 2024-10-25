@@ -1,0 +1,142 @@
+{
+  "address": "0x73cE72617dBc06d712994628bb3eb3CC408B7cF8",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newContract",
+          "type": "address"
+        }
+      ],
+      "name": "ContractCreation",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "deploymentData",
+          "type": "bytes"
+        }
+      ],
+      "name": "performCreate",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "newContract",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "deploymentData",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "salt",
+          "type": "bytes32"
+        }
+      ],
+      "name": "performCreate2",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "newContract",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x89d7c8e1d53af00fdf314e2383dc8a1913fe07e06a5780622ce34527d09e89e6",
+  "receipt": {
+    "to": "0x97A23639dbce0507Ee466741AAb1A6BD4EB7a38c",
+    "from": "0x98e2ee7DcBDEBFE5E3D51f9136f938c88A7D63F3",
+    "contractAddress": null,
+    "transactionIndex": 0,
+    "gasUsed": "226441",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x4ba544fb22bc324b9c6ee949ef6d111c3bb75eaa13c88d40cfcfa404c27ad682",
+    "transactionHash": "0x89d7c8e1d53af00fdf314e2383dc8a1913fe07e06a5780622ce34527d09e89e6",
+    "logs": [],
+    "blockNumber": 15793,
+    "cumulativeGasUsed": "226441",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "d6372cac540e87137b93d1ade6e31ca3",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.27+commit.40a35a09\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newContract\",\"type\":\"address\"}],\"name\":\"ContractCreation\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"deploymentData\",\"type\":\"bytes\"}],\"name\":\"performCreate\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"newContract\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"deploymentData\",\"type\":\"bytes\"},{\"internalType\":\"bytes32\",\"name\":\"salt\",\"type\":\"bytes32\"}],\"name\":\"performCreate2\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"newContract\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Richard Meissner - @rmeissner\",\"kind\":\"dev\",\"methods\":{\"performCreate(uint256,bytes)\":{\"params\":{\"deploymentData\":\"The initialisation code of the contract to be created.\",\"value\":\"The value in wei to be sent with the contract creation.\"},\"returns\":{\"newContract\":\"The address of the newly created contract.\"}},\"performCreate2(uint256,bytes,bytes32)\":{\"params\":{\"deploymentData\":\"The initialisation code of the contract to be created.\",\"salt\":\"The salt value to use for the contract creation.\",\"value\":\"The value in wei to be sent with the contract creation.\"},\"returns\":{\"newContract\":\"The address of the newly created contract.\"}}},\"title\":\"Create Call - Allows to use the different create opcodes to deploy a contract.\",\"version\":1},\"userdoc\":{\"events\":{\"ContractCreation(address)\":{\"notice\":\"Emitted when a new contract is created\"}},\"kind\":\"user\",\"methods\":{\"performCreate(uint256,bytes)\":{\"notice\":\"Deploys a new contract using the create opcode.\"},\"performCreate2(uint256,bytes,bytes32)\":{\"notice\":\"Deploys a new contract using the create2 opcode.\"}},\"notice\":\"This contract provides functions for deploying a new contract using the create and create2 opcodes.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/libraries/CreateCall.sol\":\"CreateCall\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"details\":{\"constantOptimizer\":true,\"cse\":true,\"deduplicate\":true,\"inliner\":true,\"jumpdestRemover\":true,\"orderLiterals\":true,\"peephole\":true,\"simpleCounterForLoopUncheckedIncrement\":true,\"yul\":true,\"yulDetails\":{\"optimizerSteps\":\":fDnTOcmuO\",\"stackAllocation\":true}},\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"contracts/libraries/CreateCall.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\n\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title Create Call - Allows to use the different create opcodes to deploy a contract.\\r\\n * @author Richard Meissner - @rmeissner\\r\\n * @notice This contract provides functions for deploying a new contract using the create and create2 opcodes.\\r\\n */\\r\\ncontract CreateCall {\\r\\n    /// @notice Emitted when a new contract is created\\r\\n    event ContractCreation(address indexed newContract);\\r\\n\\r\\n    /**\\r\\n     * @notice Deploys a new contract using the create2 opcode.\\r\\n     * @param value The value in wei to be sent with the contract creation.\\r\\n     * @param deploymentData The initialisation code of the contract to be created.\\r\\n     * @param salt The salt value to use for the contract creation.\\r\\n     * @return newContract The address of the newly created contract.\\r\\n     */\\r\\n    function performCreate2(uint256 value, bytes memory deploymentData, bytes32 salt) public returns (address newContract) {\\r\\n        /* solhint-disable no-inline-assembly */\\r\\n        /// @solidity memory-safe-assembly\\r\\n        assembly {\\r\\n            newContract := create2(value, add(0x20, deploymentData), mload(deploymentData), salt)\\r\\n        }\\r\\n        /* solhint-enable no-inline-assembly */\\r\\n        require(newContract != address(0), \\\"Could not deploy contract\\\");\\r\\n        emit ContractCreation(newContract);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Deploys a new contract using the create opcode.\\r\\n     * @param value The value in wei to be sent with the contract creation.\\r\\n     * @param deploymentData The initialisation code of the contract to be created.\\r\\n     * @return newContract The address of the newly created contract.\\r\\n     */\\r\\n    function performCreate(uint256 value, bytes memory deploymentData) public returns (address newContract) {\\r\\n        /* solhint-disable no-inline-assembly */\\r\\n        /// @solidity memory-safe-assembly\\r\\n        assembly {\\r\\n            newContract := create(value, add(deploymentData, 0x20), mload(deploymentData))\\r\\n        }\\r\\n        /* solhint-enable no-inline-assembly */\\r\\n        require(newContract != address(0), \\\"Could not deploy contract\\\");\\r\\n        emit ContractCreation(newContract);\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x523c3929ba835e93f2d34487925aa97d56a946418efba4bf62fef3b2a2ad059a\",\"license\":\"LGPL-3.0-only\"}},\"version\":1}",
+  "bytecode": "0x60806040523460195760405161032061001f823961032090f35b600080fdfe6080604052600436101561001257600080fd5b60003560e01c80634847be6f1461003257634c8c9ea103610037576101ca565b61015a565b600080fd5b905035905b565b634e487b7160e01b600052604160045260246000fd5b90601f01601f1916810190811067ffffffffffffffff82111761007b57604052565b610043565b9061004161008d60405190565b9283610059565b67ffffffffffffffff811161007b57602090601f01601f19160190565b90826000939282370152565b909291926100d26100cd82610094565b610080565b9381855281830111610037576100419160208501906100b1565b9080601f8301121561003757816020610107933591016100bd565b90565b909160608284031261003757610120838361003c565b9260208301359067ffffffffffffffff8211610037576040610147826101079487016100ec565b940161003c565b6001600160a01b031690565b346100375761019061017661017036600461010a565b9161026e565b604051918291826001600160a01b03909116815260200190565b0390f35b919091604081840312610037576101ab838261003c565b92602082013567ffffffffffffffff81116100375761010792016100ec565b34610037576101906101766101e0366004610194565b906102d1565b61014e6101076101079290565b610107906101e6565b1561020357565b60405162461bcd60e51b815260206004820152601960248201527f436f756c64206e6f74206465706c6f7920636f6e7472616374000000000000006044820152606490fd5b6101079061014e906001600160a01b031682565b61010790610248565b6101079061025c565b81519160200190f59061029861028761014e60006101f3565b6001600160a01b03841614156101fc565b6102a182610265565b7f4db17dd5e4732fb6da34a148104a592783ca119a1e7bb8829eba6cbadef0b5116102cb60405190565b600090a2565b60208251920190f09061029861028761014e60006101f356fea26469706673582212209e35c184a2dc183437cd1da80c4d4b341e9503171031c1f21f15a9f8df450b1064736f6c634300081b0033",
+  "deployedBytecode": "0x6080604052600436101561001257600080fd5b60003560e01c80634847be6f1461003257634c8c9ea103610037576101ca565b61015a565b600080fd5b905035905b565b634e487b7160e01b600052604160045260246000fd5b90601f01601f1916810190811067ffffffffffffffff82111761007b57604052565b610043565b9061004161008d60405190565b9283610059565b67ffffffffffffffff811161007b57602090601f01601f19160190565b90826000939282370152565b909291926100d26100cd82610094565b610080565b9381855281830111610037576100419160208501906100b1565b9080601f8301121561003757816020610107933591016100bd565b90565b909160608284031261003757610120838361003c565b9260208301359067ffffffffffffffff8211610037576040610147826101079487016100ec565b940161003c565b6001600160a01b031690565b346100375761019061017661017036600461010a565b9161026e565b604051918291826001600160a01b03909116815260200190565b0390f35b919091604081840312610037576101ab838261003c565b92602082013567ffffffffffffffff81116100375761010792016100ec565b34610037576101906101766101e0366004610194565b906102d1565b61014e6101076101079290565b610107906101e6565b1561020357565b60405162461bcd60e51b815260206004820152601960248201527f436f756c64206e6f74206465706c6f7920636f6e7472616374000000000000006044820152606490fd5b6101079061014e906001600160a01b031682565b61010790610248565b6101079061025c565b81519160200190f59061029861028761014e60006101f3565b6001600160a01b03841614156101fc565b6102a182610265565b7f4db17dd5e4732fb6da34a148104a592783ca119a1e7bb8829eba6cbadef0b5116102cb60405190565b600090a2565b60208251920190f09061029861028761014e60006101f356fea26469706673582212209e35c184a2dc183437cd1da80c4d4b341e9503171031c1f21f15a9f8df450b1064736f6c634300081b0033",
+  "devdoc": {
+    "author": "Richard Meissner - @rmeissner",
+    "kind": "dev",
+    "methods": {
+      "performCreate(uint256,bytes)": {
+        "params": {
+          "deploymentData": "The initialisation code of the contract to be created.",
+          "value": "The value in wei to be sent with the contract creation."
+        },
+        "returns": {
+          "newContract": "The address of the newly created contract."
+        }
+      },
+      "performCreate2(uint256,bytes,bytes32)": {
+        "params": {
+          "deploymentData": "The initialisation code of the contract to be created.",
+          "salt": "The salt value to use for the contract creation.",
+          "value": "The value in wei to be sent with the contract creation."
+        },
+        "returns": {
+          "newContract": "The address of the newly created contract."
+        }
+      }
+    },
+    "title": "Create Call - Allows to use the different create opcodes to deploy a contract.",
+    "version": 1
+  },
+  "userdoc": {
+    "events": {
+      "ContractCreation(address)": {
+        "notice": "Emitted when a new contract is created"
+      }
+    },
+    "kind": "user",
+    "methods": {
+      "performCreate(uint256,bytes)": {
+        "notice": "Deploys a new contract using the create opcode."
+      },
+      "performCreate2(uint256,bytes,bytes32)": {
+        "notice": "Deploys a new contract using the create2 opcode."
+      }
+    },
+    "notice": "This contract provides functions for deploying a new contract using the create and create2 opcodes.",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

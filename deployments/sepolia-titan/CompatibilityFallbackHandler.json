@@ -1,0 +1,419 @@
+{
+  "address": "0xb7875Cde5e1e63c299689fB491116a6a03fA62cB",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISafe",
+          "name": "safe",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "message",
+          "type": "bytes"
+        }
+      ],
+      "name": "encodeMessageDataForSafe",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "message",
+          "type": "bytes"
+        }
+      ],
+      "name": "getMessageHash",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ISafe",
+          "name": "safe",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "message",
+          "type": "bytes"
+        }
+      ],
+      "name": "getMessageHashForSafe",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getModules",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_dataHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_signature",
+          "type": "bytes"
+        }
+      ],
+      "name": "isValidSignature",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC1155BatchReceived",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC1155Received",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC721Received",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "targetContract",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "calldataPayload",
+          "type": "bytes"
+        }
+      ],
+      "name": "simulate",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "response",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "interfaceId",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "tokensReceived",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x3ab3285b56d5426be81ad4bfe3c24876f3362db5595fab3dc269673b130c389c",
+  "receipt": {
+    "to": "0x97A23639dbce0507Ee466741AAb1A6BD4EB7a38c",
+    "from": "0x98e2ee7DcBDEBFE5E3D51f9136f938c88A7D63F3",
+    "contractAddress": null,
+    "transactionIndex": 0,
+    "gasUsed": "845980",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xbdd5176d02cc843fadb0a49e3f27e0618c16023e74a783a1b1b69e759189c489",
+    "transactionHash": "0x3ab3285b56d5426be81ad4bfe3c24876f3362db5595fab3dc269673b130c389c",
+    "logs": [],
+    "blockNumber": 15792,
+    "cumulativeGasUsed": "845980",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "d6372cac540e87137b93d1ade6e31ca3",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.27+commit.40a35a09\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract ISafe\",\"name\":\"safe\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"message\",\"type\":\"bytes\"}],\"name\":\"encodeMessageDataForSafe\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"message\",\"type\":\"bytes\"}],\"name\":\"getMessageHash\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract ISafe\",\"name\":\"safe\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"message\",\"type\":\"bytes\"}],\"name\":\"getMessageHashForSafe\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getModules\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_dataHash\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"_signature\",\"type\":\"bytes\"}],\"name\":\"isValidSignature\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"onERC1155BatchReceived\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"onERC1155Received\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"onERC721Received\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"targetContract\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"calldataPayload\",\"type\":\"bytes\"}],\"name\":\"simulate\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"response\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"tokensReceived\",\"outputs\":[],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Richard Meissner - @rmeissner\",\"kind\":\"dev\",\"methods\":{\"encodeMessageDataForSafe(address,bytes)\":{\"details\":\"Returns the pre-image of the message hash (see getMessageHashForSafe).\",\"params\":{\"message\":\"Message that should be encoded.\",\"safe\":\"Safe to which the message is targeted.\"},\"returns\":{\"_0\":\"Encoded message.\"}},\"getMessageHash(bytes)\":{\"details\":\"Returns the hash of a message to be signed by owners.\",\"params\":{\"message\":\"Raw message bytes.\"},\"returns\":{\"_0\":\"Message hash.\"}},\"getMessageHashForSafe(address,bytes)\":{\"details\":\"Returns hash of a message that can be signed by owners.\",\"params\":{\"message\":\"Message that should be hashed.\",\"safe\":\"Safe to which the message is targeted.\"},\"returns\":{\"_0\":\"Message hash.\"}},\"getModules()\":{\"details\":\"Returns array of first 10 modules.\",\"returns\":{\"_0\":\"Array of modules.\"}},\"isValidSignature(bytes32,bytes)\":{\"params\":{\"_dataHash\":\"Hash of the data signed on the behalf of address(msg.sender)\",\"_signature\":\"Signature byte array associated with _dataHash\"},\"returns\":{\"_0\":\"Updated EIP1271 magic value if signature is valid, otherwise 0x0\"}},\"simulate(address,bytes)\":{\"details\":\"Performs a delegatecall on a targetContract in the context of self. Internally reverts execution to avoid side effects (making it static). Catches revert and returns encoded result as bytes.Inspired by https://github.com/gnosis/util-contracts/blob/bb5fe5fb5df6d8400998094fb1b32a178a47c3a1/contracts/StorageAccessible.sol\",\"params\":{\"calldataPayload\":\"Calldata that should be sent to the target contract (encoded method name and arguments).\",\"targetContract\":\"Address of the contract containing the code to execute.\"}},\"supportsInterface(bytes4)\":{\"params\":{\"interfaceId\":\"Id of the interface.\"},\"returns\":{\"_0\":\"if the interface is supported.\"}}},\"title\":\"Compatibility Fallback Handler - Provides compatibility between pre 1.3.0 and 1.3.0+ Safe Smart Account contracts.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"isValidSignature(bytes32,bytes)\":{\"notice\":\"Implementation of updated EIP-1271 signature validation method.\"},\"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)\":{\"notice\":\"Handles ERC1155 Token batch callback. return Standardized onERC1155BatchReceived return value.\"},\"onERC1155Received(address,address,uint256,uint256,bytes)\":{\"notice\":\"Handles ERC1155 Token callback. return Standardized onERC1155Received return value.\"},\"onERC721Received(address,address,uint256,bytes)\":{\"notice\":\"Handles ERC721 Token callback.  return Standardized onERC721Received return value.\"},\"supportsInterface(bytes4)\":{\"notice\":\"Implements ERC165 interface support for ERC1155TokenReceiver, ERC721TokenReceiver and IERC165.\"},\"tokensReceived(address,address,address,uint256,bytes,bytes)\":{\"notice\":\"Handles ERC777 Token callback. return nothing (not standardized)\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/handler/CompatibilityFallbackHandler.sol\":\"CompatibilityFallbackHandler\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"details\":{\"constantOptimizer\":true,\"cse\":true,\"deduplicate\":true,\"inliner\":true,\"jumpdestRemover\":true,\"orderLiterals\":true,\"peephole\":true,\"simpleCounterForLoopUncheckedIncrement\":true,\"yul\":true,\"yulDetails\":{\"optimizerSteps\":\":fDnTOcmuO\",\"stackAllocation\":true}},\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"contracts/handler/CompatibilityFallbackHandler.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\nimport {ISafe} from \\\"./../interfaces/ISafe.sol\\\";\\r\\nimport {ISignatureValidator} from \\\"./../interfaces/ISignatureValidator.sol\\\";\\r\\nimport {HandlerContext} from \\\"./HandlerContext.sol\\\";\\r\\nimport {TokenCallbackHandler} from \\\"./TokenCallbackHandler.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title Compatibility Fallback Handler - Provides compatibility between pre 1.3.0 and 1.3.0+ Safe Smart Account contracts.\\r\\n * @author Richard Meissner - @rmeissner\\r\\n */\\r\\ncontract CompatibilityFallbackHandler is TokenCallbackHandler, ISignatureValidator, HandlerContext {\\r\\n    // keccak256(\\\"SafeMessage(bytes message)\\\");\\r\\n    bytes32 private constant SAFE_MSG_TYPEHASH = 0x60b3cbf8b4a223d68d641b3b6ddf9a298e7f33710cf3d3a9d1146b5a6150fbca;\\r\\n\\r\\n    bytes4 internal constant SIMULATE_SELECTOR = bytes4(keccak256(\\\"simulate(address,bytes)\\\"));\\r\\n\\r\\n    address internal constant SENTINEL_MODULES = address(0x1);\\r\\n\\r\\n    /**\\r\\n     * @dev Returns the hash of a message to be signed by owners.\\r\\n     * @param message Raw message bytes.\\r\\n     * @return Message hash.\\r\\n     */\\r\\n    function getMessageHash(bytes memory message) public view returns (bytes32) {\\r\\n        return getMessageHashForSafe(ISafe(payable(msg.sender)), message);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @dev Returns the pre-image of the message hash (see getMessageHashForSafe).\\r\\n     * @param safe Safe to which the message is targeted.\\r\\n     * @param message Message that should be encoded.\\r\\n     * @return Encoded message.\\r\\n     */\\r\\n    function encodeMessageDataForSafe(ISafe safe, bytes memory message) public view returns (bytes memory) {\\r\\n        bytes32 safeMessageHash = keccak256(abi.encode(SAFE_MSG_TYPEHASH, keccak256(message)));\\r\\n        return abi.encodePacked(bytes1(0x19), bytes1(0x01), safe.domainSeparator(), safeMessageHash);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @dev Returns hash of a message that can be signed by owners.\\r\\n     * @param safe Safe to which the message is targeted.\\r\\n     * @param message Message that should be hashed.\\r\\n     * @return Message hash.\\r\\n     */\\r\\n    function getMessageHashForSafe(ISafe safe, bytes memory message) public view returns (bytes32) {\\r\\n        return keccak256(encodeMessageDataForSafe(safe, message));\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Implementation of updated EIP-1271 signature validation method.\\r\\n     * @param _dataHash Hash of the data signed on the behalf of address(msg.sender)\\r\\n     * @param _signature Signature byte array associated with _dataHash\\r\\n     * @return Updated EIP1271 magic value if signature is valid, otherwise 0x0\\r\\n     */\\r\\n    function isValidSignature(bytes32 _dataHash, bytes calldata _signature) public view override returns (bytes4) {\\r\\n        // Caller should be a Safe\\r\\n        ISafe safe = ISafe(payable(msg.sender));\\r\\n        bytes memory messageData = encodeMessageDataForSafe(safe, abi.encode(_dataHash));\\r\\n        bytes32 messageHash = keccak256(messageData);\\r\\n        if (_signature.length == 0) {\\r\\n            require(safe.signedMessages(messageHash) != 0, \\\"Hash not approved\\\");\\r\\n        } else {\\r\\n            safe.checkSignatures(messageHash, _signature);\\r\\n        }\\r\\n        return EIP1271_MAGIC_VALUE;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @dev Returns array of first 10 modules.\\r\\n     * @return Array of modules.\\r\\n     */\\r\\n    function getModules() external view returns (address[] memory) {\\r\\n        // Caller should be a Safe\\r\\n        ISafe safe = ISafe(payable(msg.sender));\\r\\n        (address[] memory array, ) = safe.getModulesPaginated(SENTINEL_MODULES, 10);\\r\\n        return array;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @dev Performs a delegatecall on a targetContract in the context of self.\\r\\n     * Internally reverts execution to avoid side effects (making it static). Catches revert and returns encoded result as bytes.\\r\\n     * @dev Inspired by https://github.com/gnosis/util-contracts/blob/bb5fe5fb5df6d8400998094fb1b32a178a47c3a1/contracts/StorageAccessible.sol\\r\\n     * @param targetContract Address of the contract containing the code to execute.\\r\\n     * @param calldataPayload Calldata that should be sent to the target contract (encoded method name and arguments).\\r\\n     */\\r\\n    function simulate(address targetContract, bytes calldata calldataPayload) external returns (bytes memory response) {\\r\\n        /**\\r\\n         * Suppress compiler warnings about not using parameters, while allowing\\r\\n         * parameters to keep names for documentation purposes. This does not\\r\\n         * generate code.\\r\\n         */\\r\\n        targetContract;\\r\\n        calldataPayload;\\r\\n\\r\\n        /* solhint-disable no-inline-assembly */\\r\\n        /// @solidity memory-safe-assembly\\r\\n        assembly {\\r\\n            let ptr := mload(0x40)\\r\\n            /**\\r\\n             * Store `simulateAndRevert.selector`.\\r\\n             * String representation is used to force right padding\\r\\n             */\\r\\n            mstore(ptr, \\\"\\\\xb4\\\\xfa\\\\xba\\\\x09\\\")\\r\\n\\r\\n            /**\\r\\n             * Abuse the fact that both this and the internal methods have the\\r\\n             * same signature, and differ only in symbol name (and therefore,\\r\\n             * selector) and copy calldata directly. This saves us approximately\\r\\n             * 250 bytes of code and 300 gas at runtime over the\\r\\n             * `abi.encodeWithSelector` builtin.\\r\\n             */\\r\\n            calldatacopy(add(ptr, 0x04), 0x04, sub(calldatasize(), 0x04))\\r\\n\\r\\n            /**\\r\\n             * `pop` is required here by the compiler, as top level expressions\\r\\n             * can't have return values in inline assembly. `call` typically\\r\\n             * returns a 0 or 1 value indicated whether or not it reverted, but\\r\\n             * since we know it will always revert, we can safely ignore it.\\r\\n             */\\r\\n            pop(\\r\\n                call(\\r\\n                    gas(),\\r\\n                    // address() has been changed to caller() to use the implementation of the Safe\\r\\n                    caller(),\\r\\n                    0,\\r\\n                    ptr,\\r\\n                    calldatasize(),\\r\\n                    /**\\r\\n                     * The `simulateAndRevert` call always reverts, and\\r\\n                     * instead encodes whether or not it was successful in the return\\r\\n                     * data. The first 32-byte word of the return data contains the\\r\\n                     * `success` value, so write it to memory address 0x00 (which is\\r\\n                     * reserved Solidity scratch space and OK to use).\\r\\n                     */\\r\\n                    0x00,\\r\\n                    0x20\\r\\n                )\\r\\n            )\\r\\n\\r\\n            /**\\r\\n             * Allocate and copy the response bytes, making sure to increment\\r\\n             * the free memory pointer accordingly (in case this method is\\r\\n             * called as an internal function). The remaining `returndata[0x20:]`\\r\\n             * contains the ABI encoded response bytes, so we can just write it\\r\\n             * as is to memory.\\r\\n             */\\r\\n            let responseSize := sub(returndatasize(), 0x20)\\r\\n            response := mload(0x40)\\r\\n            mstore(0x40, add(response, responseSize))\\r\\n            returndatacopy(response, 0x20, responseSize)\\r\\n\\r\\n            if iszero(mload(0x00)) {\\r\\n                revert(add(response, 0x20), mload(response))\\r\\n            }\\r\\n        }\\r\\n        /* solhint-enable no-inline-assembly */\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x33927281cffff938113a679a342b1b01633f1c0842be19259af48b3713ae29f5\",\"license\":\"LGPL-3.0-only\"},\"contracts/handler/HandlerContext.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title Handler Context - Allows the fallback handler to extract addition context from the calldata\\r\\n * @dev The fallback manager appends the following context to the calldata:\\r\\n *      1. Fallback manager caller address (non-padded)\\r\\n * based on https://github.com/OpenZeppelin/openzeppelin-contracts/blob/f8cc8b844a9f92f63dc55aa581f7d643a1bc5ac1/contracts/metatx/ERC2771Context.sol\\r\\n * @author Richard Meissner - @rmeissner\\r\\n */\\r\\nabstract contract HandlerContext {\\r\\n    /**\\r\\n     * @notice Allows fetching the original caller address.\\r\\n     * @dev This is only reliable in combination with a FallbackManager that supports this (e.g. Safe contract >=1.3.0).\\r\\n     *      When using this functionality make sure that the linked _manager (aka msg.sender) supports this.\\r\\n     *      This function does not rely on a trusted forwarder. Use the returned value only to\\r\\n     *      check information against the calling manager.\\r\\n     * @return sender Original caller address.\\r\\n     */\\r\\n    function _msgSender() internal pure returns (address sender) {\\r\\n        // The assembly code is more direct than the Solidity version using `abi.decode`.\\r\\n        /* solhint-disable no-inline-assembly */\\r\\n        /// @solidity memory-safe-assembly\\r\\n        assembly {\\r\\n            sender := shr(96, calldataload(sub(calldatasize(), 20)))\\r\\n        }\\r\\n        /* solhint-enable no-inline-assembly */\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Returns the FallbackManager address\\r\\n     * @return Fallback manager address\\r\\n     */\\r\\n    function _manager() internal view returns (address) {\\r\\n        return msg.sender;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0xaf99955cc65972d3161e27cbd99014d2283c3c5bbaf428423b354ae2a34d6cbf\",\"license\":\"LGPL-3.0-only\"},\"contracts/handler/TokenCallbackHandler.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\nimport {ERC1155TokenReceiver} from \\\"../interfaces/ERC1155TokenReceiver.sol\\\";\\r\\nimport {ERC721TokenReceiver} from \\\"../interfaces/ERC721TokenReceiver.sol\\\";\\r\\nimport {ERC777TokensRecipient} from \\\"../interfaces/ERC777TokensRecipient.sol\\\";\\r\\nimport {IERC165} from \\\"../interfaces/IERC165.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title Default Callback Handler - Handles supported tokens' callbacks, allowing Safes receiving these tokens.\\r\\n * @author Richard Meissner - @rmeissner\\r\\n */\\r\\ncontract TokenCallbackHandler is ERC1155TokenReceiver, ERC777TokensRecipient, ERC721TokenReceiver, IERC165 {\\r\\n    /**\\r\\n     * @notice Handles ERC1155 Token callback.\\r\\n     * return Standardized onERC1155Received return value.\\r\\n     */\\r\\n    function onERC1155Received(address, address, uint256, uint256, bytes calldata) external pure override returns (bytes4) {\\r\\n        return 0xf23a6e61;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Handles ERC1155 Token batch callback.\\r\\n     * return Standardized onERC1155BatchReceived return value.\\r\\n     */\\r\\n    function onERC1155BatchReceived(\\r\\n        address,\\r\\n        address,\\r\\n        uint256[] calldata,\\r\\n        uint256[] calldata,\\r\\n        bytes calldata\\r\\n    ) external pure override returns (bytes4) {\\r\\n        return 0xbc197c81;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Handles ERC721 Token callback.\\r\\n     *  return Standardized onERC721Received return value.\\r\\n     */\\r\\n    function onERC721Received(address, address, uint256, bytes calldata) external pure override returns (bytes4) {\\r\\n        return 0x150b7a02;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Handles ERC777 Token callback.\\r\\n     * return nothing (not standardized)\\r\\n     */\\r\\n    function tokensReceived(address, address, address, uint256, bytes calldata, bytes calldata) external pure override {\\r\\n        // We implement this for completeness, doesn't really have any value\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Implements ERC165 interface support for ERC1155TokenReceiver, ERC721TokenReceiver and IERC165.\\r\\n     * @param interfaceId Id of the interface.\\r\\n     * @return if the interface is supported.\\r\\n     */\\r\\n    function supportsInterface(bytes4 interfaceId) external view virtual override returns (bool) {\\r\\n        return\\r\\n            interfaceId == type(ERC1155TokenReceiver).interfaceId ||\\r\\n            interfaceId == type(ERC721TokenReceiver).interfaceId ||\\r\\n            interfaceId == type(IERC165).interfaceId;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x9f26a735dfff0faa2724793882eb03dde11775a789cfba78ae8bf028094e732a\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/ERC1155TokenReceiver.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n// Note: The ERC-165 identifier for this interface is 0x4e2312e0.\\r\\ninterface ERC1155TokenReceiver {\\r\\n    /**\\r\\n     * @notice Handle the receipt of a single ERC1155 token type.\\r\\n     * @dev An ERC1155-compliant smart contract MUST call this function on the token recipient contract, at the end of a `safeTransferFrom` after the balance has been updated.\\r\\n     *      This function MUST return `bytes4(keccak256(\\\"onERC1155Received(address,address,uint256,uint256,bytes)\\\"))` (i.e. 0xf23a6e61) if it accepts the transfer.\\r\\n     *      This function MUST revert if it rejects the transfer.\\r\\n     *      Return of any other value than the prescribed keccak256 generated value MUST result in the transaction being reverted by the caller.\\r\\n     * @param _operator  The address which initiated the transfer (i.e. msg.sender).\\r\\n     * @param _from      The address which previously owned the token.\\r\\n     * @param _id        The ID of the token being transferred.\\r\\n     * @param _value     The amount of tokens being transferred.\\r\\n     * @param _data      Additional data with no specified format.\\r\\n     * @return           `bytes4(keccak256(\\\"onERC1155Received(address,address,uint256,uint256,bytes)\\\"))`.\\r\\n     */\\r\\n    function onERC1155Received(\\r\\n        address _operator,\\r\\n        address _from,\\r\\n        uint256 _id,\\r\\n        uint256 _value,\\r\\n        bytes calldata _data\\r\\n    ) external returns (bytes4);\\r\\n\\r\\n    /**\\r\\n     * @notice Handle the receipt of multiple ERC1155 token types.\\r\\n     * @dev An ERC1155-compliant smart contract MUST call this function on the token recipient contract, at the end of a `safeBatchTransferFrom` after the balances have been updated.\\r\\n     *      This function MUST return `bytes4(keccak256(\\\"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)\\\"))` (i.e. 0xbc197c81) if it accepts the transfer(s).\\r\\n     *      This function MUST revert if it rejects the transfer(s).\\r\\n     *      Return of any other value than the prescribed keccak256 generated value MUST result in the transaction being reverted by the caller.\\r\\n     * @param _operator  The address which initiated the batch transfer (i.e. msg.sender).\\r\\n     * @param _from      The address which previously owned the token.\\r\\n     * @param _ids       An array containing ids of each token being transferred (order and length must match _values array).\\r\\n     * @param _values    An array containing amounts of each token being transferred (order and length must match _ids array).\\r\\n     * @param _data      Additional data with no specified format.\\r\\n     * @return           `bytes4(keccak256(\\\"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)\\\"))`.\\r\\n     */\\r\\n    function onERC1155BatchReceived(\\r\\n        address _operator,\\r\\n        address _from,\\r\\n        uint256[] calldata _ids,\\r\\n        uint256[] calldata _values,\\r\\n        bytes calldata _data\\r\\n    ) external returns (bytes4);\\r\\n}\\r\\n\",\"keccak256\":\"0xc71c97bf3d521189ac646958e38ebd1cdfc08f493637fd3992c8e47ce333579d\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/ERC721TokenReceiver.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/// @dev Note: the ERC-165 identifier for this interface is 0x150b7a02.\\r\\ninterface ERC721TokenReceiver {\\r\\n    /**\\r\\n     * @notice Handle the receipt of an NFT\\r\\n     * @dev The ERC721 smart contract calls this function on the recipient\\r\\n     *  after a `transfer`. This function MAY throw to revert and reject the\\r\\n     *  transfer. Return of other than the magic value MUST result in the\\r\\n     *  transaction being reverted.\\r\\n     *  Note: the contract address is always the message sender.\\r\\n     * @param _operator The address which called `safeTransferFrom` function.\\r\\n     * @param _from The address which previously owned the token.\\r\\n     * @param _tokenId The NFT identifier which is being transferred.\\r\\n     * @param _data Additional data with no specified format.\\r\\n     * @return `bytes4(keccak256(\\\"onERC721Received(address,address,uint256,bytes)\\\"))`.\\r\\n     *  unless throwing\\r\\n     */\\r\\n    function onERC721Received(address _operator, address _from, uint256 _tokenId, bytes calldata _data) external returns (bytes4);\\r\\n}\\r\\n\",\"keccak256\":\"0xadd81d3b6c54eca306429918b5e9f12413378d74c56527350c1cc500117208f6\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/ERC777TokensRecipient.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title ERC777TokensRecipient\\r\\n * @dev Interface for contracts that will be called with the ERC777 token's `tokensReceived` method.\\r\\n * The contract receiving the tokens must implement this interface in order to receive the tokens.\\r\\n */\\r\\ninterface ERC777TokensRecipient {\\r\\n    /**\\r\\n     * @dev Called by the ERC777 token contract after a successful transfer or a minting operation.\\r\\n     * @param operator The address of the operator performing the transfer or minting operation.\\r\\n     * @param from The address of the sender.\\r\\n     * @param to The address of the recipient.\\r\\n     * @param amount The amount of tokens that were transferred or minted.\\r\\n     * @param data Additional data that was passed during the transfer or minting operation.\\r\\n     * @param operatorData Additional data that was passed by the operator during the transfer or minting operation.\\r\\n     */\\r\\n    function tokensReceived(\\r\\n        address operator,\\r\\n        address from,\\r\\n        address to,\\r\\n        uint256 amount,\\r\\n        bytes calldata data,\\r\\n        bytes calldata operatorData\\r\\n    ) external;\\r\\n}\\r\\n\",\"keccak256\":\"0xa072f947dcb9ce7e2b4b49d4a9114d512ca6b8085f9c786c38645de9f9f7c6e6\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/IERC165.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/// @notice More details at https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol\\r\\ninterface IERC165 {\\r\\n    /**\\r\\n     * @dev Returns true if this contract implements the interface defined by `interfaceId`.\\r\\n     * See the corresponding EIP section\\r\\n     * https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified\\r\\n     * to learn more about how these ids are created.\\r\\n     *\\r\\n     * This function call must use less than 30 000 gas.\\r\\n     */\\r\\n    function supportsInterface(bytes4 interfaceId) external view returns (bool);\\r\\n}\\r\\n\",\"keccak256\":\"0x9606d417e73b051594c5270abb703dd4d164b3da737aafd2b8d0c2407c19b093\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/IFallbackManager.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title IFallbackManager - A contract interface managing fallback calls made to this contract.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface IFallbackManager {\\r\\n    event ChangedFallbackHandler(address indexed handler);\\r\\n\\r\\n    /**\\r\\n     * @notice Set Fallback Handler to `handler` for the Safe.\\r\\n     * @dev Only fallback calls without value and with data will be forwarded.\\r\\n     *      This can only be done via a Safe transaction.\\r\\n     *      Cannot be set to the Safe itself.\\r\\n     * @param handler contract to handle fallback calls.\\r\\n     */\\r\\n    function setFallbackHandler(address handler) external;\\r\\n}\\r\\n\",\"keccak256\":\"0xac140e71f4d9518982b27ccd9370d3d41c767f21bcef45a6bdd69785612d0e9b\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/IGuardManager.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\n/* solhint-disable one-contract-per-file */\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title IGuardManager - A contract interface managing transaction guards which perform pre and post-checks on Safe transactions.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface IGuardManager {\\r\\n    event ChangedGuard(address indexed guard);\\r\\n\\r\\n    /**\\r\\n     * @dev Set a guard that checks transactions before execution\\r\\n     *      This can only be done via a Safe transaction.\\r\\n     *      \\u26a0\\ufe0f IMPORTANT: Since a guard has full power to block Safe transaction execution,\\r\\n     *        a broken guard can cause a denial of service for the Safe. Make sure to carefully\\r\\n     *        audit the guard code and design recovery mechanisms.\\r\\n     * @notice Set Transaction Guard `guard` for the Safe. Make sure you trust the guard.\\r\\n     * @param guard The address of the guard to be used or the 0 address to disable the guard\\r\\n     */\\r\\n    function setGuard(address guard) external;\\r\\n}\\r\\n\",\"keccak256\":\"0x01f0c2ce0a38046de929195363684c15bcd579159e8c2fc3123b6710d5f0fe27\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/IModuleManager.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\nimport {Enum} from \\\"../libraries/Enum.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title IModuleManager - An interface of contract managing Safe modules\\r\\n * @notice Modules are extensions with unlimited access to a Safe that can be added to a Safe by its owners.\\r\\n           \\u26a0\\ufe0f WARNING: Modules are a security risk since they can execute arbitrary transactions, \\r\\n           so only trusted and audited modules should be added to a Safe. A malicious module can\\r\\n           completely takeover a Safe.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface IModuleManager {\\r\\n    event EnabledModule(address indexed module);\\r\\n    event DisabledModule(address indexed module);\\r\\n    event ExecutionFromModuleSuccess(address indexed module);\\r\\n    event ExecutionFromModuleFailure(address indexed module);\\r\\n    event ChangedModuleGuard(address indexed moduleGuard);\\r\\n\\r\\n    /**\\r\\n     * @notice Enables the module `module` for the Safe.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param module Module to be whitelisted.\\r\\n     */\\r\\n    function enableModule(address module) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Disables the module `module` for the Safe.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param prevModule Previous module in the modules linked list.\\r\\n     * @param module Module to be removed.\\r\\n     */\\r\\n    function disableModule(address prevModule, address module) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Execute `operation` (0: Call, 1: DelegateCall) to `to` with `value` (Native Token)\\r\\n     * @param to Destination address of module transaction.\\r\\n     * @param value Ether value of module transaction.\\r\\n     * @param data Data payload of module transaction.\\r\\n     * @param operation Operation type of module transaction.\\r\\n     * @return success Boolean flag indicating if the call succeeded.\\r\\n     */\\r\\n    function execTransactionFromModule(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes memory data,\\r\\n        Enum.Operation operation\\r\\n    ) external returns (bool success);\\r\\n\\r\\n    /**\\r\\n     * @notice Execute `operation` (0: Call, 1: DelegateCall) to `to` with `value` (Native Token) and return data\\r\\n     * @param to Destination address of module transaction.\\r\\n     * @param value Ether value of module transaction.\\r\\n     * @param data Data payload of module transaction.\\r\\n     * @param operation Operation type of module transaction.\\r\\n     * @return success Boolean flag indicating if the call succeeded.\\r\\n     * @return returnData Data returned by the call.\\r\\n     */\\r\\n    function execTransactionFromModuleReturnData(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes memory data,\\r\\n        Enum.Operation operation\\r\\n    ) external returns (bool success, bytes memory returnData);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns if an module is enabled\\r\\n     * @return True if the module is enabled\\r\\n     */\\r\\n    function isModuleEnabled(address module) external view returns (bool);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns an array of modules.\\r\\n     *         If all entries fit into a single page, the next pointer will be 0x1.\\r\\n     *         If another page is present, next will be the last element of the returned array.\\r\\n     * @param start Start of the page. Has to be a module or start pointer (0x1 address)\\r\\n     * @param pageSize Maximum number of modules that should be returned. Has to be > 0\\r\\n     * @return array Array of modules.\\r\\n     * @return next Start of the next page.\\r\\n     */\\r\\n    function getModulesPaginated(address start, uint256 pageSize) external view returns (address[] memory array, address next);\\r\\n\\r\\n    /**\\r\\n     * @dev Set a module guard that checks transactions initiated by the module before execution\\r\\n     *      This can only be done via a Safe transaction.\\r\\n     *      \\u26a0\\ufe0f IMPORTANT: Since a module guard has full power to block Safe transaction execution initiatied via a module,\\r\\n     *        a broken module guard can cause a denial of service for the Safe modules. Make sure to carefully\\r\\n     *        audit the module guard code and design recovery mechanisms.\\r\\n     * @notice Set Module Guard `moduleGuard` for the Safe. Make sure you trust the module guard.\\r\\n     * @param moduleGuard The address of the module guard to be used or the zero address to disable the module guard.\\r\\n     */\\r\\n    function setModuleGuard(address moduleGuard) external;\\r\\n}\\r\\n\",\"keccak256\":\"0xb4dc05e8a965d5109212a0971c0666d749d11c5ca7420b79f9f93bc55194d141\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/IOwnerManager.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title IOwnerManager - Interface for contract which manages Safe owners and a threshold to authorize transactions.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface IOwnerManager {\\r\\n    event AddedOwner(address indexed owner);\\r\\n    event RemovedOwner(address indexed owner);\\r\\n    event ChangedThreshold(uint256 threshold);\\r\\n\\r\\n    /**\\r\\n     * @notice Adds the owner `owner` to the Safe and updates the threshold to `_threshold`.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param owner New owner address.\\r\\n     * @param _threshold New threshold.\\r\\n     */\\r\\n    function addOwnerWithThreshold(address owner, uint256 _threshold) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Removes the owner `owner` from the Safe and updates the threshold to `_threshold`.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param prevOwner Owner that pointed to the owner to be removed in the linked list\\r\\n     * @param owner Owner address to be removed.\\r\\n     * @param _threshold New threshold.\\r\\n     */\\r\\n    function removeOwner(address prevOwner, address owner, uint256 _threshold) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Replaces the owner `oldOwner` in the Safe with `newOwner`.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param prevOwner Owner that pointed to the owner to be replaced in the linked list\\r\\n     * @param oldOwner Owner address to be replaced.\\r\\n     * @param newOwner New owner address.\\r\\n     */\\r\\n    function swapOwner(address prevOwner, address oldOwner, address newOwner) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Changes the threshold of the Safe to `_threshold`.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param _threshold New threshold.\\r\\n     */\\r\\n    function changeThreshold(uint256 _threshold) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Returns the number of required confirmations for a Safe transaction aka the threshold.\\r\\n     * @return Threshold number.\\r\\n     */\\r\\n    function getThreshold() external view returns (uint256);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns if `owner` is an owner of the Safe.\\r\\n     * @return Boolean if owner is an owner of the Safe.\\r\\n     */\\r\\n    function isOwner(address owner) external view returns (bool);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns a list of Safe owners.\\r\\n     * @return Array of Safe owners.\\r\\n     */\\r\\n    function getOwners() external view returns (address[] memory);\\r\\n}\\r\\n\",\"keccak256\":\"0x80bd294df67adb27ed505dd3b17ef2252514acf738d52593fbd682c3493c9de0\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/ISafe.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\nimport {Enum} from \\\"./../libraries/Enum.sol\\\";\\r\\nimport {IFallbackManager} from \\\"./IFallbackManager.sol\\\";\\r\\nimport {IGuardManager} from \\\"./IGuardManager.sol\\\";\\r\\nimport {IModuleManager} from \\\"./IModuleManager.sol\\\";\\r\\nimport {IOwnerManager} from \\\"./IOwnerManager.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title ISafe - A multisignature wallet interface with support for confirmations using signed messages based on EIP-712.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface ISafe is IModuleManager, IGuardManager, IOwnerManager, IFallbackManager {\\r\\n    event SafeSetup(address indexed initiator, address[] owners, uint256 threshold, address initializer, address fallbackHandler);\\r\\n    event ApproveHash(bytes32 indexed approvedHash, address indexed owner);\\r\\n    event SignMsg(bytes32 indexed msgHash);\\r\\n    event ExecutionFailure(bytes32 indexed txHash, uint256 payment);\\r\\n    event ExecutionSuccess(bytes32 indexed txHash, uint256 payment);\\r\\n\\r\\n    /**\\r\\n     * @notice Sets an initial storage of the Safe contract.\\r\\n     * @dev This method can only be called once.\\r\\n     *      If a proxy was created without setting up, anyone can call setup and claim the proxy.\\r\\n     * @param _owners List of Safe owners.\\r\\n     * @param _threshold Number of required confirmations for a Safe transaction.\\r\\n     * @param to Contract address for optional delegate call.\\r\\n     * @param data Data payload for optional delegate call.\\r\\n     * @param fallbackHandler Handler for fallback calls to this contract\\r\\n     * @param paymentToken Token that should be used for the payment (0 is ETH)\\r\\n     * @param payment Value that should be paid\\r\\n     * @param paymentReceiver Address that should receive the payment (or 0 if tx.origin)\\r\\n     */\\r\\n    function setup(\\r\\n        address[] calldata _owners,\\r\\n        uint256 _threshold,\\r\\n        address to,\\r\\n        bytes calldata data,\\r\\n        address fallbackHandler,\\r\\n        address paymentToken,\\r\\n        uint256 payment,\\r\\n        address payable paymentReceiver\\r\\n    ) external;\\r\\n\\r\\n    /** @notice Executes a `operation` {0: Call, 1: DelegateCall}} transaction to `to` with `value` (Native Currency)\\r\\n     *          and pays `gasPrice` * `gasLimit` in `gasToken` token to `refundReceiver`.\\r\\n     * @dev The fees are always transferred, even if the user transaction fails.\\r\\n     *      This method doesn't perform any sanity check of the transaction, such as:\\r\\n     *      - if the contract at `to` address has code or not\\r\\n     *      - if the `gasToken` is a contract or not\\r\\n     *      It is the responsibility of the caller to perform such checks.\\r\\n     * @param to Destination address of Safe transaction.\\r\\n     * @param value Ether value of Safe transaction.\\r\\n     * @param data Data payload of Safe transaction.\\r\\n     * @param operation Operation type of Safe transaction.\\r\\n     * @param safeTxGas Gas that should be used for the Safe transaction.\\r\\n     * @param baseGas Gas costs that are independent of the transaction execution(e.g. base transaction fee, signature check, payment of the refund)\\r\\n     * @param gasPrice Gas price that should be used for the payment calculation.\\r\\n     * @param gasToken Token address (or 0 if ETH) that is used for the payment.\\r\\n     * @param refundReceiver Address of receiver of gas payment (or 0 if tx.origin).\\r\\n     * @param signatures Signature data that should be verified.\\r\\n     *                   Can be packed ECDSA signature ({bytes32 r}{bytes32 s}{uint8 v}), contract signature (EIP-1271) or approved hash.\\r\\n     * @return success Boolean indicating transaction's success.\\r\\n     */\\r\\n    function execTransaction(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes calldata data,\\r\\n        Enum.Operation operation,\\r\\n        uint256 safeTxGas,\\r\\n        uint256 baseGas,\\r\\n        uint256 gasPrice,\\r\\n        address gasToken,\\r\\n        address payable refundReceiver,\\r\\n        bytes memory signatures\\r\\n    ) external payable returns (bool success);\\r\\n\\r\\n    /**\\r\\n     * @notice Checks whether the signature provided is valid for the provided data and hash. Reverts otherwise.\\r\\n     * @param dataHash Hash of the data (could be either a message hash or transaction hash)\\r\\n     * @param signatures Signature data that should be verified.\\r\\n     *                   Can be packed ECDSA signature ({bytes32 r}{bytes32 s}{uint8 v}), contract signature (EIP-1271) or approved hash.\\r\\n     */\\r\\n    function checkSignatures(bytes32 dataHash, bytes memory signatures) external view;\\r\\n\\r\\n    /**\\r\\n     * @notice Checks whether the signature provided is valid for the provided data and hash. Reverts otherwise.\\r\\n     * @dev Since the EIP-1271 does an external call, be mindful of reentrancy attacks.\\r\\n     * @param executor Address that executing the transaction.\\r\\n     *        \\u26a0\\ufe0f\\u26a0\\ufe0f\\u26a0\\ufe0f Make sure that the executor address is a legitmate executor.\\r\\n     *        Incorrectly passed the executor might reduce the threshold by 1 signature. \\u26a0\\ufe0f\\u26a0\\ufe0f\\u26a0\\ufe0f\\r\\n     * @param dataHash Hash of the data (could be either a message hash or transaction hash)\\r\\n     * @param signatures Signature data that should be verified.\\r\\n     *                   Can be packed ECDSA signature ({bytes32 r}{bytes32 s}{uint8 v}), contract signature (EIP-1271) or approved hash.\\r\\n     * @param requiredSignatures Amount of required valid signatures.\\r\\n     */\\r\\n    function checkNSignatures(address executor, bytes32 dataHash, bytes memory signatures, uint256 requiredSignatures) external view;\\r\\n\\r\\n    /**\\r\\n     * @notice Marks hash `hashToApprove` as approved.\\r\\n     * @dev This can be used with a pre-approved hash transaction signature.\\r\\n     *      IMPORTANT: The approved hash stays approved forever. There's no revocation mechanism, so it behaves similarly to ECDSA signatures\\r\\n     * @param hashToApprove The hash to mark as approved for signatures that are verified by this contract.\\r\\n     */\\r\\n    function approveHash(bytes32 hashToApprove) external;\\r\\n\\r\\n    /**\\r\\n     * @dev Returns the domain separator for this contract, as defined in the EIP-712 standard.\\r\\n     * @return bytes32 The domain separator hash.\\r\\n     */\\r\\n    function domainSeparator() external view returns (bytes32);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns transaction hash to be signed by owners.\\r\\n     * @param to Destination address.\\r\\n     * @param value Ether value.\\r\\n     * @param data Data payload.\\r\\n     * @param operation Operation type.\\r\\n     * @param safeTxGas Gas that should be used for the safe transaction.\\r\\n     * @param baseGas Gas costs for data used to trigger the safe transaction.\\r\\n     * @param gasPrice Maximum gas price that should be used for this transaction.\\r\\n     * @param gasToken Token address (or 0 if ETH) that is used for the payment.\\r\\n     * @param refundReceiver Address of receiver of gas payment (or 0 if tx.origin).\\r\\n     * @param _nonce Transaction nonce.\\r\\n     * @return Transaction hash.\\r\\n     */\\r\\n    function getTransactionHash(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes calldata data,\\r\\n        Enum.Operation operation,\\r\\n        uint256 safeTxGas,\\r\\n        uint256 baseGas,\\r\\n        uint256 gasPrice,\\r\\n        address gasToken,\\r\\n        address refundReceiver,\\r\\n        uint256 _nonce\\r\\n    ) external view returns (bytes32);\\r\\n\\r\\n    /**\\r\\n     * External getter function for state variables.\\r\\n     */\\r\\n\\r\\n    /**\\r\\n     * @notice Returns the version of the Safe contract.\\r\\n     * @return Version string.\\r\\n     */\\r\\n    // solhint-disable-next-line\\r\\n    function VERSION() external view returns (string memory);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns the nonce of the Safe contract.\\r\\n     * @return Nonce.\\r\\n     */\\r\\n    function nonce() external view returns (uint256);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns a uint if the messageHash is signed by the owner.\\r\\n     * @param messageHash Hash of message that should be checked.\\r\\n     * @return Number denoting if an owner signed the hash.\\r\\n     */\\r\\n    function signedMessages(bytes32 messageHash) external view returns (uint256);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns a uint if the messageHash is approved by the owner.\\r\\n     * @param owner Owner address that should be checked.\\r\\n     * @param messageHash Hash of message that should be checked.\\r\\n     * @return Number denoting if an owner approved the hash.\\r\\n     */\\r\\n    function approvedHashes(address owner, bytes32 messageHash) external view returns (uint256);\\r\\n}\\r\\n\",\"keccak256\":\"0x7b68615030245afc1acba44d5bd450caecfd23d3fadc7bbc577c36d7dbdd9b09\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/ISignatureValidator.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\n/* solhint-disable one-contract-per-file */\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\ncontract ISignatureValidatorConstants {\\r\\n    // bytes4(keccak256(\\\"isValidSignature(bytes32,bytes)\\\")\\r\\n    bytes4 internal constant EIP1271_MAGIC_VALUE = 0x1626ba7e;\\r\\n}\\r\\n\\r\\nabstract contract ISignatureValidator is ISignatureValidatorConstants {\\r\\n    /**\\r\\n     * @notice EIP1271 method to validate a signature.\\r\\n     * @param _hash Hash of the data signed on the behalf of address(this).\\r\\n     * @param _signature Signature byte array associated with _data.\\r\\n     *\\r\\n     * MUST return the bytes4 magic value 0x1626ba7e when function passes.\\r\\n     * MUST NOT modify state (using STATICCALL for solc < 0.5, view modifier for solc > 0.5)\\r\\n     * MUST allow external calls\\r\\n     */\\r\\n    function isValidSignature(bytes32 _hash, bytes memory _signature) external view virtual returns (bytes4);\\r\\n}\\r\\n\",\"keccak256\":\"0x0df2e45e7b8464031c36d86f2015339611615b0371ffdf76d46df94d5e0c8217\",\"license\":\"LGPL-3.0-only\"},\"contracts/libraries/Enum.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title Enum - Collection of enums used in Safe Smart Account contracts.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\nlibrary Enum {\\r\\n    enum Operation {\\r\\n        Call,\\r\\n        DelegateCall\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x5eed8ff46d1411dd7f9485efeb69fdfca53ba516e8c5b67a71e7bea59904f920\",\"license\":\"LGPL-3.0-only\"}},\"version\":1}",
+  "bytecode": "0x608060405234601957604051610e5261001f8239610e5290f35b600080fdfe6080604052600436101561001257600080fd5b60003560e01c806223de29146100c157806301ffc9a7146100bc5780630a1028c4146100b7578063150b7a02146100b25780631626ba7e146100ad57806323031640146100a85780636ac24784146100a3578063b2494df31461009e578063bc197c8114610099578063bd61951d146100945763f23a6e61036100e757610743565b6106c8565b61068c565b6105b1565b61051a565b6104f2565b61041d565b6103ae565b610334565b61021c565b6101bf565b6001600160a01b031690565b90565b6001600160a01b0381165b036100e757565b600080fd5b905035906100f9826100d5565b565b806100e0565b905035906100f9826100fb565b909182601f830112156100e7578135916001600160401b0383116100e75760200192600183028401116100e757565b60c0818303126100e75761015182826100ec565b9261015f83602084016100ec565b9261016d81604085016100ec565b9261017b8260608301610101565b9260808201356001600160401b0381116100e7578361019b91840161010e565b92909360a08201356001600160401b0381116100e7576101bb920161010e565b9091565b346100e7576101cf36600461013d565b50505050505050506101e060405190565b80805b0390f35b6001600160e01b031981166100e0565b905035906100f9826101e7565b906020828203126100e7576100d2916101f7565b9052565b346100e7576101e3610237610232366004610204565b610765565b60405191829182901515815260200190565b634e487b7160e01b600052604160045260246000fd5b90601f01601f191681019081106001600160401b0382111761028057604052565b610249565b906100f961029260405190565b928361025f565b6001600160401b03811161028057602090601f01601f19160190565b0190565b90826000939282370152565b909291926102da6102d582610299565b610285565b93818552818301116100e7576100f99160208501906102b9565b9080601f830112156100e7578160206100d2933591016102c5565b906020828203126100e75781356001600160401b0381116100e7576100d292016102f4565b346100e7576101e361034f61034a36600461030f565b6107e4565b6040519182918290815260200190565b906080828203126100e75761037481836100ec565b9261038282602085016100ec565b926103908360408301610101565b9260608201356001600160401b0381116100e7576101bb920161010e565b346100e7576101e36103cd6103c436600461035f565b9392909261081e565b604051918291826001600160e01b0319909116815260200190565b9190916040818403126100e7576103ff8382610101565b9260208201356001600160401b0381116100e7576101bb920161010e565b346100e7576101e36103cd6104333660046103e8565b916108f6565b6001600160a01b0381166100e0565b905035906100f982610439565b9190916040818403126100e75761046c8382610448565b9260208201356001600160401b0381116100e7576100d292016102f4565b60005b83811061049d5750506000910152565b818101518382015260200161048d565b6104ce6104d76020936102b5936104c2815190565b80835293849260200190565b9586910161048a565b601f01601f191690565b60208082526100d2929101906104ad565b346100e7576101e361050e610508366004610455565b90610af7565b604051918291826104e1565b346100e7576101e361034f610530366004610455565b90610bf7565b60009103126100e757565b9061056161055a610550845190565b8084529260200190565b9260200190565b9060005b8181106105725750505090565b90919261059861059160019286516001600160a01b0316815260200190565b9460200190565b929101610565565b60208082526100d292910190610541565b346100e7576105c1366004610536565b6101e36105cc610d19565b604051918291826105a0565b909182601f830112156100e7578135916001600160401b0383116100e75760200192602083028401116100e757565b9160a0838303126100e75761061c82846100ec565b9261062a83602083016100ec565b9260408201356001600160401b0381116100e7578161064a9184016105d8565b92909360608201356001600160401b0381116100e7578361066c9184016105d8565b92909360808201356001600160401b0381116100e7576101bb920161010e565b346100e7576101e36103cd6106a2366004610607565b96959095949194939293610d8e565b9190916040818403126100e7576103ff83826100ec565b346100e7576101e361050e6106de3660046106b1565b91610dac565b91909160a0818403126100e7576106fb83826100ec565b9261070981602084016100ec565b926107178260408501610101565b926107258360608301610101565b9260808201356001600160401b0381116100e7576101bb920161010e565b346100e7576101e36103cd6107593660046106e4565b94939093929192610e00565b630271189760e51b6001600160e01b03198216149081156107a3575b811561078b575090565b6301ffc9a760e01b91506001600160e01b0319161490565b6001600160e01b03198116630a85bd0160e11b149150610781565b6100d2906100c6906001600160a01b031682565b6100d2906107be565b6100d2906107d2565b6100d2906107f96107f4336107db565b6107db565b610bf7565b61081161080b6100d29290565b60e01b90565b6001600160e01b03191690565b505050505061082b600090565b506100d263150b7a026107fe565b6100d26100d26100d29290565b91906104d78161085d816102b59560209181520190565b80956102b9565b9081526040602082018190526100d293910191610846565b6040513d6000823e3d90fd5b905051906100f9826100fb565b906020828203126100e7576100d291610888565b156108b057565b60405162461bcd60e51b815260206004820152601160248201527012185cda081b9bdd08185c1c1c9bdd9959607a1b6044820152606490fd5b6100d2631626ba7e6107fe565b91906109356109076107f4336107db565b9361092f61091460405190565b60208101928352918290604082015b9081038252038261025f565b84610af7565b610947610940825190565b9160200190565b20908260009361095d61095986610839565b9190565b03610a05575050602090610973610994946107db565b60405194859283918291635ae6bd3760e01b83526004830190815260200190565b03915afa908115610a00576109bf926000926109c7575b506109596109b891610839565b14156108a9565b6100d26108e9565b6109b89192506109f16109599160203d6020116109f9575b6109e9818361025f565b810190610895565b9291506109ab565b503d6109df565b61087c565b909293610a11906107db565b803b156100e757610a41938593610a2760405190565b9586948593849363ed516d5160e01b855260048501610864565b03915afa8015610a0057610a57575b50506109bf565b81610a7692903d10610a7d575b610a6e818361025f565b810190610536565b3880610a50565b503d610a64565b6100d27f60b3cbf8b4a223d68d641b3b6ddf9a298e7f33710cf3d3a9d1146b5a6150fbca610839565b9081526040810192916100f99160200152565b610ad3610acd6100d29290565b60f81b90565b6001600160f81b03191690565b0180926001600160f81b0319169052565b01918252565b90610b3561092391610b07606090565b50610b10610a84565b90610b1c610940825190565b2090610b2760405190565b938492602084019283610aad565b610b40610940825190565b2090610b4c6019610ac0565b90610b60610b5a6001610ac0565b916107db565b916020610b6c60405190565b63f698da2560e01b815293849060049082905afa928315610a0057600093610bd0575b506109236100d29394610ba160405190565b95869460208601948592610af160016102b594610af18288610ae060209b9a8c996001600160f81b0319169052565b6100d29350610bf06109239160203d6020116109f9576109e9818361025f565b9350610b8f565b610c019190610af7565b610c0c610940825190565b2090565b6100c66100d26100d29290565b6100d290610c10565b6100d26001610c1d565b6001600160401b0381116102805760208091020190565b905051906100f9826100d5565b90929192610c646102d582610c30565b93818552602080860192028301928184116100e757915b838310610c885750505050565b60208091610c968486610c47565b815201920191610c7b565b9080601f830112156100e75781516100d292602001610c54565b91906040838203126100e7578251906001600160401b0382116100e7576020610ce9826100d2948701610ca1565b9401610c47565b61021890610839565b6001600160a01b0390911681526040810192916100f99160200190610cf0565b610d596000600a610d2f6107f46107f4336107db565b610d37610c26565b604051809581948293610d4e63cc2f845260e01b90565b845260048401610cf9565b03915afa908115610a0057600091610d6f575090565b610d8a913d8091833e610d82818361025f565b810190610cbb565b5090565b5050505050505050610d9e600090565b506100d263bc197c816107fe565b505050610db7606090565b506020600060405163b4faba0960e01b815260043603600480830137369082335af15060203d0390604051918083016040526020833e60005115610df757565b50602081519101fd5b505050505050610e0e600090565b506100d263f23a6e616107fe56fea264697066735822122054745734ca3c8e93c9fbce52893817a33fe45ed860cc8f45d9b9b26d39d3a0ec64736f6c634300081b0033",
+  "deployedBytecode": "0x6080604052600436101561001257600080fd5b60003560e01c806223de29146100c157806301ffc9a7146100bc5780630a1028c4146100b7578063150b7a02146100b25780631626ba7e146100ad57806323031640146100a85780636ac24784146100a3578063b2494df31461009e578063bc197c8114610099578063bd61951d146100945763f23a6e61036100e757610743565b6106c8565b61068c565b6105b1565b61051a565b6104f2565b61041d565b6103ae565b610334565b61021c565b6101bf565b6001600160a01b031690565b90565b6001600160a01b0381165b036100e757565b600080fd5b905035906100f9826100d5565b565b806100e0565b905035906100f9826100fb565b909182601f830112156100e7578135916001600160401b0383116100e75760200192600183028401116100e757565b60c0818303126100e75761015182826100ec565b9261015f83602084016100ec565b9261016d81604085016100ec565b9261017b8260608301610101565b9260808201356001600160401b0381116100e7578361019b91840161010e565b92909360a08201356001600160401b0381116100e7576101bb920161010e565b9091565b346100e7576101cf36600461013d565b50505050505050506101e060405190565b80805b0390f35b6001600160e01b031981166100e0565b905035906100f9826101e7565b906020828203126100e7576100d2916101f7565b9052565b346100e7576101e3610237610232366004610204565b610765565b60405191829182901515815260200190565b634e487b7160e01b600052604160045260246000fd5b90601f01601f191681019081106001600160401b0382111761028057604052565b610249565b906100f961029260405190565b928361025f565b6001600160401b03811161028057602090601f01601f19160190565b0190565b90826000939282370152565b909291926102da6102d582610299565b610285565b93818552818301116100e7576100f99160208501906102b9565b9080601f830112156100e7578160206100d2933591016102c5565b906020828203126100e75781356001600160401b0381116100e7576100d292016102f4565b346100e7576101e361034f61034a36600461030f565b6107e4565b6040519182918290815260200190565b906080828203126100e75761037481836100ec565b9261038282602085016100ec565b926103908360408301610101565b9260608201356001600160401b0381116100e7576101bb920161010e565b346100e7576101e36103cd6103c436600461035f565b9392909261081e565b604051918291826001600160e01b0319909116815260200190565b9190916040818403126100e7576103ff8382610101565b9260208201356001600160401b0381116100e7576101bb920161010e565b346100e7576101e36103cd6104333660046103e8565b916108f6565b6001600160a01b0381166100e0565b905035906100f982610439565b9190916040818403126100e75761046c8382610448565b9260208201356001600160401b0381116100e7576100d292016102f4565b60005b83811061049d5750506000910152565b818101518382015260200161048d565b6104ce6104d76020936102b5936104c2815190565b80835293849260200190565b9586910161048a565b601f01601f191690565b60208082526100d2929101906104ad565b346100e7576101e361050e610508366004610455565b90610af7565b604051918291826104e1565b346100e7576101e361034f610530366004610455565b90610bf7565b60009103126100e757565b9061056161055a610550845190565b8084529260200190565b9260200190565b9060005b8181106105725750505090565b90919261059861059160019286516001600160a01b0316815260200190565b9460200190565b929101610565565b60208082526100d292910190610541565b346100e7576105c1366004610536565b6101e36105cc610d19565b604051918291826105a0565b909182601f830112156100e7578135916001600160401b0383116100e75760200192602083028401116100e757565b9160a0838303126100e75761061c82846100ec565b9261062a83602083016100ec565b9260408201356001600160401b0381116100e7578161064a9184016105d8565b92909360608201356001600160401b0381116100e7578361066c9184016105d8565b92909360808201356001600160401b0381116100e7576101bb920161010e565b346100e7576101e36103cd6106a2366004610607565b96959095949194939293610d8e565b9190916040818403126100e7576103ff83826100ec565b346100e7576101e361050e6106de3660046106b1565b91610dac565b91909160a0818403126100e7576106fb83826100ec565b9261070981602084016100ec565b926107178260408501610101565b926107258360608301610101565b9260808201356001600160401b0381116100e7576101bb920161010e565b346100e7576101e36103cd6107593660046106e4565b94939093929192610e00565b630271189760e51b6001600160e01b03198216149081156107a3575b811561078b575090565b6301ffc9a760e01b91506001600160e01b0319161490565b6001600160e01b03198116630a85bd0160e11b149150610781565b6100d2906100c6906001600160a01b031682565b6100d2906107be565b6100d2906107d2565b6100d2906107f96107f4336107db565b6107db565b610bf7565b61081161080b6100d29290565b60e01b90565b6001600160e01b03191690565b505050505061082b600090565b506100d263150b7a026107fe565b6100d26100d26100d29290565b91906104d78161085d816102b59560209181520190565b80956102b9565b9081526040602082018190526100d293910191610846565b6040513d6000823e3d90fd5b905051906100f9826100fb565b906020828203126100e7576100d291610888565b156108b057565b60405162461bcd60e51b815260206004820152601160248201527012185cda081b9bdd08185c1c1c9bdd9959607a1b6044820152606490fd5b6100d2631626ba7e6107fe565b91906109356109076107f4336107db565b9361092f61091460405190565b60208101928352918290604082015b9081038252038261025f565b84610af7565b610947610940825190565b9160200190565b20908260009361095d61095986610839565b9190565b03610a05575050602090610973610994946107db565b60405194859283918291635ae6bd3760e01b83526004830190815260200190565b03915afa908115610a00576109bf926000926109c7575b506109596109b891610839565b14156108a9565b6100d26108e9565b6109b89192506109f16109599160203d6020116109f9575b6109e9818361025f565b810190610895565b9291506109ab565b503d6109df565b61087c565b909293610a11906107db565b803b156100e757610a41938593610a2760405190565b9586948593849363ed516d5160e01b855260048501610864565b03915afa8015610a0057610a57575b50506109bf565b81610a7692903d10610a7d575b610a6e818361025f565b810190610536565b3880610a50565b503d610a64565b6100d27f60b3cbf8b4a223d68d641b3b6ddf9a298e7f33710cf3d3a9d1146b5a6150fbca610839565b9081526040810192916100f99160200152565b610ad3610acd6100d29290565b60f81b90565b6001600160f81b03191690565b0180926001600160f81b0319169052565b01918252565b90610b3561092391610b07606090565b50610b10610a84565b90610b1c610940825190565b2090610b2760405190565b938492602084019283610aad565b610b40610940825190565b2090610b4c6019610ac0565b90610b60610b5a6001610ac0565b916107db565b916020610b6c60405190565b63f698da2560e01b815293849060049082905afa928315610a0057600093610bd0575b506109236100d29394610ba160405190565b95869460208601948592610af160016102b594610af18288610ae060209b9a8c996001600160f81b0319169052565b6100d29350610bf06109239160203d6020116109f9576109e9818361025f565b9350610b8f565b610c019190610af7565b610c0c610940825190565b2090565b6100c66100d26100d29290565b6100d290610c10565b6100d26001610c1d565b6001600160401b0381116102805760208091020190565b905051906100f9826100d5565b90929192610c646102d582610c30565b93818552602080860192028301928184116100e757915b838310610c885750505050565b60208091610c968486610c47565b815201920191610c7b565b9080601f830112156100e75781516100d292602001610c54565b91906040838203126100e7578251906001600160401b0382116100e7576020610ce9826100d2948701610ca1565b9401610c47565b61021890610839565b6001600160a01b0390911681526040810192916100f99160200190610cf0565b610d596000600a610d2f6107f46107f4336107db565b610d37610c26565b604051809581948293610d4e63cc2f845260e01b90565b845260048401610cf9565b03915afa908115610a0057600091610d6f575090565b610d8a913d8091833e610d82818361025f565b810190610cbb565b5090565b5050505050505050610d9e600090565b506100d263bc197c816107fe565b505050610db7606090565b506020600060405163b4faba0960e01b815260043603600480830137369082335af15060203d0390604051918083016040526020833e60005115610df757565b50602081519101fd5b505050505050610e0e600090565b506100d263f23a6e616107fe56fea264697066735822122054745734ca3c8e93c9fbce52893817a33fe45ed860cc8f45d9b9b26d39d3a0ec64736f6c634300081b0033",
+  "devdoc": {
+    "author": "Richard Meissner - @rmeissner",
+    "kind": "dev",
+    "methods": {
+      "encodeMessageDataForSafe(address,bytes)": {
+        "details": "Returns the pre-image of the message hash (see getMessageHashForSafe).",
+        "params": {
+          "message": "Message that should be encoded.",
+          "safe": "Safe to which the message is targeted."
+        },
+        "returns": {
+          "_0": "Encoded message."
+        }
+      },
+      "getMessageHash(bytes)": {
+        "details": "Returns the hash of a message to be signed by owners.",
+        "params": {
+          "message": "Raw message bytes."
+        },
+        "returns": {
+          "_0": "Message hash."
+        }
+      },
+      "getMessageHashForSafe(address,bytes)": {
+        "details": "Returns hash of a message that can be signed by owners.",
+        "params": {
+          "message": "Message that should be hashed.",
+          "safe": "Safe to which the message is targeted."
+        },
+        "returns": {
+          "_0": "Message hash."
+        }
+      },
+      "getModules()": {
+        "details": "Returns array of first 10 modules.",
+        "returns": {
+          "_0": "Array of modules."
+        }
+      },
+      "isValidSignature(bytes32,bytes)": {
+        "params": {
+          "_dataHash": "Hash of the data signed on the behalf of address(msg.sender)",
+          "_signature": "Signature byte array associated with _dataHash"
+        },
+        "returns": {
+          "_0": "Updated EIP1271 magic value if signature is valid, otherwise 0x0"
+        }
+      },
+      "simulate(address,bytes)": {
+        "details": "Performs a delegatecall on a targetContract in the context of self. Internally reverts execution to avoid side effects (making it static). Catches revert and returns encoded result as bytes.Inspired by https://github.com/gnosis/util-contracts/blob/bb5fe5fb5df6d8400998094fb1b32a178a47c3a1/contracts/StorageAccessible.sol",
+        "params": {
+          "calldataPayload": "Calldata that should be sent to the target contract (encoded method name and arguments).",
+          "targetContract": "Address of the contract containing the code to execute."
+        }
+      },
+      "supportsInterface(bytes4)": {
+        "params": {
+          "interfaceId": "Id of the interface."
+        },
+        "returns": {
+          "_0": "if the interface is supported."
+        }
+      }
+    },
+    "title": "Compatibility Fallback Handler - Provides compatibility between pre 1.3.0 and 1.3.0+ Safe Smart Account contracts.",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "isValidSignature(bytes32,bytes)": {
+        "notice": "Implementation of updated EIP-1271 signature validation method."
+      },
+      "onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)": {
+        "notice": "Handles ERC1155 Token batch callback. return Standardized onERC1155BatchReceived return value."
+      },
+      "onERC1155Received(address,address,uint256,uint256,bytes)": {
+        "notice": "Handles ERC1155 Token callback. return Standardized onERC1155Received return value."
+      },
+      "onERC721Received(address,address,uint256,bytes)": {
+        "notice": "Handles ERC721 Token callback.  return Standardized onERC721Received return value."
+      },
+      "supportsInterface(bytes4)": {
+        "notice": "Implements ERC165 interface support for ERC1155TokenReceiver, ERC721TokenReceiver and IERC165."
+      },
+      "tokensReceived(address,address,address,uint256,bytes,bytes)": {
+        "notice": "Handles ERC777 Token callback. return nothing (not standardized)"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

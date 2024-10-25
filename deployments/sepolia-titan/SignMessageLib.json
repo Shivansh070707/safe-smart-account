@@ -1,0 +1,218 @@
+{
+  "address": "0x44200D6e8Af1da58656F0E4866e44599596d2481",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "msgHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "SignMsg",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "message",
+          "type": "bytes"
+        }
+      ],
+      "name": "getMessageHash",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "signMessage",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x9d9f6f803c2e149f8ec179135c714d844a1619bfddf599eadcd5aae5b98d9c6b",
+  "receipt": {
+    "to": "0x97A23639dbce0507Ee466741AAb1A6BD4EB7a38c",
+    "from": "0x98e2ee7DcBDEBFE5E3D51f9136f938c88A7D63F3",
+    "contractAddress": null,
+    "transactionIndex": 0,
+    "gasUsed": "308512",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x10690d1d0a6cbd49874675bd5b5ffa505f5a7a19559061cb478659edba90e423",
+    "transactionHash": "0x9d9f6f803c2e149f8ec179135c714d844a1619bfddf599eadcd5aae5b98d9c6b",
+    "logs": [],
+    "blockNumber": 15796,
+    "cumulativeGasUsed": "308512",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "d6372cac540e87137b93d1ade6e31ca3",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.27+commit.40a35a09\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"msgHash\",\"type\":\"bytes32\"}],\"name\":\"SignMsg\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"message\",\"type\":\"bytes\"}],\"name\":\"getMessageHash\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"signMessage\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Richard Meissner - @rmeissner\",\"kind\":\"dev\",\"methods\":{\"getMessageHash(bytes)\":{\"details\":\"Returns hash of a message that can be signed by owners.\",\"params\":{\"message\":\"Message that should be hashed.\"},\"returns\":{\"_0\":\"Message hash.\"}},\"signMessage(bytes)\":{\"details\":\"Can be verified using EIP-1271 validation method by passing the pre-image of the message hash and empty bytes as the signature.\",\"params\":{\"_data\":\"Arbitrary length data that should be marked as signed on the behalf of address(this).\"}}},\"title\":\"SignMessageLib - Allows to sign messages on-chain by writing the signed message hashes on-chain.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"signMessage(bytes)\":{\"notice\":\"Marks a message (`_data`) as signed.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/libraries/SignMessageLib.sol\":\"SignMessageLib\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"details\":{\"constantOptimizer\":true,\"cse\":true,\"deduplicate\":true,\"inliner\":true,\"jumpdestRemover\":true,\"orderLiterals\":true,\"peephole\":true,\"simpleCounterForLoopUncheckedIncrement\":true,\"yul\":true,\"yulDetails\":{\"optimizerSteps\":\":fDnTOcmuO\",\"stackAllocation\":true}},\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"contracts/interfaces/IFallbackManager.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title IFallbackManager - A contract interface managing fallback calls made to this contract.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface IFallbackManager {\\r\\n    event ChangedFallbackHandler(address indexed handler);\\r\\n\\r\\n    /**\\r\\n     * @notice Set Fallback Handler to `handler` for the Safe.\\r\\n     * @dev Only fallback calls without value and with data will be forwarded.\\r\\n     *      This can only be done via a Safe transaction.\\r\\n     *      Cannot be set to the Safe itself.\\r\\n     * @param handler contract to handle fallback calls.\\r\\n     */\\r\\n    function setFallbackHandler(address handler) external;\\r\\n}\\r\\n\",\"keccak256\":\"0xac140e71f4d9518982b27ccd9370d3d41c767f21bcef45a6bdd69785612d0e9b\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/IGuardManager.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\n/* solhint-disable one-contract-per-file */\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title IGuardManager - A contract interface managing transaction guards which perform pre and post-checks on Safe transactions.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface IGuardManager {\\r\\n    event ChangedGuard(address indexed guard);\\r\\n\\r\\n    /**\\r\\n     * @dev Set a guard that checks transactions before execution\\r\\n     *      This can only be done via a Safe transaction.\\r\\n     *      \\u26a0\\ufe0f IMPORTANT: Since a guard has full power to block Safe transaction execution,\\r\\n     *        a broken guard can cause a denial of service for the Safe. Make sure to carefully\\r\\n     *        audit the guard code and design recovery mechanisms.\\r\\n     * @notice Set Transaction Guard `guard` for the Safe. Make sure you trust the guard.\\r\\n     * @param guard The address of the guard to be used or the 0 address to disable the guard\\r\\n     */\\r\\n    function setGuard(address guard) external;\\r\\n}\\r\\n\",\"keccak256\":\"0x01f0c2ce0a38046de929195363684c15bcd579159e8c2fc3123b6710d5f0fe27\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/IModuleManager.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\nimport {Enum} from \\\"../libraries/Enum.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title IModuleManager - An interface of contract managing Safe modules\\r\\n * @notice Modules are extensions with unlimited access to a Safe that can be added to a Safe by its owners.\\r\\n           \\u26a0\\ufe0f WARNING: Modules are a security risk since they can execute arbitrary transactions, \\r\\n           so only trusted and audited modules should be added to a Safe. A malicious module can\\r\\n           completely takeover a Safe.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface IModuleManager {\\r\\n    event EnabledModule(address indexed module);\\r\\n    event DisabledModule(address indexed module);\\r\\n    event ExecutionFromModuleSuccess(address indexed module);\\r\\n    event ExecutionFromModuleFailure(address indexed module);\\r\\n    event ChangedModuleGuard(address indexed moduleGuard);\\r\\n\\r\\n    /**\\r\\n     * @notice Enables the module `module` for the Safe.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param module Module to be whitelisted.\\r\\n     */\\r\\n    function enableModule(address module) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Disables the module `module` for the Safe.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param prevModule Previous module in the modules linked list.\\r\\n     * @param module Module to be removed.\\r\\n     */\\r\\n    function disableModule(address prevModule, address module) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Execute `operation` (0: Call, 1: DelegateCall) to `to` with `value` (Native Token)\\r\\n     * @param to Destination address of module transaction.\\r\\n     * @param value Ether value of module transaction.\\r\\n     * @param data Data payload of module transaction.\\r\\n     * @param operation Operation type of module transaction.\\r\\n     * @return success Boolean flag indicating if the call succeeded.\\r\\n     */\\r\\n    function execTransactionFromModule(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes memory data,\\r\\n        Enum.Operation operation\\r\\n    ) external returns (bool success);\\r\\n\\r\\n    /**\\r\\n     * @notice Execute `operation` (0: Call, 1: DelegateCall) to `to` with `value` (Native Token) and return data\\r\\n     * @param to Destination address of module transaction.\\r\\n     * @param value Ether value of module transaction.\\r\\n     * @param data Data payload of module transaction.\\r\\n     * @param operation Operation type of module transaction.\\r\\n     * @return success Boolean flag indicating if the call succeeded.\\r\\n     * @return returnData Data returned by the call.\\r\\n     */\\r\\n    function execTransactionFromModuleReturnData(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes memory data,\\r\\n        Enum.Operation operation\\r\\n    ) external returns (bool success, bytes memory returnData);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns if an module is enabled\\r\\n     * @return True if the module is enabled\\r\\n     */\\r\\n    function isModuleEnabled(address module) external view returns (bool);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns an array of modules.\\r\\n     *         If all entries fit into a single page, the next pointer will be 0x1.\\r\\n     *         If another page is present, next will be the last element of the returned array.\\r\\n     * @param start Start of the page. Has to be a module or start pointer (0x1 address)\\r\\n     * @param pageSize Maximum number of modules that should be returned. Has to be > 0\\r\\n     * @return array Array of modules.\\r\\n     * @return next Start of the next page.\\r\\n     */\\r\\n    function getModulesPaginated(address start, uint256 pageSize) external view returns (address[] memory array, address next);\\r\\n\\r\\n    /**\\r\\n     * @dev Set a module guard that checks transactions initiated by the module before execution\\r\\n     *      This can only be done via a Safe transaction.\\r\\n     *      \\u26a0\\ufe0f IMPORTANT: Since a module guard has full power to block Safe transaction execution initiatied via a module,\\r\\n     *        a broken module guard can cause a denial of service for the Safe modules. Make sure to carefully\\r\\n     *        audit the module guard code and design recovery mechanisms.\\r\\n     * @notice Set Module Guard `moduleGuard` for the Safe. Make sure you trust the module guard.\\r\\n     * @param moduleGuard The address of the module guard to be used or the zero address to disable the module guard.\\r\\n     */\\r\\n    function setModuleGuard(address moduleGuard) external;\\r\\n}\\r\\n\",\"keccak256\":\"0xb4dc05e8a965d5109212a0971c0666d749d11c5ca7420b79f9f93bc55194d141\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/IOwnerManager.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title IOwnerManager - Interface for contract which manages Safe owners and a threshold to authorize transactions.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface IOwnerManager {\\r\\n    event AddedOwner(address indexed owner);\\r\\n    event RemovedOwner(address indexed owner);\\r\\n    event ChangedThreshold(uint256 threshold);\\r\\n\\r\\n    /**\\r\\n     * @notice Adds the owner `owner` to the Safe and updates the threshold to `_threshold`.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param owner New owner address.\\r\\n     * @param _threshold New threshold.\\r\\n     */\\r\\n    function addOwnerWithThreshold(address owner, uint256 _threshold) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Removes the owner `owner` from the Safe and updates the threshold to `_threshold`.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param prevOwner Owner that pointed to the owner to be removed in the linked list\\r\\n     * @param owner Owner address to be removed.\\r\\n     * @param _threshold New threshold.\\r\\n     */\\r\\n    function removeOwner(address prevOwner, address owner, uint256 _threshold) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Replaces the owner `oldOwner` in the Safe with `newOwner`.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param prevOwner Owner that pointed to the owner to be replaced in the linked list\\r\\n     * @param oldOwner Owner address to be replaced.\\r\\n     * @param newOwner New owner address.\\r\\n     */\\r\\n    function swapOwner(address prevOwner, address oldOwner, address newOwner) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Changes the threshold of the Safe to `_threshold`.\\r\\n     * @dev This can only be done via a Safe transaction.\\r\\n     * @param _threshold New threshold.\\r\\n     */\\r\\n    function changeThreshold(uint256 _threshold) external;\\r\\n\\r\\n    /**\\r\\n     * @notice Returns the number of required confirmations for a Safe transaction aka the threshold.\\r\\n     * @return Threshold number.\\r\\n     */\\r\\n    function getThreshold() external view returns (uint256);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns if `owner` is an owner of the Safe.\\r\\n     * @return Boolean if owner is an owner of the Safe.\\r\\n     */\\r\\n    function isOwner(address owner) external view returns (bool);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns a list of Safe owners.\\r\\n     * @return Array of Safe owners.\\r\\n     */\\r\\n    function getOwners() external view returns (address[] memory);\\r\\n}\\r\\n\",\"keccak256\":\"0x80bd294df67adb27ed505dd3b17ef2252514acf738d52593fbd682c3493c9de0\",\"license\":\"LGPL-3.0-only\"},\"contracts/interfaces/ISafe.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\nimport {Enum} from \\\"./../libraries/Enum.sol\\\";\\r\\nimport {IFallbackManager} from \\\"./IFallbackManager.sol\\\";\\r\\nimport {IGuardManager} from \\\"./IGuardManager.sol\\\";\\r\\nimport {IModuleManager} from \\\"./IModuleManager.sol\\\";\\r\\nimport {IOwnerManager} from \\\"./IOwnerManager.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title ISafe - A multisignature wallet interface with support for confirmations using signed messages based on EIP-712.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\ninterface ISafe is IModuleManager, IGuardManager, IOwnerManager, IFallbackManager {\\r\\n    event SafeSetup(address indexed initiator, address[] owners, uint256 threshold, address initializer, address fallbackHandler);\\r\\n    event ApproveHash(bytes32 indexed approvedHash, address indexed owner);\\r\\n    event SignMsg(bytes32 indexed msgHash);\\r\\n    event ExecutionFailure(bytes32 indexed txHash, uint256 payment);\\r\\n    event ExecutionSuccess(bytes32 indexed txHash, uint256 payment);\\r\\n\\r\\n    /**\\r\\n     * @notice Sets an initial storage of the Safe contract.\\r\\n     * @dev This method can only be called once.\\r\\n     *      If a proxy was created without setting up, anyone can call setup and claim the proxy.\\r\\n     * @param _owners List of Safe owners.\\r\\n     * @param _threshold Number of required confirmations for a Safe transaction.\\r\\n     * @param to Contract address for optional delegate call.\\r\\n     * @param data Data payload for optional delegate call.\\r\\n     * @param fallbackHandler Handler for fallback calls to this contract\\r\\n     * @param paymentToken Token that should be used for the payment (0 is ETH)\\r\\n     * @param payment Value that should be paid\\r\\n     * @param paymentReceiver Address that should receive the payment (or 0 if tx.origin)\\r\\n     */\\r\\n    function setup(\\r\\n        address[] calldata _owners,\\r\\n        uint256 _threshold,\\r\\n        address to,\\r\\n        bytes calldata data,\\r\\n        address fallbackHandler,\\r\\n        address paymentToken,\\r\\n        uint256 payment,\\r\\n        address payable paymentReceiver\\r\\n    ) external;\\r\\n\\r\\n    /** @notice Executes a `operation` {0: Call, 1: DelegateCall}} transaction to `to` with `value` (Native Currency)\\r\\n     *          and pays `gasPrice` * `gasLimit` in `gasToken` token to `refundReceiver`.\\r\\n     * @dev The fees are always transferred, even if the user transaction fails.\\r\\n     *      This method doesn't perform any sanity check of the transaction, such as:\\r\\n     *      - if the contract at `to` address has code or not\\r\\n     *      - if the `gasToken` is a contract or not\\r\\n     *      It is the responsibility of the caller to perform such checks.\\r\\n     * @param to Destination address of Safe transaction.\\r\\n     * @param value Ether value of Safe transaction.\\r\\n     * @param data Data payload of Safe transaction.\\r\\n     * @param operation Operation type of Safe transaction.\\r\\n     * @param safeTxGas Gas that should be used for the Safe transaction.\\r\\n     * @param baseGas Gas costs that are independent of the transaction execution(e.g. base transaction fee, signature check, payment of the refund)\\r\\n     * @param gasPrice Gas price that should be used for the payment calculation.\\r\\n     * @param gasToken Token address (or 0 if ETH) that is used for the payment.\\r\\n     * @param refundReceiver Address of receiver of gas payment (or 0 if tx.origin).\\r\\n     * @param signatures Signature data that should be verified.\\r\\n     *                   Can be packed ECDSA signature ({bytes32 r}{bytes32 s}{uint8 v}), contract signature (EIP-1271) or approved hash.\\r\\n     * @return success Boolean indicating transaction's success.\\r\\n     */\\r\\n    function execTransaction(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes calldata data,\\r\\n        Enum.Operation operation,\\r\\n        uint256 safeTxGas,\\r\\n        uint256 baseGas,\\r\\n        uint256 gasPrice,\\r\\n        address gasToken,\\r\\n        address payable refundReceiver,\\r\\n        bytes memory signatures\\r\\n    ) external payable returns (bool success);\\r\\n\\r\\n    /**\\r\\n     * @notice Checks whether the signature provided is valid for the provided data and hash. Reverts otherwise.\\r\\n     * @param dataHash Hash of the data (could be either a message hash or transaction hash)\\r\\n     * @param signatures Signature data that should be verified.\\r\\n     *                   Can be packed ECDSA signature ({bytes32 r}{bytes32 s}{uint8 v}), contract signature (EIP-1271) or approved hash.\\r\\n     */\\r\\n    function checkSignatures(bytes32 dataHash, bytes memory signatures) external view;\\r\\n\\r\\n    /**\\r\\n     * @notice Checks whether the signature provided is valid for the provided data and hash. Reverts otherwise.\\r\\n     * @dev Since the EIP-1271 does an external call, be mindful of reentrancy attacks.\\r\\n     * @param executor Address that executing the transaction.\\r\\n     *        \\u26a0\\ufe0f\\u26a0\\ufe0f\\u26a0\\ufe0f Make sure that the executor address is a legitmate executor.\\r\\n     *        Incorrectly passed the executor might reduce the threshold by 1 signature. \\u26a0\\ufe0f\\u26a0\\ufe0f\\u26a0\\ufe0f\\r\\n     * @param dataHash Hash of the data (could be either a message hash or transaction hash)\\r\\n     * @param signatures Signature data that should be verified.\\r\\n     *                   Can be packed ECDSA signature ({bytes32 r}{bytes32 s}{uint8 v}), contract signature (EIP-1271) or approved hash.\\r\\n     * @param requiredSignatures Amount of required valid signatures.\\r\\n     */\\r\\n    function checkNSignatures(address executor, bytes32 dataHash, bytes memory signatures, uint256 requiredSignatures) external view;\\r\\n\\r\\n    /**\\r\\n     * @notice Marks hash `hashToApprove` as approved.\\r\\n     * @dev This can be used with a pre-approved hash transaction signature.\\r\\n     *      IMPORTANT: The approved hash stays approved forever. There's no revocation mechanism, so it behaves similarly to ECDSA signatures\\r\\n     * @param hashToApprove The hash to mark as approved for signatures that are verified by this contract.\\r\\n     */\\r\\n    function approveHash(bytes32 hashToApprove) external;\\r\\n\\r\\n    /**\\r\\n     * @dev Returns the domain separator for this contract, as defined in the EIP-712 standard.\\r\\n     * @return bytes32 The domain separator hash.\\r\\n     */\\r\\n    function domainSeparator() external view returns (bytes32);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns transaction hash to be signed by owners.\\r\\n     * @param to Destination address.\\r\\n     * @param value Ether value.\\r\\n     * @param data Data payload.\\r\\n     * @param operation Operation type.\\r\\n     * @param safeTxGas Gas that should be used for the safe transaction.\\r\\n     * @param baseGas Gas costs for data used to trigger the safe transaction.\\r\\n     * @param gasPrice Maximum gas price that should be used for this transaction.\\r\\n     * @param gasToken Token address (or 0 if ETH) that is used for the payment.\\r\\n     * @param refundReceiver Address of receiver of gas payment (or 0 if tx.origin).\\r\\n     * @param _nonce Transaction nonce.\\r\\n     * @return Transaction hash.\\r\\n     */\\r\\n    function getTransactionHash(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes calldata data,\\r\\n        Enum.Operation operation,\\r\\n        uint256 safeTxGas,\\r\\n        uint256 baseGas,\\r\\n        uint256 gasPrice,\\r\\n        address gasToken,\\r\\n        address refundReceiver,\\r\\n        uint256 _nonce\\r\\n    ) external view returns (bytes32);\\r\\n\\r\\n    /**\\r\\n     * External getter function for state variables.\\r\\n     */\\r\\n\\r\\n    /**\\r\\n     * @notice Returns the version of the Safe contract.\\r\\n     * @return Version string.\\r\\n     */\\r\\n    // solhint-disable-next-line\\r\\n    function VERSION() external view returns (string memory);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns the nonce of the Safe contract.\\r\\n     * @return Nonce.\\r\\n     */\\r\\n    function nonce() external view returns (uint256);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns a uint if the messageHash is signed by the owner.\\r\\n     * @param messageHash Hash of message that should be checked.\\r\\n     * @return Number denoting if an owner signed the hash.\\r\\n     */\\r\\n    function signedMessages(bytes32 messageHash) external view returns (uint256);\\r\\n\\r\\n    /**\\r\\n     * @notice Returns a uint if the messageHash is approved by the owner.\\r\\n     * @param owner Owner address that should be checked.\\r\\n     * @param messageHash Hash of message that should be checked.\\r\\n     * @return Number denoting if an owner approved the hash.\\r\\n     */\\r\\n    function approvedHashes(address owner, bytes32 messageHash) external view returns (uint256);\\r\\n}\\r\\n\",\"keccak256\":\"0x7b68615030245afc1acba44d5bd450caecfd23d3fadc7bbc577c36d7dbdd9b09\",\"license\":\"LGPL-3.0-only\"},\"contracts/libraries/Enum.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title Enum - Collection of enums used in Safe Smart Account contracts.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\nlibrary Enum {\\r\\n    enum Operation {\\r\\n        Call,\\r\\n        DelegateCall\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x5eed8ff46d1411dd7f9485efeb69fdfca53ba516e8c5b67a71e7bea59904f920\",\"license\":\"LGPL-3.0-only\"},\"contracts/libraries/SafeStorage.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title SafeStorage - Storage layout of the Safe Smart Account contracts to be used in libraries.\\r\\n * @dev Should be always the first base contract of a library that is used with a Safe.\\r\\n * @author Richard Meissner - @rmeissner\\r\\n */\\r\\ncontract SafeStorage {\\r\\n    // From /common/Singleton.sol\\r\\n    address internal singleton;\\r\\n    // From /common/ModuleManager.sol\\r\\n    mapping(address => address) internal modules;\\r\\n    // From /common/OwnerManager.sol\\r\\n    mapping(address => address) internal owners;\\r\\n    uint256 internal ownerCount;\\r\\n    uint256 internal threshold;\\r\\n\\r\\n    // From /Safe.sol\\r\\n    uint256 internal nonce;\\r\\n    bytes32 internal _deprecatedDomainSeparator;\\r\\n    mapping(bytes32 => uint256) internal signedMessages;\\r\\n    mapping(address => mapping(bytes32 => uint256)) internal approvedHashes;\\r\\n}\\r\\n\",\"keccak256\":\"0xa5c6f39d070cc6ee83e45ad2789d55e69005c21ceb21ae87b743a44eeb8641c4\",\"license\":\"LGPL-3.0-only\"},\"contracts/libraries/SignMessageLib.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\nimport {ISafe} from \\\"./../interfaces/ISafe.sol\\\";\\r\\nimport {SafeStorage} from \\\"./SafeStorage.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title SignMessageLib - Allows to sign messages on-chain by writing the signed message hashes on-chain.\\r\\n * @author Richard Meissner - @rmeissner\\r\\n */\\r\\ncontract SignMessageLib is SafeStorage {\\r\\n    // keccak256(\\\"SafeMessage(bytes message)\\\");\\r\\n    bytes32 private constant SAFE_MSG_TYPEHASH = 0x60b3cbf8b4a223d68d641b3b6ddf9a298e7f33710cf3d3a9d1146b5a6150fbca;\\r\\n\\r\\n    event SignMsg(bytes32 indexed msgHash);\\r\\n\\r\\n    /**\\r\\n     * @notice Marks a message (`_data`) as signed.\\r\\n     * @dev Can be verified using EIP-1271 validation method by passing the pre-image of the message hash and empty bytes as the signature.\\r\\n     * @param _data Arbitrary length data that should be marked as signed on the behalf of address(this).\\r\\n     */\\r\\n    function signMessage(bytes calldata _data) external {\\r\\n        bytes32 msgHash = getMessageHash(_data);\\r\\n        signedMessages[msgHash] = 1;\\r\\n        emit SignMsg(msgHash);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @dev Returns hash of a message that can be signed by owners.\\r\\n     * @param message Message that should be hashed.\\r\\n     * @return Message hash.\\r\\n     */\\r\\n    function getMessageHash(bytes memory message) public view returns (bytes32) {\\r\\n        bytes32 safeMessageHash = keccak256(abi.encode(SAFE_MSG_TYPEHASH, keccak256(message)));\\r\\n        return keccak256(abi.encodePacked(bytes1(0x19), bytes1(0x01), ISafe(payable(address(this))).domainSeparator(), safeMessageHash));\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0xdeb382025e7254131227e1527faf81307e11f847c655774e84ce4d22713f039e\",\"license\":\"LGPL-3.0-only\"}},\"version\":1}",
+  "bytecode": "0x60806040523460195760405161049b61001f823961049b90f35b600080fdfe6080604052600436101561001257600080fd5b60003560e01c80630a1028c414610032576385a5affe036100e6576101b8565b61012f565b634e487b7160e01b600052604160045260246000fd5b90601f01601f1916810190811067ffffffffffffffff82111761006f57604052565b610037565b9061008861008160405190565b928361004d565b565b67ffffffffffffffff811161006f57602090601f01601f19160190565b0190565b90826000939282370152565b909291926100cc6100c78261008a565b610074565b93818552818301116100e6576100889160208501906100ab565b600080fd5b9080601f830112156100e657816020610106933591016100b7565b90565b906020828203126100e657813567ffffffffffffffff81116100e65761010692016100eb565b346100e65761015a61014a610145366004610109565b6102a4565b6040519182918290815260200190565b0390f35b909182601f830112156100e65781359167ffffffffffffffff83116100e65760200192600183028401116100e657565b906020828203126100e657813567ffffffffffffffff81116100e6576101b4920161015e565b9091565b346100e6576101d16101cb36600461018e565b90610405565b604051005b6101066101066101069290565b6101067f60b3cbf8b4a223d68d641b3b6ddf9a298e7f33710cf3d3a9d1146b5a6150fbca6101d6565b9081526040810192916100889160200152565b61023261022c6101069290565b60f81b90565b6001600160f81b03191690565b61010690610253906001600160a01b031682565b6001600160a01b031690565b6101069061023f565b6101069061025f565b906020828203126100e657505190565b6040513d6000823e3d90fd5b0180926001600160f81b0319169052565b01918252565b6102f46102e8916102b3600090565b506102bc6101e3565b906102cf6102c8825190565b9160200190565b20906102da60405190565b93849260208401928361020c565b9081038252038261004d565b6102ff6102c8825190565b2061030a601961021f565b610314600161021f565b61032b61032661032661032630610268565b610268565b91602061033760405190565b63f698da2560e01b815293849060049082905afa9283156103e1576000936103aa575b506102e861039b939461036c60405190565b9586946020860194859261029e60016100a79461029e828861028d60209b9a8c996001600160f81b0319169052565b6103a66102c8825190565b2090565b61039b93506103d36102e89160203d6020116103da575b6103cb818361004d565b810190610271565b935061035a565b503d6103c1565b610281565b6101069136916100b7565b90610106610106610401926101d6565b9055565b61014561043592610415926103e6565b61010661042260016101d6565b60008381526007602052604090206103f1565b7fe7f4675038f4f6034dfcbbb24c4dc08e4ebf10eb9d257d3d02c0f38d122ac6e461045f60405190565b600090a256fea2646970667358221220fa499f4f680d3788309e261c3194689c91b2b6d8e820dcc5e21fe8e74b3c910664736f6c634300081b0033",
+  "deployedBytecode": "0x6080604052600436101561001257600080fd5b60003560e01c80630a1028c414610032576385a5affe036100e6576101b8565b61012f565b634e487b7160e01b600052604160045260246000fd5b90601f01601f1916810190811067ffffffffffffffff82111761006f57604052565b610037565b9061008861008160405190565b928361004d565b565b67ffffffffffffffff811161006f57602090601f01601f19160190565b0190565b90826000939282370152565b909291926100cc6100c78261008a565b610074565b93818552818301116100e6576100889160208501906100ab565b600080fd5b9080601f830112156100e657816020610106933591016100b7565b90565b906020828203126100e657813567ffffffffffffffff81116100e65761010692016100eb565b346100e65761015a61014a610145366004610109565b6102a4565b6040519182918290815260200190565b0390f35b909182601f830112156100e65781359167ffffffffffffffff83116100e65760200192600183028401116100e657565b906020828203126100e657813567ffffffffffffffff81116100e6576101b4920161015e565b9091565b346100e6576101d16101cb36600461018e565b90610405565b604051005b6101066101066101069290565b6101067f60b3cbf8b4a223d68d641b3b6ddf9a298e7f33710cf3d3a9d1146b5a6150fbca6101d6565b9081526040810192916100889160200152565b61023261022c6101069290565b60f81b90565b6001600160f81b03191690565b61010690610253906001600160a01b031682565b6001600160a01b031690565b6101069061023f565b6101069061025f565b906020828203126100e657505190565b6040513d6000823e3d90fd5b0180926001600160f81b0319169052565b01918252565b6102f46102e8916102b3600090565b506102bc6101e3565b906102cf6102c8825190565b9160200190565b20906102da60405190565b93849260208401928361020c565b9081038252038261004d565b6102ff6102c8825190565b2061030a601961021f565b610314600161021f565b61032b61032661032661032630610268565b610268565b91602061033760405190565b63f698da2560e01b815293849060049082905afa9283156103e1576000936103aa575b506102e861039b939461036c60405190565b9586946020860194859261029e60016100a79461029e828861028d60209b9a8c996001600160f81b0319169052565b6103a66102c8825190565b2090565b61039b93506103d36102e89160203d6020116103da575b6103cb818361004d565b810190610271565b935061035a565b503d6103c1565b610281565b6101069136916100b7565b90610106610106610401926101d6565b9055565b61014561043592610415926103e6565b61010661042260016101d6565b60008381526007602052604090206103f1565b7fe7f4675038f4f6034dfcbbb24c4dc08e4ebf10eb9d257d3d02c0f38d122ac6e461045f60405190565b600090a256fea2646970667358221220fa499f4f680d3788309e261c3194689c91b2b6d8e820dcc5e21fe8e74b3c910664736f6c634300081b0033",
+  "devdoc": {
+    "author": "Richard Meissner - @rmeissner",
+    "kind": "dev",
+    "methods": {
+      "getMessageHash(bytes)": {
+        "details": "Returns hash of a message that can be signed by owners.",
+        "params": {
+          "message": "Message that should be hashed."
+        },
+        "returns": {
+          "_0": "Message hash."
+        }
+      },
+      "signMessage(bytes)": {
+        "details": "Can be verified using EIP-1271 validation method by passing the pre-image of the message hash and empty bytes as the signature.",
+        "params": {
+          "_data": "Arbitrary length data that should be marked as signed on the behalf of address(this)."
+        }
+      }
+    },
+    "title": "SignMessageLib - Allows to sign messages on-chain by writing the signed message hashes on-chain.",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "signMessage(bytes)": {
+        "notice": "Marks a message (`_data`) as signed."
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 6142,
+        "contract": "contracts/libraries/SignMessageLib.sol:SignMessageLib",
+        "label": "singleton",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 6146,
+        "contract": "contracts/libraries/SignMessageLib.sol:SignMessageLib",
+        "label": "modules",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_address)"
+      },
+      {
+        "astId": 6150,
+        "contract": "contracts/libraries/SignMessageLib.sol:SignMessageLib",
+        "label": "owners",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_address,t_address)"
+      },
+      {
+        "astId": 6152,
+        "contract": "contracts/libraries/SignMessageLib.sol:SignMessageLib",
+        "label": "ownerCount",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 6154,
+        "contract": "contracts/libraries/SignMessageLib.sol:SignMessageLib",
+        "label": "threshold",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 6156,
+        "contract": "contracts/libraries/SignMessageLib.sol:SignMessageLib",
+        "label": "nonce",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 6158,
+        "contract": "contracts/libraries/SignMessageLib.sol:SignMessageLib",
+        "label": "_deprecatedDomainSeparator",
+        "offset": 0,
+        "slot": "6",
+        "type": "t_bytes32"
+      },
+      {
+        "astId": 6162,
+        "contract": "contracts/libraries/SignMessageLib.sol:SignMessageLib",
+        "label": "signedMessages",
+        "offset": 0,
+        "slot": "7",
+        "type": "t_mapping(t_bytes32,t_uint256)"
+      },
+      {
+        "astId": 6168,
+        "contract": "contracts/libraries/SignMessageLib.sol:SignMessageLib",
+        "label": "approvedHashes",
+        "offset": 0,
+        "slot": "8",
+        "type": "t_mapping(t_address,t_mapping(t_bytes32,t_uint256))"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_address,t_address)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => address)",
+        "numberOfBytes": "32",
+        "value": "t_address"
+      },
+      "t_mapping(t_address,t_mapping(t_bytes32,t_uint256))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(bytes32 => uint256))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_bytes32,t_uint256)"
+      },
+      "t_mapping(t_bytes32,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

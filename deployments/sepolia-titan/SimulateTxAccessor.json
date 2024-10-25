@@ -1,0 +1,112 @@
+{
+  "address": "0xB9496a0f1e36b16Fa1AF52A22319907E27E39C74",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        },
+        {
+          "internalType": "enum Enum.Operation",
+          "name": "operation",
+          "type": "uint8"
+        }
+      ],
+      "name": "simulate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "estimate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "success",
+          "type": "bool"
+        },
+        {
+          "internalType": "bytes",
+          "name": "returnData",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xba650cb06d0a0f4a3c8405f37568e4446f5073fca915837ae74f8f3a60f43d08",
+  "receipt": {
+    "to": "0x97A23639dbce0507Ee466741AAb1A6BD4EB7a38c",
+    "from": "0x98e2ee7DcBDEBFE5E3D51f9136f938c88A7D63F3",
+    "contractAddress": null,
+    "transactionIndex": 0,
+    "gasUsed": "309201",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x37a061eb368be7c3dd0558d9d3ba0cca55fb8e8a9e120e123559e9329e432f21",
+    "transactionHash": "0xba650cb06d0a0f4a3c8405f37568e4446f5073fca915837ae74f8f3a60f43d08",
+    "logs": [],
+    "blockNumber": 15789,
+    "cumulativeGasUsed": "309201",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "d6372cac540e87137b93d1ade6e31ca3",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.27+commit.40a35a09\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"},{\"internalType\":\"enum Enum.Operation\",\"name\":\"operation\",\"type\":\"uint8\"}],\"name\":\"simulate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"estimate\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"},{\"internalType\":\"bytes\",\"name\":\"returnData\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Richard Meissner - @rmeissner\",\"kind\":\"dev\",\"methods\":{\"simulate(address,uint256,bytes,uint8)\":{\"details\":\"Executes the specified operation {Call, DelegateCall} and returns operation-specific data.      Has to be called via delegatecall.      This returns the data equal to `abi.encode(uint256(estimate), bool(success), bytes(returnData))`.      Specifically, the returndata will be:      `estimate:uint256 || success:bool || returnData.length:uint256 || returnData:bytes`.\",\"params\":{\"data\":\"Data payload.\",\"operation\":\"Operation type {Call, DelegateCall}.\",\"to\":\"Destination address .\",\"value\":\"Native token value.\"},\"returns\":{\"estimate\":\"Gas used.\",\"returnData\":\"Return data.\",\"success\":\"Success boolean value.\"}}},\"title\":\"Simulate Transaction Accessor.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"simulate(address,uint256,bytes,uint8)\":{\"notice\":\"Simulates a Safe transaction and returns the used gas, success boolean and the return data.\"}},\"notice\":\"Can be used with StorageAccessible to simulate Safe transactions.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/accessors/SimulateTxAccessor.sol\":\"SimulateTxAccessor\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"details\":{\"constantOptimizer\":true,\"cse\":true,\"deduplicate\":true,\"inliner\":true,\"jumpdestRemover\":true,\"orderLiterals\":true,\"peephole\":true,\"simpleCounterForLoopUncheckedIncrement\":true,\"yul\":true,\"yulDetails\":{\"optimizerSteps\":\":fDnTOcmuO\",\"stackAllocation\":true}},\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"contracts/accessors/SimulateTxAccessor.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\nimport {Executor, Enum} from \\\"../base/Executor.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title Simulate Transaction Accessor.\\r\\n * @notice Can be used with StorageAccessible to simulate Safe transactions.\\r\\n * @author Richard Meissner - @rmeissner\\r\\n */\\r\\ncontract SimulateTxAccessor is Executor {\\r\\n    address private immutable ACCESSOR_SINGLETON;\\r\\n\\r\\n    constructor() {\\r\\n        ACCESSOR_SINGLETON = address(this);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Modifier to make a function callable via delegatecall only.\\r\\n     * If the function is called via a regular call, it will revert.\\r\\n     */\\r\\n    modifier onlyDelegateCall() {\\r\\n        require(address(this) != ACCESSOR_SINGLETON, \\\"SimulateTxAccessor should only be called via delegatecall\\\");\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Simulates a Safe transaction and returns the used gas, success boolean and the return data.\\r\\n     * @dev Executes the specified operation {Call, DelegateCall} and returns operation-specific data.\\r\\n     *      Has to be called via delegatecall.\\r\\n     *      This returns the data equal to `abi.encode(uint256(estimate), bool(success), bytes(returnData))`.\\r\\n     *      Specifically, the returndata will be:\\r\\n     *      `estimate:uint256 || success:bool || returnData.length:uint256 || returnData:bytes`.\\r\\n     * @param to Destination address .\\r\\n     * @param value Native token value.\\r\\n     * @param data Data payload.\\r\\n     * @param operation Operation type {Call, DelegateCall}.\\r\\n     * @return estimate Gas used.\\r\\n     * @return success Success boolean value.\\r\\n     * @return returnData Return data.\\r\\n     */\\r\\n    function simulate(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes calldata data,\\r\\n        Enum.Operation operation\\r\\n    ) external onlyDelegateCall returns (uint256 estimate, bool success, bytes memory returnData) {\\r\\n        uint256 startGas = gasleft();\\r\\n        success = execute(to, value, data, operation, gasleft());\\r\\n        estimate = startGas - gasleft();\\r\\n        /* solhint-disable no-inline-assembly */\\r\\n        /// @solidity memory-safe-assembly\\r\\n        assembly {\\r\\n            // Load free memory location\\r\\n            let ptr := mload(0x40)\\r\\n            // We allocate memory for the return data by setting the free memory location to\\r\\n            // current free memory location + data size + 32 bytes for data size value\\r\\n            mstore(0x40, add(ptr, add(returndatasize(), 0x20)))\\r\\n            // Store the size\\r\\n            mstore(ptr, returndatasize())\\r\\n            // Store the data\\r\\n            returndatacopy(add(ptr, 0x20), 0, returndatasize())\\r\\n            // Point the return data to the correct memory location\\r\\n            returnData := ptr\\r\\n        }\\r\\n        /* solhint-enable no-inline-assembly */\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x0db2c7b759fba7c70b8546f13940481b3152f18f27adcb42da1e8e300f0de2d8\",\"license\":\"LGPL-3.0-only\"},\"contracts/base/Executor.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\nimport {Enum} from \\\"../libraries/Enum.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title Executor - A contract that can execute transactions\\r\\n * @author Richard Meissner - @rmeissner\\r\\n */\\r\\nabstract contract Executor {\\r\\n    /**\\r\\n     * @notice Executes either a delegatecall or a call with provided parameters.\\r\\n     * @dev This method doesn't perform any sanity check of the transaction, such as:\\r\\n     *      - if the contract at `to` address has code or not\\r\\n     *      It is the responsibility of the caller to perform such checks.\\r\\n     * @param to Destination address.\\r\\n     * @param value Ether value.\\r\\n     * @param data Data payload.\\r\\n     * @param operation Operation type.\\r\\n     * @return success boolean flag indicating if the call succeeded.\\r\\n     */\\r\\n    function execute(\\r\\n        address to,\\r\\n        uint256 value,\\r\\n        bytes memory data,\\r\\n        Enum.Operation operation,\\r\\n        uint256 txGas\\r\\n    ) internal returns (bool success) {\\r\\n        if (operation == Enum.Operation.DelegateCall) {\\r\\n            /* solhint-disable no-inline-assembly */\\r\\n            /// @solidity memory-safe-assembly\\r\\n            assembly {\\r\\n                success := delegatecall(txGas, to, add(data, 0x20), mload(data), 0, 0)\\r\\n            }\\r\\n            /* solhint-enable no-inline-assembly */\\r\\n        } else {\\r\\n            /* solhint-disable no-inline-assembly */\\r\\n            /// @solidity memory-safe-assembly\\r\\n            assembly {\\r\\n                success := call(txGas, to, value, add(data, 0x20), mload(data), 0, 0)\\r\\n            }\\r\\n            /* solhint-enable no-inline-assembly */\\r\\n        }\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0xca682e0704aa08a06c02555635005ccae50ef369debf6a47309c5795af1fcd5b\",\"license\":\"LGPL-3.0-only\"},\"contracts/libraries/Enum.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title Enum - Collection of enums used in Safe Smart Account contracts.\\r\\n * @author @safe-global/safe-protocol\\r\\n */\\r\\nlibrary Enum {\\r\\n    enum Operation {\\r\\n        Call,\\r\\n        DelegateCall\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x5eed8ff46d1411dd7f9485efeb69fdfca53ba516e8c5b67a71e7bea59904f920\",\"license\":\"LGPL-3.0-only\"}},\"version\":1}",
+  "bytecode": "0x60a060405234602857600e605c565b60405161049a610069823960805181610282015261049a90f35b600080fd5b603f906042906001600160a01b031682565b90565b6001600160a01b031690565b603f90602d565b603f90604e565b6063306055565b60805256fe6080604052600436101561001257600080fd5b60003560e01c631c5fb2110361004857610194565b6001600160a01b031690565b90565b6001600160a01b0381165b0361004857565b600080fd5b9050359061005a82610036565b565b80610041565b9050359061005a8261005c565b909182601f830112156100485781359167ffffffffffffffff831161004857602001926001830284011161004857565b6002111561004857565b9050359061005a8261009f565b919091608081840312610048576100cd838261004d565b926100db8160208401610062565b92604083013567ffffffffffffffff8111610048578261010260609461003393870161006f565b949095016100a9565b60005b83811061011e5750506000910152565b818101518382015260200161010e565b61014f61015860209361016293610143815190565b80835293849260200190565b9586910161010b565b601f01601f191690565b0190565b61018761003394929361017e60608401956000850152565b15156020830152565b604081840391015261012e565b34610048576101c26101b36101aa3660046100b6565b939290926103e2565b60405191939193849384610166565b0390f35b61003390610027906001600160a01b031682565b610033906101c6565b610033906101da565b156101f357565b60405162461bcd60e51b815260206004820152603960248201527f53696d756c61746554784163636573736f722073686f756c64206f6e6c79206260448201527f652063616c6c6564207669612064656c656761746563616c6c000000000000006064820152608490fd5b906102bb979695949392916102b6610275306101e3565b6102af6001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016916001600160a01b031690565b14156101ec565b61039c565b909192565b634e487b7160e01b600052604160045260246000fd5b90601f01601f1916810190811067ffffffffffffffff8211176102f857604052565b6102c0565b9061005a61030a60405190565b92836102d6565b67ffffffffffffffff81116102f857602090601f01601f19160190565b90826000939282370152565b9092919261034f61034a82610311565b6102fd565b93818552818301116100485761005a91602085019061032e565b61003391369161033a565b634e487b7160e01b600052601160045260246000fd5b9190820391821161039757565b610374565b916103bf9594916103c7979894935050506103b95a975a95610369565b91610423565b915a9061038a565b9160405160203d0181016040523d81523d6000602083013e90565b6102bb9493929190606060008061025e565b634e487b7160e01b600052602160045260246000fd5b6002111561041457565b6103f4565b9061005a8261040a565b600094918594610431600090565b5061044561043f6001610419565b91610419565b148514610458575060208351930191f490565b9060208451940192f19056fea26469706673582212206884ea0aaab6d2559a19636fcd92ac0cda5334738e232ebcca01c48992eddaa764736f6c634300081b0033",
+  "deployedBytecode": "0x6080604052600436101561001257600080fd5b60003560e01c631c5fb2110361004857610194565b6001600160a01b031690565b90565b6001600160a01b0381165b0361004857565b600080fd5b9050359061005a82610036565b565b80610041565b9050359061005a8261005c565b909182601f830112156100485781359167ffffffffffffffff831161004857602001926001830284011161004857565b6002111561004857565b9050359061005a8261009f565b919091608081840312610048576100cd838261004d565b926100db8160208401610062565b92604083013567ffffffffffffffff8111610048578261010260609461003393870161006f565b949095016100a9565b60005b83811061011e5750506000910152565b818101518382015260200161010e565b61014f61015860209361016293610143815190565b80835293849260200190565b9586910161010b565b601f01601f191690565b0190565b61018761003394929361017e60608401956000850152565b15156020830152565b604081840391015261012e565b34610048576101c26101b36101aa3660046100b6565b939290926103e2565b60405191939193849384610166565b0390f35b61003390610027906001600160a01b031682565b610033906101c6565b610033906101da565b156101f357565b60405162461bcd60e51b815260206004820152603960248201527f53696d756c61746554784163636573736f722073686f756c64206f6e6c79206260448201527f652063616c6c6564207669612064656c656761746563616c6c000000000000006064820152608490fd5b906102bb979695949392916102b6610275306101e3565b6102af6001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016916001600160a01b031690565b14156101ec565b61039c565b909192565b634e487b7160e01b600052604160045260246000fd5b90601f01601f1916810190811067ffffffffffffffff8211176102f857604052565b6102c0565b9061005a61030a60405190565b92836102d6565b67ffffffffffffffff81116102f857602090601f01601f19160190565b90826000939282370152565b9092919261034f61034a82610311565b6102fd565b93818552818301116100485761005a91602085019061032e565b61003391369161033a565b634e487b7160e01b600052601160045260246000fd5b9190820391821161039757565b610374565b916103bf9594916103c7979894935050506103b95a975a95610369565b91610423565b915a9061038a565b9160405160203d0181016040523d81523d6000602083013e90565b6102bb9493929190606060008061025e565b634e487b7160e01b600052602160045260246000fd5b6002111561041457565b6103f4565b9061005a8261040a565b600094918594610431600090565b5061044561043f6001610419565b91610419565b148514610458575060208351930191f490565b9060208451940192f19056fea26469706673582212206884ea0aaab6d2559a19636fcd92ac0cda5334738e232ebcca01c48992eddaa764736f6c634300081b0033",
+  "devdoc": {
+    "author": "Richard Meissner - @rmeissner",
+    "kind": "dev",
+    "methods": {
+      "simulate(address,uint256,bytes,uint8)": {
+        "details": "Executes the specified operation {Call, DelegateCall} and returns operation-specific data.      Has to be called via delegatecall.      This returns the data equal to `abi.encode(uint256(estimate), bool(success), bytes(returnData))`.      Specifically, the returndata will be:      `estimate:uint256 || success:bool || returnData.length:uint256 || returnData:bytes`.",
+        "params": {
+          "data": "Data payload.",
+          "operation": "Operation type {Call, DelegateCall}.",
+          "to": "Destination address .",
+          "value": "Native token value."
+        },
+        "returns": {
+          "estimate": "Gas used.",
+          "returnData": "Return data.",
+          "success": "Success boolean value."
+        }
+      }
+    },
+    "title": "Simulate Transaction Accessor.",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "simulate(address,uint256,bytes,uint8)": {
+        "notice": "Simulates a Safe transaction and returns the used gas, success boolean and the return data."
+      }
+    },
+    "notice": "Can be used with StorageAccessible to simulate Safe transactions.",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

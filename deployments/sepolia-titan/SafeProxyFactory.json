@@ -1,0 +1,225 @@
+{
+  "address": "0x3D207bc26A87A1B40D7a9afDf5aFCf76d63dDD67",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "contract SafeProxy",
+          "name": "proxy",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "singleton",
+          "type": "address"
+        }
+      ],
+      "name": "ProxyCreation",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_singleton",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "initializer",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "saltNonce",
+          "type": "uint256"
+        }
+      ],
+      "name": "createChainSpecificProxyWithNonce",
+      "outputs": [
+        {
+          "internalType": "contract SafeProxy",
+          "name": "proxy",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_singleton",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "initializer",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "saltNonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "contract IProxyCreationCallback",
+          "name": "callback",
+          "type": "address"
+        }
+      ],
+      "name": "createProxyWithCallback",
+      "outputs": [
+        {
+          "internalType": "contract SafeProxy",
+          "name": "proxy",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_singleton",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "initializer",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "saltNonce",
+          "type": "uint256"
+        }
+      ],
+      "name": "createProxyWithNonce",
+      "outputs": [
+        {
+          "internalType": "contract SafeProxy",
+          "name": "proxy",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getChainId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "proxyCreationCode",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x435f9e4af4d7da1e2556efc3e54c9076ba1e9418534ec8426c002d5694ecd68b",
+  "receipt": {
+    "to": "0x97A23639dbce0507Ee466741AAb1A6BD4EB7a38c",
+    "from": "0x98e2ee7DcBDEBFE5E3D51f9136f938c88A7D63F3",
+    "contractAddress": null,
+    "transactionIndex": 0,
+    "gasUsed": "626534",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x1046a106569673d1ed28328fb39db45636dbfb54a240f8f34332507cadc20083",
+    "transactionHash": "0x435f9e4af4d7da1e2556efc3e54c9076ba1e9418534ec8426c002d5694ecd68b",
+    "logs": [],
+    "blockNumber": 15790,
+    "cumulativeGasUsed": "626534",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "d6372cac540e87137b93d1ade6e31ca3",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.27+commit.40a35a09\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"contract SafeProxy\",\"name\":\"proxy\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"singleton\",\"type\":\"address\"}],\"name\":\"ProxyCreation\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_singleton\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"initializer\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"saltNonce\",\"type\":\"uint256\"}],\"name\":\"createChainSpecificProxyWithNonce\",\"outputs\":[{\"internalType\":\"contract SafeProxy\",\"name\":\"proxy\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_singleton\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"initializer\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"saltNonce\",\"type\":\"uint256\"},{\"internalType\":\"contract IProxyCreationCallback\",\"name\":\"callback\",\"type\":\"address\"}],\"name\":\"createProxyWithCallback\",\"outputs\":[{\"internalType\":\"contract SafeProxy\",\"name\":\"proxy\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_singleton\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"initializer\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"saltNonce\",\"type\":\"uint256\"}],\"name\":\"createProxyWithNonce\",\"outputs\":[{\"internalType\":\"contract SafeProxy\",\"name\":\"proxy\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getChainId\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"proxyCreationCode\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Stefan George - @Georgi87\",\"kind\":\"dev\",\"methods\":{\"createChainSpecificProxyWithNonce(address,bytes,uint256)\":{\"details\":\"Allows to create a new proxy contract that should exist only on 1 network (e.g. specific governance or admin accounts)      by including the chain id in the create2 salt. Such proxies cannot be created on other networks by replaying the transaction.\",\"params\":{\"_singleton\":\"Address of singleton contract. Must be deployed at the time of execution.\",\"initializer\":\"Payload for a message call to be sent to a new proxy contract.\",\"saltNonce\":\"Nonce that will be used to generate the salt to calculate the address of the new proxy contract.\"}},\"createProxyWithCallback(address,bytes,uint256,address)\":{\"params\":{\"_singleton\":\"Address of singleton contract. Must be deployed at the time of execution.\",\"callback\":\"Callback that will be invoked after the new proxy contract has been successfully deployed and initialized.\",\"initializer\":\"Payload for a message call to be sent to a new proxy contract.\",\"saltNonce\":\"Nonce that will be used to generate the salt to calculate the address of the new proxy contract.\"}},\"createProxyWithNonce(address,bytes,uint256)\":{\"params\":{\"_singleton\":\"Address of singleton contract. Must be deployed at the time of execution.\",\"initializer\":\"Payload for a message call to be sent to a new proxy contract.\",\"saltNonce\":\"Nonce that will be used to generate the salt to calculate the address of the new proxy contract.\"}},\"getChainId()\":{\"returns\":{\"_0\":\"The ID of the current chain as a uint256.\"}},\"proxyCreationCode()\":{\"details\":\"Allows to retrieve the creation code used for the Proxy deployment. With this it is easily possible to calculate predicted address.\"}},\"title\":\"Proxy Factory - Allows to create a new proxy contract and execute a message call to the new proxy within one transaction.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"createChainSpecificProxyWithNonce(address,bytes,uint256)\":{\"notice\":\"Deploys a new chain-specific proxy with `_singleton` singleton and `saltNonce` salt. Optionally executes an initializer call to a new proxy.\"},\"createProxyWithCallback(address,bytes,uint256,address)\":{\"notice\":\"Deploy a new proxy with `_singleton` singleton and `saltNonce` salt.         Optionally executes an initializer call to a new proxy and calls a specified callback address `callback`.\"},\"createProxyWithNonce(address,bytes,uint256)\":{\"notice\":\"Deploys a new proxy with `_singleton` singleton and `saltNonce` salt. Optionally executes an initializer call to a new proxy.\"},\"getChainId()\":{\"notice\":\"Returns the ID of the chain the contract is currently deployed on.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/proxies/SafeProxyFactory.sol\":\"SafeProxyFactory\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"details\":{\"constantOptimizer\":true,\"cse\":true,\"deduplicate\":true,\"inliner\":true,\"jumpdestRemover\":true,\"orderLiterals\":true,\"peephole\":true,\"simpleCounterForLoopUncheckedIncrement\":true,\"yul\":true,\"yulDetails\":{\"optimizerSteps\":\":fDnTOcmuO\",\"stackAllocation\":true}},\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"contracts/proxies/IProxyCreationCallback.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\nimport {SafeProxy} from \\\"./SafeProxy.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title IProxyCreationCallback\\r\\n * @dev An interface for a contract that implements a callback function to be executed after the creation of a proxy instance.\\r\\n */\\r\\ninterface IProxyCreationCallback {\\r\\n    /**\\r\\n     * @dev Function to be called after the creation of a SafeProxy instance.\\r\\n     * @param proxy The newly created SafeProxy instance.\\r\\n     * @param _singleton The address of the singleton contract used to create the proxy.\\r\\n     * @param initializer The initializer function call data.\\r\\n     * @param saltNonce The nonce used to generate the salt for the proxy deployment.\\r\\n     */\\r\\n    function proxyCreated(SafeProxy proxy, address _singleton, bytes calldata initializer, uint256 saltNonce) external;\\r\\n}\\r\\n\",\"keccak256\":\"0x8f1aff7b6c712869cede4581c36f567a267158689ea91012a69cf1a5fcb76452\",\"license\":\"LGPL-3.0-only\"},\"contracts/proxies/SafeProxy.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\n/* solhint-disable one-contract-per-file */\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\n/**\\r\\n * @title IProxy - Helper interface to access the singleton address of the Proxy on-chain.\\r\\n * @author Richard Meissner - @rmeissner\\r\\n */\\r\\ninterface IProxy {\\r\\n    function masterCopy() external view returns (address);\\r\\n}\\r\\n\\r\\n/**\\r\\n * @title SafeProxy - Generic proxy contract allows to execute all transactions applying the code of a master contract.\\r\\n * @author Stefan George - <stefan@gnosis.io>\\r\\n * @author Richard Meissner - <richard@gnosis.io>\\r\\n */\\r\\ncontract SafeProxy {\\r\\n    // Singleton always needs to be first declared variable, to ensure that it is at the same location in the contracts to which calls are delegated.\\r\\n    // To reduce deployment costs this variable is internal and needs to be retrieved via `getStorageAt`\\r\\n    address internal singleton;\\r\\n\\r\\n    /**\\r\\n     * @notice Constructor function sets address of singleton contract.\\r\\n     * @param _singleton Singleton address.\\r\\n     */\\r\\n    constructor(address _singleton) {\\r\\n        require(_singleton != address(0), \\\"Invalid singleton address provided\\\");\\r\\n        singleton = _singleton;\\r\\n    }\\r\\n\\r\\n    /// @dev Fallback function forwards all transactions and returns all received return data.\\r\\n    fallback() external payable {\\r\\n        // solhint-disable-next-line no-inline-assembly\\r\\n        assembly {\\r\\n            let _singleton := sload(0)\\r\\n            // 0xa619486e == keccak(\\\"masterCopy()\\\"). The value is right padded to 32-bytes with 0s\\r\\n            if eq(calldataload(0), 0xa619486e00000000000000000000000000000000000000000000000000000000) {\\r\\n                mstore(0, shr(12, shl(12, _singleton)))\\r\\n                return(0, 0x20)\\r\\n            }\\r\\n            calldatacopy(0, 0, calldatasize())\\r\\n            let success := delegatecall(gas(), _singleton, 0, calldatasize(), 0, 0)\\r\\n            returndatacopy(0, 0, returndatasize())\\r\\n            if eq(success, 0) {\\r\\n                revert(0, returndatasize())\\r\\n            }\\r\\n            return(0, returndatasize())\\r\\n        }\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x9d4b10a013a84b04261e4e45776a6f0a8d48d9fbd222a8f69eb850167a117a69\",\"license\":\"LGPL-3.0-only\"},\"contracts/proxies/SafeProxyFactory.sol\":{\"content\":\"// SPDX-License-Identifier: LGPL-3.0-only\\r\\npragma solidity >=0.7.0 <0.9.0;\\r\\n\\r\\nimport {IProxyCreationCallback} from \\\"./IProxyCreationCallback.sol\\\";\\r\\nimport {SafeProxy} from \\\"./SafeProxy.sol\\\";\\r\\n\\r\\n/**\\r\\n * @title Proxy Factory - Allows to create a new proxy contract and execute a message call to the new proxy within one transaction.\\r\\n * @author Stefan George - @Georgi87\\r\\n */\\r\\ncontract SafeProxyFactory {\\r\\n    event ProxyCreation(SafeProxy indexed proxy, address singleton);\\r\\n\\r\\n    /// @dev Allows to retrieve the creation code used for the Proxy deployment. With this it is easily possible to calculate predicted address.\\r\\n    function proxyCreationCode() public pure returns (bytes memory) {\\r\\n        return type(SafeProxy).creationCode;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Internal method to create a new proxy contract using CREATE2. Optionally executes an initializer call to a new proxy.\\r\\n     * @param _singleton Address of singleton contract. Must be deployed at the time of execution.\\r\\n     * @param initializer (Optional) Payload for a message call to be sent to a new proxy contract.\\r\\n     * @param salt Create2 salt to use for calculating the address of the new proxy contract.\\r\\n     * @return proxy Address of the new proxy contract.\\r\\n     */\\r\\n    function deployProxy(address _singleton, bytes memory initializer, bytes32 salt) internal returns (SafeProxy proxy) {\\r\\n        require(isContract(_singleton), \\\"Singleton contract not deployed\\\");\\r\\n\\r\\n        bytes memory deploymentData = abi.encodePacked(type(SafeProxy).creationCode, uint256(uint160(_singleton)));\\r\\n        /* solhint-disable no-inline-assembly */\\r\\n        /// @solidity memory-safe-assembly\\r\\n        assembly {\\r\\n            proxy := create2(0x0, add(0x20, deploymentData), mload(deploymentData), salt)\\r\\n        }\\r\\n        /* solhint-enable no-inline-assembly */\\r\\n        require(address(proxy) != address(0), \\\"Create2 call failed\\\");\\r\\n\\r\\n        if (initializer.length > 0) {\\r\\n            /* solhint-disable no-inline-assembly */\\r\\n            /// @solidity memory-safe-assembly\\r\\n            assembly {\\r\\n                if eq(call(gas(), proxy, 0, add(initializer, 0x20), mload(initializer), 0, 0), 0) {\\r\\n                    revert(0, 0)\\r\\n                }\\r\\n            }\\r\\n            /* solhint-enable no-inline-assembly */\\r\\n        }\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Deploys a new proxy with `_singleton` singleton and `saltNonce` salt. Optionally executes an initializer call to a new proxy.\\r\\n     * @param _singleton Address of singleton contract. Must be deployed at the time of execution.\\r\\n     * @param initializer Payload for a message call to be sent to a new proxy contract.\\r\\n     * @param saltNonce Nonce that will be used to generate the salt to calculate the address of the new proxy contract.\\r\\n     */\\r\\n    function createProxyWithNonce(address _singleton, bytes memory initializer, uint256 saltNonce) public returns (SafeProxy proxy) {\\r\\n        // If the initializer changes the proxy address should change too. Hashing the initializer data is cheaper than just concatinating it\\r\\n        bytes32 salt = keccak256(abi.encodePacked(keccak256(initializer), saltNonce));\\r\\n        proxy = deployProxy(_singleton, initializer, salt);\\r\\n        emit ProxyCreation(proxy, _singleton);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Deploys a new chain-specific proxy with `_singleton` singleton and `saltNonce` salt. Optionally executes an initializer call to a new proxy.\\r\\n     * @dev Allows to create a new proxy contract that should exist only on 1 network (e.g. specific governance or admin accounts)\\r\\n     *      by including the chain id in the create2 salt. Such proxies cannot be created on other networks by replaying the transaction.\\r\\n     * @param _singleton Address of singleton contract. Must be deployed at the time of execution.\\r\\n     * @param initializer Payload for a message call to be sent to a new proxy contract.\\r\\n     * @param saltNonce Nonce that will be used to generate the salt to calculate the address of the new proxy contract.\\r\\n     */\\r\\n    function createChainSpecificProxyWithNonce(\\r\\n        address _singleton,\\r\\n        bytes memory initializer,\\r\\n        uint256 saltNonce\\r\\n    ) public returns (SafeProxy proxy) {\\r\\n        // If the initializer changes the proxy address should change too. Hashing the initializer data is cheaper than just concatenating it\\r\\n        bytes32 salt = keccak256(abi.encodePacked(keccak256(initializer), saltNonce, getChainId()));\\r\\n        proxy = deployProxy(_singleton, initializer, salt);\\r\\n        emit ProxyCreation(proxy, _singleton);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Deploy a new proxy with `_singleton` singleton and `saltNonce` salt.\\r\\n     *         Optionally executes an initializer call to a new proxy and calls a specified callback address `callback`.\\r\\n     * @param _singleton Address of singleton contract. Must be deployed at the time of execution.\\r\\n     * @param initializer Payload for a message call to be sent to a new proxy contract.\\r\\n     * @param saltNonce Nonce that will be used to generate the salt to calculate the address of the new proxy contract.\\r\\n     * @param callback Callback that will be invoked after the new proxy contract has been successfully deployed and initialized.\\r\\n     */\\r\\n    function createProxyWithCallback(\\r\\n        address _singleton,\\r\\n        bytes memory initializer,\\r\\n        uint256 saltNonce,\\r\\n        IProxyCreationCallback callback\\r\\n    ) public returns (SafeProxy proxy) {\\r\\n        uint256 saltNonceWithCallback = uint256(keccak256(abi.encodePacked(saltNonce, callback)));\\r\\n        proxy = createProxyWithNonce(_singleton, initializer, saltNonceWithCallback);\\r\\n        if (address(callback) != address(0)) callback.proxyCreated(proxy, _singleton, initializer, saltNonce);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Returns true if `account` is a contract.\\r\\n     * @dev This function will return false if invoked during the constructor of a contract,\\r\\n     *      as the code is not actually created until after the constructor finishes.\\r\\n     * @param account The address being queried\\r\\n     * @return True if `account` is a contract\\r\\n     */\\r\\n    function isContract(address account) internal view returns (bool) {\\r\\n        uint256 size;\\r\\n        /* solhint-disable no-inline-assembly */\\r\\n        /// @solidity memory-safe-assembly\\r\\n        assembly {\\r\\n            size := extcodesize(account)\\r\\n        }\\r\\n        /* solhint-enable no-inline-assembly */\\r\\n        return size > 0;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @notice Returns the ID of the chain the contract is currently deployed on.\\r\\n     * @return The ID of the current chain as a uint256.\\r\\n     */\\r\\n    function getChainId() public view returns (uint256) {\\r\\n        uint256 id;\\r\\n        /* solhint-disable no-inline-assembly */\\r\\n        /// @solidity memory-safe-assembly\\r\\n        assembly {\\r\\n            id := chainid()\\r\\n        }\\r\\n        /* solhint-enable no-inline-assembly */\\r\\n        return id;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x652bc4485392c12ecab213ed50bb8dce3c6f879ccfd57a4ec3c7df514e3b8cdc\",\"license\":\"LGPL-3.0-only\"}},\"version\":1}",
+  "bytecode": "0x608060405234601957604051610a5c61001f8239610a5c90f35b600080fdfe6080604052600436101561001257600080fd5b60003560e01c80631688f0b9146100625780633408e4701461005d57806353e5d93514610058578063d18af54d146100535763ec9e80bb0361008857610369565b61034a565b6102b8565b610235565b6101fe565b6001600160a01b031690565b90565b6001600160a01b0381165b0361008857565b600080fd5b9050359061009a82610076565b565b634e487b7160e01b600052604160045260246000fd5b90601f01601f1916810190811067ffffffffffffffff8211176100d457604052565b61009c565b9061009a6100e660405190565b92836100b2565b67ffffffffffffffff81116100d457602090601f01601f19160190565b0190565b90826000939282370152565b9092919261012f61012a826100ed565b6100d9565b93818552818301116100885761009a91602085019061010e565b9080601f83011215610088578160206100739335910161011a565b80610081565b9050359061009a82610164565b90916060828403126100885761018d838361008d565b9260208301359067ffffffffffffffff82116100885760406101b482610073948701610149565b940161016a565b61007390610067906001600160a01b031682565b610073906101bb565b610073906101cf565b6101ea906101d8565b9052565b60208101929161009a91906101e1565b346100885761022661021a610214366004610177565b9161038b565b604051918291826101ee565b0390f35b600091031261008857565b346100885761024536600461022a565b604051468152602090f35b60005b8381106102635750506000910152565b8181015183820152602001610253565b61029461029d60209361010a93610288815190565b80835293849260200190565b95869101610250565b601f01601f191690565b602080825261007392910190610273565b34610088576102c836600461022a565b6102266102d361043f565b604051918291826102a7565b6001600160a01b038116610081565b9050359061009a826102df565b6080818303126100885761030f828261008d565b92602082013567ffffffffffffffff81116100885761033384610073928501610149565b936060610343826040870161016a565b94016102ee565b346100885761022661021a6103603660046102fb565b929190916104f4565b346100885761022661021a61037f366004610177565b916105db565b01918252565b9291906103c56103d16103eb936103a0600090565b508351602085012060405193849260208401928360208161038561010a938396959052565b908103825203826100b2565b6103e36103dc825190565b9160200190565b2090846106f1565b917f4f51faf6c4561ff95f067657e43439f0f856d97c04d9ec9070a6199ad418e23561043a610419856101d8565b9261042360405190565b918291826001600160a01b03909116815260200190565b0390a2565b61024961044e602082016100d9565b908082526107de602083013990565b6104696101ea916101d8565b60601b90565b01809261045d565b6100736100736100739290565b61007390610477565b6100676100736100739290565b6100739061048d565b94939160609161009a946104d66104e3936104c660808b019460008c01906101e1565b6001600160a01b031660208a0152565b8782036040890152610273565b940152565b6040513d6000823e3d90fd5b9293929061053f61053861050760405190565b61052781602081016103c58b8a8360208161046f61010a93601496959052565b6105326103dc825190565b20610484565b828461038b565b9161054a83966101d8565b90610558610067600061049a565b6001600160a01b0383160361056f575b5050505050565b813b1561008857600080946105a061058660405190565b978896879586946303ca56a360e31b8652600486016104a3565b03925af180156105d6576105b8575b80808080610568565b6105d09060006105c881836100b2565b81019061022a565b386105af565b6104e8565b92916103eb91906103d16105ed835190565b60208401209146926103c561060160405190565b60208082019384529095869461010a908390610385828882565b1561062257565b60405162461bcd60e51b815260206004820152601f60248201527f53696e676c65746f6e20636f6e7472616374206e6f74206465706c6f796564006044820152606490fd5b6100739081906001600160a01b031681565b61010a6106919260209261068b815190565b94859290565b93849101610250565b6106aa61010a9160209493610679565b918252565b156106b657565b60405162461bcd60e51b815260206004820152601360248201527210dc99585d194c8818d85b1b0819985a5b1959606a1b6044820152606490fd5b61075a6103c59194939294610704600090565b50610716610711826107cb565b61061b565b61074261073d6102499261072c602085016100d9565b938085526107de60208601396101cf565b610667565b9061074c60405190565b93849260208401928361069a565b8051906020016000f59161076d836101d8565b906107976000926107906107836100678661049a565b916001600160a01b031690565b14156106af565b80516107a96107a584610477565b9190565b116107b2575050565b8180826020829451910182885af1146107c85750565b80fd5b3b6107d96107a56000610477565b119056fe608060405234610028576100196100146100c0565b6101a1565b604051607b6101ce8239607b90f35b600080fd5b634e487b7160e01b600052604160045260246000fd5b90601f01601f191681019081106001600160401b0382111761006457604052565b61002d565b9061007d61007660405190565b9283610043565b565b6001600160a01b031690565b90565b6001600160a01b0381160361002857565b9050519061007d8261008e565b906020828203126100285761008b9161009f565b61008b610249803803806100d381610069565b9283398101906100ac565b61007f61008b61008b9290565b61008b906100de565b156100fb57565b60405162461bcd60e51b815260206004820152602260248201527f496e76616c69642073696e676c65746f6e20616464726573732070726f766964604482015261195960f21b6064820152608490fd5b61008b9061007f906001600160a01b031682565b61008b9061014b565b61008b9061015f565b9061018161008b61019d92610168565b82546001600160a01b0319166001600160a01b03919091161790565b9055565b61007d906101c66101b561007f60006100eb565b6001600160a01b03831614156100f4565b600061017156fe608060405260008054903563530ca43760e11b146036576000808092368280378136915af43d82803e146031573d6000f35b3d6000fd5b600c1b600c1c60005260206000f3fea26469706673582212201826c35dec7f59a9c01e90f89fd982a02783f167464e5b21f2bfa64898707c5564736f6c634300081b0033a26469706673582212202ad1147384bb635e48670e56dbc22e4662100d1da2b064f25d7044ff67e9344e64736f6c634300081b0033",
+  "deployedBytecode": "0x6080604052600436101561001257600080fd5b60003560e01c80631688f0b9146100625780633408e4701461005d57806353e5d93514610058578063d18af54d146100535763ec9e80bb0361008857610369565b61034a565b6102b8565b610235565b6101fe565b6001600160a01b031690565b90565b6001600160a01b0381165b0361008857565b600080fd5b9050359061009a82610076565b565b634e487b7160e01b600052604160045260246000fd5b90601f01601f1916810190811067ffffffffffffffff8211176100d457604052565b61009c565b9061009a6100e660405190565b92836100b2565b67ffffffffffffffff81116100d457602090601f01601f19160190565b0190565b90826000939282370152565b9092919261012f61012a826100ed565b6100d9565b93818552818301116100885761009a91602085019061010e565b9080601f83011215610088578160206100739335910161011a565b80610081565b9050359061009a82610164565b90916060828403126100885761018d838361008d565b9260208301359067ffffffffffffffff82116100885760406101b482610073948701610149565b940161016a565b61007390610067906001600160a01b031682565b610073906101bb565b610073906101cf565b6101ea906101d8565b9052565b60208101929161009a91906101e1565b346100885761022661021a610214366004610177565b9161038b565b604051918291826101ee565b0390f35b600091031261008857565b346100885761024536600461022a565b604051468152602090f35b60005b8381106102635750506000910152565b8181015183820152602001610253565b61029461029d60209361010a93610288815190565b80835293849260200190565b95869101610250565b601f01601f191690565b602080825261007392910190610273565b34610088576102c836600461022a565b6102266102d361043f565b604051918291826102a7565b6001600160a01b038116610081565b9050359061009a826102df565b6080818303126100885761030f828261008d565b92602082013567ffffffffffffffff81116100885761033384610073928501610149565b936060610343826040870161016a565b94016102ee565b346100885761022661021a6103603660046102fb565b929190916104f4565b346100885761022661021a61037f366004610177565b916105db565b01918252565b9291906103c56103d16103eb936103a0600090565b508351602085012060405193849260208401928360208161038561010a938396959052565b908103825203826100b2565b6103e36103dc825190565b9160200190565b2090846106f1565b917f4f51faf6c4561ff95f067657e43439f0f856d97c04d9ec9070a6199ad418e23561043a610419856101d8565b9261042360405190565b918291826001600160a01b03909116815260200190565b0390a2565b61024961044e602082016100d9565b908082526107de602083013990565b6104696101ea916101d8565b60601b90565b01809261045d565b6100736100736100739290565b61007390610477565b6100676100736100739290565b6100739061048d565b94939160609161009a946104d66104e3936104c660808b019460008c01906101e1565b6001600160a01b031660208a0152565b8782036040890152610273565b940152565b6040513d6000823e3d90fd5b9293929061053f61053861050760405190565b61052781602081016103c58b8a8360208161046f61010a93601496959052565b6105326103dc825190565b20610484565b828461038b565b9161054a83966101d8565b90610558610067600061049a565b6001600160a01b0383160361056f575b5050505050565b813b1561008857600080946105a061058660405190565b978896879586946303ca56a360e31b8652600486016104a3565b03925af180156105d6576105b8575b80808080610568565b6105d09060006105c881836100b2565b81019061022a565b386105af565b6104e8565b92916103eb91906103d16105ed835190565b60208401209146926103c561060160405190565b60208082019384529095869461010a908390610385828882565b1561062257565b60405162461bcd60e51b815260206004820152601f60248201527f53696e676c65746f6e20636f6e7472616374206e6f74206465706c6f796564006044820152606490fd5b6100739081906001600160a01b031681565b61010a6106919260209261068b815190565b94859290565b93849101610250565b6106aa61010a9160209493610679565b918252565b156106b657565b60405162461bcd60e51b815260206004820152601360248201527210dc99585d194c8818d85b1b0819985a5b1959606a1b6044820152606490fd5b61075a6103c59194939294610704600090565b50610716610711826107cb565b61061b565b61074261073d6102499261072c602085016100d9565b938085526107de60208601396101cf565b610667565b9061074c60405190565b93849260208401928361069a565b8051906020016000f59161076d836101d8565b906107976000926107906107836100678661049a565b916001600160a01b031690565b14156106af565b80516107a96107a584610477565b9190565b116107b2575050565b8180826020829451910182885af1146107c85750565b80fd5b3b6107d96107a56000610477565b119056fe608060405234610028576100196100146100c0565b6101a1565b604051607b6101ce8239607b90f35b600080fd5b634e487b7160e01b600052604160045260246000fd5b90601f01601f191681019081106001600160401b0382111761006457604052565b61002d565b9061007d61007660405190565b9283610043565b565b6001600160a01b031690565b90565b6001600160a01b0381160361002857565b9050519061007d8261008e565b906020828203126100285761008b9161009f565b61008b610249803803806100d381610069565b9283398101906100ac565b61007f61008b61008b9290565b61008b906100de565b156100fb57565b60405162461bcd60e51b815260206004820152602260248201527f496e76616c69642073696e676c65746f6e20616464726573732070726f766964604482015261195960f21b6064820152608490fd5b61008b9061007f906001600160a01b031682565b61008b9061014b565b61008b9061015f565b9061018161008b61019d92610168565b82546001600160a01b0319166001600160a01b03919091161790565b9055565b61007d906101c66101b561007f60006100eb565b6001600160a01b03831614156100f4565b600061017156fe608060405260008054903563530ca43760e11b146036576000808092368280378136915af43d82803e146031573d6000f35b3d6000fd5b600c1b600c1c60005260206000f3fea26469706673582212201826c35dec7f59a9c01e90f89fd982a02783f167464e5b21f2bfa64898707c5564736f6c634300081b0033a26469706673582212202ad1147384bb635e48670e56dbc22e4662100d1da2b064f25d7044ff67e9344e64736f6c634300081b0033",
+  "devdoc": {
+    "author": "Stefan George - @Georgi87",
+    "kind": "dev",
+    "methods": {
+      "createChainSpecificProxyWithNonce(address,bytes,uint256)": {
+        "details": "Allows to create a new proxy contract that should exist only on 1 network (e.g. specific governance or admin accounts)      by including the chain id in the create2 salt. Such proxies cannot be created on other networks by replaying the transaction.",
+        "params": {
+          "_singleton": "Address of singleton contract. Must be deployed at the time of execution.",
+          "initializer": "Payload for a message call to be sent to a new proxy contract.",
+          "saltNonce": "Nonce that will be used to generate the salt to calculate the address of the new proxy contract."
+        }
+      },
+      "createProxyWithCallback(address,bytes,uint256,address)": {
+        "params": {
+          "_singleton": "Address of singleton contract. Must be deployed at the time of execution.",
+          "callback": "Callback that will be invoked after the new proxy contract has been successfully deployed and initialized.",
+          "initializer": "Payload for a message call to be sent to a new proxy contract.",
+          "saltNonce": "Nonce that will be used to generate the salt to calculate the address of the new proxy contract."
+        }
+      },
+      "createProxyWithNonce(address,bytes,uint256)": {
+        "params": {
+          "_singleton": "Address of singleton contract. Must be deployed at the time of execution.",
+          "initializer": "Payload for a message call to be sent to a new proxy contract.",
+          "saltNonce": "Nonce that will be used to generate the salt to calculate the address of the new proxy contract."
+        }
+      },
+      "getChainId()": {
+        "returns": {
+          "_0": "The ID of the current chain as a uint256."
+        }
+      },
+      "proxyCreationCode()": {
+        "details": "Allows to retrieve the creation code used for the Proxy deployment. With this it is easily possible to calculate predicted address."
+      }
+    },
+    "title": "Proxy Factory - Allows to create a new proxy contract and execute a message call to the new proxy within one transaction.",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "createChainSpecificProxyWithNonce(address,bytes,uint256)": {
+        "notice": "Deploys a new chain-specific proxy with `_singleton` singleton and `saltNonce` salt. Optionally executes an initializer call to a new proxy."
+      },
+      "createProxyWithCallback(address,bytes,uint256,address)": {
+        "notice": "Deploy a new proxy with `_singleton` singleton and `saltNonce` salt.         Optionally executes an initializer call to a new proxy and calls a specified callback address `callback`."
+      },
+      "createProxyWithNonce(address,bytes,uint256)": {
+        "notice": "Deploys a new proxy with `_singleton` singleton and `saltNonce` salt. Optionally executes an initializer call to a new proxy."
+      },
+      "getChainId()": {
+        "notice": "Returns the ID of the chain the contract is currently deployed on."
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
